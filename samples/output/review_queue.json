@@ -1,0 +1,124 @@
+[
+  {
+    "document_id": "DOC_002",
+    "source_filename": "intake_B_flattened_lindqvist.pdf",
+    "review_id": "REV_001",
+    "kind": "attribute",
+    "ref": "PAT_001.email",
+    "field_label": "Email",
+    "value": "grace.lindqvist@example",
+    "status": "invalid",
+    "reason": "not a valid e-mail address",
+    "page": 1,
+    "bbox": [
+      69.2,
+      190.0,
+      169.9,
+      202.4
+    ]
+  },
+  {
+    "document_id": "DOC_003",
+    "source_filename": "intake_C_other_clinic_rivera.pdf",
+    "review_id": "REV_001",
+    "kind": "validation",
+    "ref": "MED_004",
+    "reason": "[medication_record_integrity] row text wraps onto a following line; merged values must be confirmed"
+  },
+  {
+    "document_id": "DOC_003",
+    "source_filename": "intake_C_other_clinic_rivera.pdf",
+    "review_id": "REV_002",
+    "kind": "validation",
+    "ref": "CONS_002",
+    "reason": "[consent_decision_integrity] consent decision for 'text_message' could not be resolved"
+  },
+  {
+    "document_id": "DOC_003",
+    "source_filename": "intake_C_other_clinic_rivera.pdf",
+    "review_id": "REV_003",
+    "kind": "attribute",
+    "ref": "MED_004.frequency",
+    "field_label": "How Often",
+    "value": "Daily (with breakfast)",
+    "status": "needs_review",
+    "reason": "value continues on a following line with no row key; merged into the row above",
+    "page": 1,
+    "bbox": [
+      430.0,
+      513.8,
+      494.9,
+      536.8
+    ]
+  },
+  {
+    "document_id": "DOC_003",
+    "source_filename": "intake_C_other_clinic_rivera.pdf",
+    "review_id": "REV_004",
+    "kind": "attribute",
+    "ref": "CONS_002.decision",
+    "field_label": "May we send text messages",
+    "value": null,
+    "status": "needs_review",
+    "reason": "yes/no answer could not be resolved; could not resolve a single yes/no answer from '[X] Yes [X] No'",
+    "page": 2,
+    "bbox": [
+      173.1,
+      229.8,
+      238.0,
+      242.8
+    ]
+  },
+  {
+    "document_id": "DOC_003",
+    "source_filename": "intake_C_other_clinic_rivera.pdf",
+    "review_id": "REV_005",
+    "kind": "relationship",
+    "ref": "REL_013",
+    "relationship": "PAT_001 TAKES_MEDICATION MED_004",
+    "reason": "row text wraps onto a following line; merged values must be confirmed; relationship confidence 0.55 is below the review threshold",
+    "pages": [
+      1
+    ]
+  },
+  {
+    "document_id": "DOC_003",
+    "source_filename": "intake_C_other_clinic_rivera.pdf",
+    "review_id": "REV_006",
+    "kind": "relationship",
+    "ref": "REL_032",
+    "relationship": "PAT_001 PROVIDES_CONSENT CONS_002",
+    "reason": "answer to 'May we send text messages?' needs review (yes/no answer could not be resolved)",
+    "pages": [
+      2
+    ]
+  },
+  {
+    "document_id": "DOC_003",
+    "source_filename": "intake_C_other_clinic_rivera.pdf",
+    "review_id": "REV_007",
+    "kind": "relationship",
+    "ref": "REL_045",
+    "relationship": "PAT_001 SIGNS AGR_003",
+    "reason": "printed name 'Ana Lopez' differs from patient 'Maria Rivera'; the signer may be a guardian or representative",
+    "pages": [
+      2
+    ]
+  },
+  {
+    "document_id": "DOC_004",
+    "source_filename": "intake_D_scanned_rivera.pdf",
+    "review_id": "REV_001",
+    "kind": "page",
+    "ref": "page 1",
+    "reason": "page is an image without a text layer and OCR is unavailable; content not extracted"
+  },
+  {
+    "document_id": "DOC_004",
+    "source_filename": "intake_D_scanned_rivera.pdf",
+    "review_id": "REV_002",
+    "kind": "page",
+    "ref": "page 2",
+    "reason": "page is an image without a text layer and OCR is unavailable; content not extracted"
+  }
+]

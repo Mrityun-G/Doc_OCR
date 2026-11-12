@@ -1,0 +1,11 @@
+-r requirements.txt
+# tests
+pytest>=8
+jsonschema>=4.20
+# tools/make_demo_video.py (drives installed Microsoft Edge, encodes H.264)
+playwright>=1.40
+imageio-ffmpeg>=0.5
+opencv-python>=4.8
+# optional: OCR for image-only (scanned) pages - also needs the Tesseract binary on PATH
+# pytesseract>=0.3.10
+# pillow>=10

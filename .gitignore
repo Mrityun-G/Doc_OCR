@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# runtime data and local outputs (root only: samples/output/ is committed as an example)
+/web_data/
+/output/
+/logs/
+
+# video working files
+video/_*.mp4
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

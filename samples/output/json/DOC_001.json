@@ -1,0 +1,6290 @@
+{
+  "schema_version": "1.0",
+  "document_id": "DOC_001",
+  "document_type": "patient_intake",
+  "template_id": "patient_intake_v1",
+  "source": {
+    "filename": "intake_A_fillable_okafor.pdf",
+    "sha256": "16448ca35f1a15680ac9c27d41d6b9b6efe14e5d320e06dd016882992545f3e4",
+    "page_count": 3,
+    "has_acroform": true,
+    "pages_without_text_layer": [],
+    "ocr_pages": []
+  },
+  "processing": {
+    "engine": "docintel 1.0.0",
+    "processed_at": "2026-11-12T07:12:39+00:00",
+    "extraction_mode": "template_acroform",
+    "review_threshold": 0.7,
+    "status": "completed",
+    "coordinate_system": "PDF points; origin top-left; bbox = [x0, y0, x1, y1]"
+  },
+  "sections": [
+    {
+      "section_id": "patient_info",
+      "title": "Patient Information",
+      "source_heading": "Patient Information",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          79.7,
+          144.8,
+          95.5
+        ]
+      },
+      "entity_ids": [
+        "PAT_001"
+      ]
+    },
+    {
+      "section_id": "spouse_info",
+      "title": "Spouse Information",
+      "source_heading": "Spouse Information",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          220.7,
+          148.0,
+          236.5
+        ]
+      },
+      "entity_ids": [
+        "SPO_001"
+      ]
+    },
+    {
+      "section_id": "emergency_contact",
+      "title": "Emergency Contact",
+      "source_heading": "Emergency Contact",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          277.7,
+          148.0,
+          293.5
+        ]
+      },
+      "entity_ids": [
+        "EMC_001"
+      ]
+    },
+    {
+      "section_id": "primary_insurance",
+      "title": "Primary Insurance",
+      "source_heading": "Primary Insurance",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          334.7,
+          140.3,
+          350.5
+        ]
+      },
+      "entity_ids": [
+        "INS_001",
+        "INSCO_001"
+      ]
+    },
+    {
+      "section_id": "secondary_insurance",
+      "title": "Secondary Insurance",
+      "source_heading": "Secondary Insurance",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          433.7,
+          156.3,
+          449.5
+        ]
+      },
+      "entity_ids": [
+        "INS_002",
+        "INSCO_002"
+      ]
+    },
+    {
+      "section_id": "medications",
+      "title": "Current Medications",
+      "source_heading": "Current Medications",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          532.7,
+          151.2,
+          548.5
+        ]
+      },
+      "entity_ids": [
+        "MED_001",
+        "DR_001",
+        "MED_002",
+        "MED_003",
+        "DR_002"
+      ]
+    },
+    {
+      "section_id": "allergies",
+      "title": "Allergies",
+      "source_heading": "Allergies",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          43.7,
+          88.6,
+          59.5
+        ]
+      },
+      "entity_ids": [
+        "ALG_001",
+        "ALG_002"
+      ]
+    },
+    {
+      "section_id": "medical_history",
+      "title": "Past Medical History",
+      "source_heading": "Past Medical History",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          170.7,
+          152.5,
+          186.5
+        ]
+      },
+      "entity_ids": [
+        "COND_001",
+        "COND_002",
+        "COND_003",
+        "COND_004"
+      ]
+    },
+    {
+      "section_id": "surgical_history",
+      "title": "Surgical History",
+      "source_heading": "Surgical History",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          278.7,
+          128.2,
+          294.5
+        ]
+      },
+      "entity_ids": [
+        "SURG_001",
+        "HOSP_001",
+        "SURG_002",
+        "HOSP_002"
+      ]
+    },
+    {
+      "section_id": "family_history",
+      "title": "Family Medical History",
+      "source_heading": "Family Medical History",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          405.7,
+          164.6,
+          421.5
+        ]
+      },
+      "entity_ids": [
+        "FAM_001",
+        "COND_005",
+        "COND_006",
+        "FAM_002",
+        "COND_007",
+        "COND_008",
+        "FAM_003",
+        "COND_009"
+      ]
+    },
+    {
+      "section_id": "communication_consent",
+      "title": "Communication Consent",
+      "source_heading": "Communication Consent",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          532.7,
+          176.1,
+          548.5
+        ]
+      },
+      "entity_ids": [
+        "CONS_001",
+        "CONS_002",
+        "CONS_003"
+      ]
+    },
+    {
+      "section_id": "release_of_information",
+      "title": "Authorization to Release Information",
+      "source_heading": "Authorization to Release Information",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        3
+      ],
+      "heading_location": {
+        "page": 3,
+        "bbox": [
+          40.0,
+          43.7,
+          241.3,
+          59.5
+        ]
+      },
+      "entity_ids": [
+        "CONS_004",
+        "AFM_001"
+      ]
+    },
+    {
+      "section_id": "consent_to_treatment",
+      "title": "Consent to Treatment",
+      "source_heading": "Consent to Treatment",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        3
+      ],
+      "heading_location": {
+        "page": 3,
+        "bbox": [
+          40.0,
+          157.7,
+          158.8,
+          173.5
+        ]
+      },
+      "entity_ids": [
+        "AGR_001",
+        "SIG_001"
+      ]
+    },
+    {
+      "section_id": "hipaa_acknowledgment",
+      "title": "HIPAA Acknowledgment",
+      "source_heading": "HIPAA Acknowledgment",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        3
+      ],
+      "heading_location": {
+        "page": 3,
+        "bbox": [
+          40.0,
+          242.7,
+          174.2,
+          258.5
+        ]
+      },
+      "entity_ids": [
+        "AGR_002",
+        "SIG_002"
+      ]
+    },
+    {
+      "section_id": "financial_agreement",
+      "title": "Financial Responsibility Agreement",
+      "source_heading": "Financial Responsibility Agreement",
+      "identified_by": "acroform_field_names",
+      "pages": [
+        3
+      ],
+      "heading_location": {
+        "page": 3,
+        "bbox": [
+          40.0,
+          327.7,
+          234.9,
+          343.5
+        ]
+      },
+      "entity_ids": [
+        "AGR_003",
+        "SIG_003"
+      ]
+    }
+  ],
+  "entities": {
+    "patient": {
+      "patient_id": "PAT_001",
+      "entity_type": "patient",
+      "section_id": "patient_info",
+      "record": {
+        "part": "fields",
+        "record_key": "main",
+        "index": 1
+      },
+      "first_name": {
+        "value": "Samuel",
+        "raw_value": "Samuel",
+        "field_label": "First Name",
+        "template_field": "patient_info.first_name",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            89.5,
+            106.0,
+            244.8,
+            120.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "pat_first_name"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "last_name": {
+        "value": "Okafor",
+        "raw_value": "Okafor",
+        "field_label": "Last Name",
+        "template_field": "patient_info.last_name",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            301.8,
+            106.0,
+            431.0,
+            120.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "pat_last_name"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "date_of_birth": {
+        "value": "1979-04-12",
+        "raw_value": "04/12/1979",
+        "field_label": "Date of Birth",
+        "template_field": "patient_info.date_of_birth",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            494.5,
+            106.0,
+            564.0,
+            120.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "pat_dob"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": [
+            "numeric date interpreted as MM/DD (US form convention)"
+          ]
+        }
+      },
+      "sex": {
+        "value": "male",
+        "raw_value": "Male",
+        "field_label": "Sex",
+        "template_field": "patient_info.sex",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            61.0,
+            127.0,
+            165.0,
+            141.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "pat_sex"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "marital_status": {
+        "value": "married",
+        "raw_value": "Married",
+        "field_label": "Marital Status",
+        "template_field": "patient_info.marital_status",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            233.5,
+            127.0,
+            351.2,
+            141.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "pat_marital_status"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "phone": {
+        "value": "(312) 555-0148",
+        "raw_value": "(312) 555-0148",
+        "field_label": "Phone",
+        "template_field": "patient_info.phone",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            390.7,
+            127.0,
+            564.0,
+            141.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "pat_phone"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "address": {
+        "value": "1180 Lakeview Ave, Apt 4B",
+        "raw_value": "1180 Lakeview Ave, Apt 4B",
+        "field_label": "Street Address",
+        "template_field": "patient_info.address",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            105.0,
+            148.0,
+            564.0,
+            162.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "pat_address"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "city": {
+        "value": "Chicago",
+        "raw_value": "Chicago",
+        "field_label": "City",
+        "template_field": "patient_info.city",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            61.0,
+            169.0,
+            244.8,
+            183.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "pat_city"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "state": {
+        "value": "IL",
+        "raw_value": "IL",
+        "field_label": "State",
+        "template_field": "patient_info.state",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            279.3,
+            169.0,
+            377.8,
+            183.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "pat_state"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "zip": {
+        "value": "60614",
+        "raw_value": "60614",
+        "field_label": "ZIP",
+        "template_field": "patient_info.zip",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            405.3,
+            169.0,
+            564.0,
+            183.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "pat_zip"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "email": {
+        "value": "s.okafor@example.com",
+        "raw_value": "s.okafor@example.com",
+        "field_label": "Email",
+        "template_field": "patient_info.email",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            68.0,
+            190.0,
+            564.0,
+            204.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "pat_email"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "source_pages": [
+        1
+      ]
+    },
+    "spouse": {
+      "spouse_id": "SPO_001",
+      "entity_type": "spouse",
+      "section_id": "spouse_info",
+      "record": {
+        "part": "fields",
+        "record_key": "main",
+        "index": 1
+      },
+      "name": {
+        "value": "Adaeze Okafor",
+        "raw_value": "Adaeze Okafor",
+        "field_label": "Spouse Name",
+        "template_field": "spouse_info.name",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            102.5,
+            247.0,
+            271.4,
+            261.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "spo_name"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "date_of_birth": {
+        "value": "1981-09-30",
+        "raw_value": "09/30/1981",
+        "field_label": "Date of Birth",
+        "template_field": "spouse_info.date_of_birth",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            334.9,
+            247.0,
+            415.0,
+            261.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "spo_dob"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "phone": {
+        "value": "(312) 555-0172",
+        "raw_value": "312-555-0172",
+        "field_label": "Phone",
+        "template_field": "spouse_info.phone",
+        "source": {
+          "filename": "intake_A_fillable_okafor.pdf",
+          "page": 1,
+          "bbox": [
+            454.6,
+            247.0,
+            564.0,
+            261.0
+          ],
+          "label_bbox": null,
+          "acroform_field": "spo_phone"
+        },
+        "extraction_method": "acroform",
+        "confidence": 0.98,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "source_pages": [
+        1
+      ]
+    },
+    "emergency_contacts": [
+      {
+        "emergency_contact_id": "EMC_001",
+        "entity_type": "emergency_contact",
+        "section_id": "emergency_contact",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "name": {
+          "value": "Chinedu Okafor",
+          "raw_value": "Chinedu Okafor",
+          "field_label": "Contact Name",
+          "template_field": "emergency_contact.name",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              103.0,
+              304.0,
+              244.8,
+              318.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "emc_name"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "relationship": {
+          "value": "Brother",
+          "raw_value": "Brother",
+          "field_label": "Relationship to Patient",
+          "template_field": "emergency_contact.relationship",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              348.3,
+              304.0,
+              415.0,
+              318.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "emc_relationship"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "phone": {
+          "value": "(773) 555-0119",
+          "raw_value": "773-555-0119",
+          "field_label": "Phone",
+          "template_field": "emergency_contact.phone",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              454.6,
+              304.0,
+              564.0,
+              318.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "emc_phone"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "insurance_policies": [
+      {
+        "policy_id": "INS_001",
+        "entity_type": "insurance_policy",
+        "section_id": "primary_insurance",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "policy_type": {
+          "value": "primary",
+          "raw_value": "Primary Insurance",
+          "field_label": "section heading 'Primary Insurance'",
+          "template_field": "primary_insurance.policy_type",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              334.7,
+              140.3,
+              350.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "insurance_company": {
+          "value": "Harbor Health Plan",
+          "raw_value": "Harbor Health Plan",
+          "field_label": "Insurance Company",
+          "template_field": "primary_insurance.insurance_company",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              126.0,
+              361.0,
+              351.2,
+              375.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "pri_ins_company"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "phone": {
+          "value": "(800) 555-0134",
+          "raw_value": "800-555-0134",
+          "field_label": "Insurance Phone",
+          "template_field": "primary_insurance.phone",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              432.7,
+              361.0,
+              564.0,
+              375.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "pri_ins_phone"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "policy_holder": {
+          "name": {
+            "value": "Samuel Okafor",
+            "raw_value": "Samuel Okafor",
+            "field_label": "Policy Holder Name",
+            "template_field": "primary_insurance.policy_holder.name",
+            "source": {
+              "filename": "intake_A_fillable_okafor.pdf",
+              "page": 1,
+              "bbox": [
+                125.0,
+                382.0,
+                244.8,
+                396.0
+              ],
+              "label_bbox": null,
+              "acroform_field": "pri_ins_holder_name"
+            },
+            "extraction_method": "acroform",
+            "confidence": 0.98,
+            "validation": {
+              "status": "valid",
+              "messages": []
+            }
+          },
+          "relationship_to_patient": {
+            "value": "self",
+            "raw_value": "Self",
+            "field_label": "Relationship to Patient",
+            "template_field": "primary_insurance.policy_holder.relationship_to_patient",
+            "source": {
+              "filename": "intake_A_fillable_okafor.pdf",
+              "page": 1,
+              "bbox": [
+                348.3,
+                382.0,
+                415.0,
+                396.0
+              ],
+              "label_bbox": null,
+              "acroform_field": "pri_ins_holder_relationship"
+            },
+            "extraction_method": "acroform",
+            "confidence": 0.98,
+            "validation": {
+              "status": "valid",
+              "messages": []
+            }
+          },
+          "date_of_birth": {
+            "value": "1979-04-12",
+            "raw_value": "04/12/1979",
+            "field_label": "Holder DOB",
+            "template_field": "primary_insurance.policy_holder.date_of_birth",
+            "source": {
+              "filename": "intake_A_fillable_okafor.pdf",
+              "page": 1,
+              "bbox": [
+                477.1,
+                382.0,
+                564.0,
+                396.0
+              ],
+              "label_bbox": null,
+              "acroform_field": "pri_ins_holder_dob"
+            },
+            "extraction_method": "acroform",
+            "confidence": 0.98,
+            "validation": {
+              "status": "valid",
+              "messages": [
+                "numeric date interpreted as MM/DD (US form convention)"
+              ]
+            }
+          }
+        },
+        "insurance_id": {
+          "value": "HHP-55821907",
+          "raw_value": "HHP-55821907",
+          "field_label": "Insurance ID",
+          "template_field": "primary_insurance.insurance_id",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              96.5,
+              403.0,
+              298.0,
+              417.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "pri_ins_id"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "group_number": {
+          "value": "GRP-40017",
+          "raw_value": "GRP-40017",
+          "field_label": "Group Number",
+          "template_field": "primary_insurance.group_number",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              371.0,
+              403.0,
+              564.0,
+              417.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "pri_ins_group"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "insurance_company_id": "INSCO_001",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "policy_id": "INS_002",
+        "entity_type": "insurance_policy",
+        "section_id": "secondary_insurance",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "policy_type": {
+          "value": "secondary",
+          "raw_value": "Secondary Insurance",
+          "field_label": "section heading 'Secondary Insurance'",
+          "template_field": "secondary_insurance.policy_type",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              433.7,
+              156.3,
+              449.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "insurance_company": {
+          "value": "Lakeside Mutual Insurance",
+          "raw_value": "Lakeside Mutual Insurance",
+          "field_label": "Insurance Company",
+          "template_field": "secondary_insurance.insurance_company",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              126.0,
+              460.0,
+              351.2,
+              474.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "sec_ins_company"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "phone": {
+          "value": "(800) 555-0177",
+          "raw_value": "800-555-0177",
+          "field_label": "Insurance Phone",
+          "template_field": "secondary_insurance.phone",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              432.7,
+              460.0,
+              564.0,
+              474.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "sec_ins_phone"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "policy_holder": {
+          "name": {
+            "value": "Adaeze Okafor",
+            "raw_value": "Adaeze Okafor",
+            "field_label": "Policy Holder Name",
+            "template_field": "secondary_insurance.policy_holder.name",
+            "source": {
+              "filename": "intake_A_fillable_okafor.pdf",
+              "page": 1,
+              "bbox": [
+                125.0,
+                481.0,
+                244.8,
+                495.0
+              ],
+              "label_bbox": null,
+              "acroform_field": "sec_ins_holder_name"
+            },
+            "extraction_method": "acroform",
+            "confidence": 0.98,
+            "validation": {
+              "status": "valid",
+              "messages": []
+            }
+          },
+          "relationship_to_patient": {
+            "value": "spouse",
+            "raw_value": "Spouse",
+            "field_label": "Relationship to Patient",
+            "template_field": "secondary_insurance.policy_holder.relationship_to_patient",
+            "source": {
+              "filename": "intake_A_fillable_okafor.pdf",
+              "page": 1,
+              "bbox": [
+                348.3,
+                481.0,
+                415.0,
+                495.0
+              ],
+              "label_bbox": null,
+              "acroform_field": "sec_ins_holder_relationship"
+            },
+            "extraction_method": "acroform",
+            "confidence": 0.98,
+            "validation": {
+              "status": "valid",
+              "messages": []
+            }
+          },
+          "date_of_birth": {
+            "value": "1981-09-30",
+            "raw_value": "09/30/1981",
+            "field_label": "Holder DOB",
+            "template_field": "secondary_insurance.policy_holder.date_of_birth",
+            "source": {
+              "filename": "intake_A_fillable_okafor.pdf",
+              "page": 1,
+              "bbox": [
+                477.1,
+                481.0,
+                564.0,
+                495.0
+              ],
+              "label_bbox": null,
+              "acroform_field": "sec_ins_holder_dob"
+            },
+            "extraction_method": "acroform",
+            "confidence": 0.98,
+            "validation": {
+              "status": "valid",
+              "messages": []
+            }
+          }
+        },
+        "insurance_id": {
+          "value": "LMI-2209381",
+          "raw_value": "LMI-2209381",
+          "field_label": "Insurance ID",
+          "template_field": "secondary_insurance.insurance_id",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              96.5,
+              502.0,
+              298.0,
+              516.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "sec_ins_id"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "group_number": {
+          "value": "7781-B",
+          "raw_value": "7781-B",
+          "field_label": "Group Number",
+          "template_field": "secondary_insurance.group_number",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              371.0,
+              502.0,
+              564.0,
+              516.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "sec_ins_group"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "insurance_company_id": "INSCO_002",
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "insurance_companies": [
+      {
+        "company_id": "INSCO_001",
+        "entity_type": "insurance_company",
+        "section_id": "primary_insurance",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Harbor Health Plan",
+          "raw_value": "Harbor Health Plan",
+          "field_label": "Insurance Company",
+          "template_field": "primary_insurance.insurance_company",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              126.0,
+              361.0,
+              351.2,
+              375.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "pri_ins_company"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from INS_001.insurance_company"
+          ]
+        },
+        "referenced_by": [
+          "INS_001"
+        ],
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "company_id": "INSCO_002",
+        "entity_type": "insurance_company",
+        "section_id": "secondary_insurance",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Lakeside Mutual Insurance",
+          "raw_value": "Lakeside Mutual Insurance",
+          "field_label": "Insurance Company",
+          "template_field": "secondary_insurance.insurance_company",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              126.0,
+              460.0,
+              351.2,
+              474.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "sec_ins_company"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from INS_002.insurance_company"
+          ]
+        },
+        "referenced_by": [
+          "INS_002"
+        ],
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "medications": [
+      {
+        "medication_id": "MED_001",
+        "entity_type": "medication",
+        "section_id": "medications",
+        "record": {
+          "part": "table",
+          "record_key": "row1",
+          "index": 1
+        },
+        "name": {
+          "value": "Atorvastatin",
+          "raw_value": "Atorvastatin",
+          "field_label": "Medication Name",
+          "template_field": "medications.name",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              587.0,
+              193.6,
+              601.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_1_name"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "dosage": {
+          "value": "20 mg",
+          "raw_value": "20 mg",
+          "field_label": "Dosage",
+          "template_field": "medications.dosage",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              199.6,
+              587.0,
+              284.0,
+              601.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_1_dosage"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "frequency": {
+          "value": "Once daily at bedtime",
+          "raw_value": "Once daily at bedtime",
+          "field_label": "Frequency",
+          "template_field": "medications.frequency",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              290.0,
+              587.0,
+              390.4,
+              601.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_1_frequency"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor": {
+          "value": "Dr. Helen Park",
+          "raw_value": "Dr. Helen Park",
+          "field_label": "Prescribing Doctor",
+          "template_field": "medications.prescribing_doctor",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              396.4,
+              587.0,
+              566.0,
+              601.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_1_prescribing_doctor"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor_id": "DR_001",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "medication_id": "MED_002",
+        "entity_type": "medication",
+        "section_id": "medications",
+        "record": {
+          "part": "table",
+          "record_key": "row2",
+          "index": 2
+        },
+        "name": {
+          "value": "Metformin",
+          "raw_value": "Metformin",
+          "field_label": "Medication Name",
+          "template_field": "medications.name",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              605.0,
+              193.6,
+              619.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_2_name"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "dosage": {
+          "value": "500 mg",
+          "raw_value": "500 mg",
+          "field_label": "Dosage",
+          "template_field": "medications.dosage",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              199.6,
+              605.0,
+              284.0,
+              619.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_2_dosage"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "frequency": {
+          "value": "Twice daily with meals",
+          "raw_value": "Twice daily with meals",
+          "field_label": "Frequency",
+          "template_field": "medications.frequency",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              290.0,
+              605.0,
+              390.4,
+              619.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_2_frequency"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor": {
+          "value": "Dr. Helen Park",
+          "raw_value": "Dr. Helen Park",
+          "field_label": "Prescribing Doctor",
+          "template_field": "medications.prescribing_doctor",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              396.4,
+              605.0,
+              566.0,
+              619.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_2_prescribing_doctor"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor_id": "DR_001",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "medication_id": "MED_003",
+        "entity_type": "medication",
+        "section_id": "medications",
+        "record": {
+          "part": "table",
+          "record_key": "row3",
+          "index": 3
+        },
+        "name": {
+          "value": "Albuterol inhaler",
+          "raw_value": "Albuterol inhaler",
+          "field_label": "Medication Name",
+          "template_field": "medications.name",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              623.0,
+              193.6,
+              637.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_3_name"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "dosage": {
+          "value": "90 mcg, 2 puffs",
+          "raw_value": "90 mcg, 2 puffs",
+          "field_label": "Dosage",
+          "template_field": "medications.dosage",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              199.6,
+              623.0,
+              284.0,
+              637.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_3_dosage"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "frequency": {
+          "value": "As needed",
+          "raw_value": "As needed",
+          "field_label": "Frequency",
+          "template_field": "medications.frequency",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              290.0,
+              623.0,
+              390.4,
+              637.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_3_frequency"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor": {
+          "value": "Dr. Samir Gupta",
+          "raw_value": "Dr. Samir Gupta",
+          "field_label": "Prescribing Doctor",
+          "template_field": "medications.prescribing_doctor",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              396.4,
+              623.0,
+              566.0,
+              637.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_3_prescribing_doctor"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor_id": "DR_002",
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "doctors": [
+      {
+        "doctor_id": "DR_001",
+        "entity_type": "doctor",
+        "section_id": "medications",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Dr. Helen Park",
+          "raw_value": "Dr. Helen Park",
+          "field_label": "Prescribing Doctor",
+          "template_field": "medications.prescribing_doctor",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              396.4,
+              587.0,
+              566.0,
+              601.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_1_prescribing_doctor"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from MED_001.prescribing_doctor"
+          ]
+        },
+        "referenced_by": [
+          "MED_001",
+          "MED_002"
+        ],
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "doctor_id": "DR_002",
+        "entity_type": "doctor",
+        "section_id": "medications",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Dr. Samir Gupta",
+          "raw_value": "Dr. Samir Gupta",
+          "field_label": "Prescribing Doctor",
+          "template_field": "medications.prescribing_doctor",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 1,
+            "bbox": [
+              396.4,
+              623.0,
+              566.0,
+              637.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "med_3_prescribing_doctor"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from MED_003.prescribing_doctor"
+          ]
+        },
+        "referenced_by": [
+          "MED_003"
+        ],
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "allergies": [
+      {
+        "allergy_id": "ALG_001",
+        "entity_type": "allergy",
+        "section_id": "allergies",
+        "record": {
+          "part": "table",
+          "record_key": "row1",
+          "index": 1
+        },
+        "allergen": {
+          "value": "Penicillin",
+          "raw_value": "Penicillin",
+          "field_label": "Allergen",
+          "template_field": "allergies.allergen",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              85.0,
+              246.8,
+              99.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "alg_1_allergen"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "reaction": {
+          "value": "Hives",
+          "raw_value": "Hives",
+          "field_label": "Reaction",
+          "template_field": "allergies.reaction",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              252.8,
+              85.0,
+              433.0,
+              99.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "alg_1_reaction"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "severity": {
+          "value": "moderate",
+          "raw_value": "Moderate",
+          "field_label": "Severity",
+          "template_field": "allergies.severity",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              439.0,
+              85.0,
+              566.0,
+              99.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "alg_1_severity"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "allergy_id": "ALG_002",
+        "entity_type": "allergy",
+        "section_id": "allergies",
+        "record": {
+          "part": "table",
+          "record_key": "row2",
+          "index": 2
+        },
+        "allergen": {
+          "value": "Peanuts",
+          "raw_value": "Peanuts",
+          "field_label": "Allergen",
+          "template_field": "allergies.allergen",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              103.0,
+              246.8,
+              117.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "alg_2_allergen"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "reaction": {
+          "value": "Anaphylaxis",
+          "raw_value": "Anaphylaxis",
+          "field_label": "Reaction",
+          "template_field": "allergies.reaction",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              252.8,
+              103.0,
+              433.0,
+              117.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "alg_2_reaction"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "severity": {
+          "value": "life_threatening",
+          "raw_value": "Life-threatening",
+          "field_label": "Severity",
+          "template_field": "allergies.severity",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              439.0,
+              103.0,
+              566.0,
+              117.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "alg_2_severity"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "medical_conditions": [
+      {
+        "medical_condition_id": "COND_001",
+        "entity_type": "medical_condition",
+        "section_id": "medical_history",
+        "record": {
+          "part": "checklist",
+          "record_key": "diabetes",
+          "index": 1
+        },
+        "name": {
+          "value": "Diabetes",
+          "raw_value": "Diabetes",
+          "field_label": "Diabetes",
+          "template_field": "medical_history.diabetes",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              211.0,
+              50.0,
+              221.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "pmh_diabetes"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "checklist_option": "diabetes",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_002",
+        "entity_type": "medical_condition",
+        "section_id": "medical_history",
+        "record": {
+          "part": "checklist",
+          "record_key": "hypertension",
+          "index": 2
+        },
+        "name": {
+          "value": "Hypertension",
+          "raw_value": "Hypertension",
+          "field_label": "Hypertension",
+          "template_field": "medical_history.hypertension",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              173.0,
+              211.0,
+              183.0,
+              221.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "pmh_hypertension"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "checklist_option": "hypertension",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_003",
+        "entity_type": "medical_condition",
+        "section_id": "medical_history",
+        "record": {
+          "part": "checklist",
+          "record_key": "asthma",
+          "index": 3
+        },
+        "name": {
+          "value": "Asthma",
+          "raw_value": "Asthma",
+          "field_label": "Asthma",
+          "template_field": "medical_history.asthma",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              306.0,
+              211.0,
+              316.0,
+              221.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "pmh_asthma"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "checklist_option": "asthma",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_004",
+        "entity_type": "medical_condition",
+        "section_id": "medical_history",
+        "record": {
+          "part": "checklist",
+          "record_key": "other",
+          "index": 4
+        },
+        "name": {
+          "value": "Sleep apnea",
+          "raw_value": "Sleep apnea",
+          "field_label": "Other Conditions",
+          "template_field": "medical_history.other",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              113.0,
+              246.0,
+              564.0,
+              260.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "pmh_other"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'Sleep apnea'"
+          ]
+        },
+        "checklist_option": null,
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_005",
+        "entity_type": "medical_condition",
+        "section_id": "family_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Hypertension",
+          "raw_value": "Hypertension, Type 2 diabetes",
+          "field_label": "Medical Conditions",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              274.1,
+              447.0,
+              566.0,
+              461.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_mother_conditions"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'Hypertension, Type 2 diabetes'"
+          ]
+        },
+        "owner_id": "FAM_001",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_006",
+        "entity_type": "medical_condition",
+        "section_id": "family_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Type 2 diabetes",
+          "raw_value": "Hypertension, Type 2 diabetes",
+          "field_label": "Medical Conditions",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              274.1,
+              447.0,
+              566.0,
+              461.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_mother_conditions"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'Hypertension, Type 2 diabetes'"
+          ]
+        },
+        "owner_id": "FAM_001",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_007",
+        "entity_type": "medical_condition",
+        "section_id": "family_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Heart disease",
+          "raw_value": "Heart disease, Stroke",
+          "field_label": "Medical Conditions",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              274.1,
+              465.0,
+              566.0,
+              479.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_father_conditions"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'Heart disease, Stroke'"
+          ]
+        },
+        "owner_id": "FAM_002",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_008",
+        "entity_type": "medical_condition",
+        "section_id": "family_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Stroke",
+          "raw_value": "Heart disease, Stroke",
+          "field_label": "Medical Conditions",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              274.1,
+              465.0,
+              566.0,
+              479.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_father_conditions"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'Heart disease, Stroke'"
+          ]
+        },
+        "owner_id": "FAM_002",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_009",
+        "entity_type": "medical_condition",
+        "section_id": "family_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Asthma",
+          "raw_value": "Asthma",
+          "field_label": "Medical Conditions",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              274.1,
+              483.0,
+              566.0,
+              497.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_siblings_conditions"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'Asthma'"
+          ]
+        },
+        "owner_id": "FAM_003",
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "surgeries": [
+      {
+        "surgery_id": "SURG_001",
+        "entity_type": "surgery",
+        "section_id": "surgical_history",
+        "record": {
+          "part": "table",
+          "record_key": "row1",
+          "index": 1
+        },
+        "procedure": {
+          "value": "Appendectomy",
+          "raw_value": "Appendectomy",
+          "field_label": "Procedure",
+          "template_field": "surgical_history.procedure",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              320.0,
+              246.8,
+              334.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "surg_1_procedure"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "date": {
+          "value": "2004",
+          "raw_value": "2004",
+          "field_label": "Date",
+          "template_field": "surgical_history.date",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              252.8,
+              320.0,
+              342.6,
+              334.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "surg_1_date"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": [
+              "year only"
+            ]
+          }
+        },
+        "hospital": {
+          "value": "Mercy General Hospital",
+          "raw_value": "Mercy General Hospital",
+          "field_label": "Hospital",
+          "template_field": "surgical_history.hospital",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              348.6,
+              320.0,
+              566.0,
+              334.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "surg_1_hospital"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "hospital_id": "HOSP_001",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "surgery_id": "SURG_002",
+        "entity_type": "surgery",
+        "section_id": "surgical_history",
+        "record": {
+          "part": "table",
+          "record_key": "row2",
+          "index": 2
+        },
+        "procedure": {
+          "value": "Knee arthroscopy",
+          "raw_value": "Knee arthroscopy",
+          "field_label": "Procedure",
+          "template_field": "surgical_history.procedure",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              338.0,
+              246.8,
+              352.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "surg_2_procedure"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "date": {
+          "value": "2017-06",
+          "raw_value": "06/2017",
+          "field_label": "Date",
+          "template_field": "surgical_history.date",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              252.8,
+              338.0,
+              342.6,
+              352.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "surg_2_date"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": [
+              "month/year only"
+            ]
+          }
+        },
+        "hospital": {
+          "value": "Northside Surgical Center",
+          "raw_value": "Northside Surgical Center",
+          "field_label": "Hospital",
+          "template_field": "surgical_history.hospital",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              348.6,
+              338.0,
+              566.0,
+              352.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "surg_2_hospital"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "hospital_id": "HOSP_002",
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "hospitals": [
+      {
+        "hospital_id": "HOSP_001",
+        "entity_type": "hospital",
+        "section_id": "surgical_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Mercy General Hospital",
+          "raw_value": "Mercy General Hospital",
+          "field_label": "Hospital",
+          "template_field": "surgical_history.hospital",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              348.6,
+              320.0,
+              566.0,
+              334.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "surg_1_hospital"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from SURG_001.hospital"
+          ]
+        },
+        "referenced_by": [
+          "SURG_001"
+        ],
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "hospital_id": "HOSP_002",
+        "entity_type": "hospital",
+        "section_id": "surgical_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Northside Surgical Center",
+          "raw_value": "Northside Surgical Center",
+          "field_label": "Hospital",
+          "template_field": "surgical_history.hospital",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              348.6,
+              338.0,
+              566.0,
+              352.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "surg_2_hospital"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from SURG_002.hospital"
+          ]
+        },
+        "referenced_by": [
+          "SURG_002"
+        ],
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "family_members": [
+      {
+        "family_member_id": "FAM_001",
+        "entity_type": "family_member",
+        "section_id": "family_history",
+        "record": {
+          "part": "row_table",
+          "record_key": "mother",
+          "index": 1
+        },
+        "living_status": {
+          "value": "living",
+          "raw_value": "Living",
+          "field_label": "Living/Deceased",
+          "template_field": "family_history.living_status",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              125.1,
+              447.0,
+              214.9,
+              461.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_mother_living_status"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "relation": {
+          "value": "mother",
+          "raw_value": "Mother",
+          "field_label": "Relation",
+          "template_field": "family_history.relation",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              125.1,
+              447.0,
+              214.9,
+              461.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_mother_living_status"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "derived from template row label"
+          ]
+        },
+        "age": {
+          "value": 71,
+          "raw_value": "71",
+          "field_label": "Age",
+          "template_field": "family_history.age",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              220.9,
+              447.0,
+              268.1,
+              461.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_mother_age"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "conditions": {
+          "value": [
+            "Hypertension",
+            "Type 2 diabetes"
+          ],
+          "raw_value": "Hypertension, Type 2 diabetes",
+          "field_label": "Medical Conditions",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              274.1,
+              447.0,
+              566.0,
+              461.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_mother_conditions"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "conditions_ids": [
+          "COND_005",
+          "COND_006"
+        ],
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "family_member_id": "FAM_002",
+        "entity_type": "family_member",
+        "section_id": "family_history",
+        "record": {
+          "part": "row_table",
+          "record_key": "father",
+          "index": 2
+        },
+        "living_status": {
+          "value": "deceased",
+          "raw_value": "Deceased",
+          "field_label": "Living/Deceased",
+          "template_field": "family_history.living_status",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              125.1,
+              465.0,
+              214.9,
+              479.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_father_living_status"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "relation": {
+          "value": "father",
+          "raw_value": "Father",
+          "field_label": "Relation",
+          "template_field": "family_history.relation",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              125.1,
+              465.0,
+              214.9,
+              479.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_father_living_status"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "derived from template row label"
+          ]
+        },
+        "age": {
+          "value": 68,
+          "raw_value": "68",
+          "field_label": "Age",
+          "template_field": "family_history.age",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              220.9,
+              465.0,
+              268.1,
+              479.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_father_age"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "conditions": {
+          "value": [
+            "Heart disease",
+            "Stroke"
+          ],
+          "raw_value": "Heart disease, Stroke",
+          "field_label": "Medical Conditions",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              274.1,
+              465.0,
+              566.0,
+              479.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_father_conditions"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "conditions_ids": [
+          "COND_007",
+          "COND_008"
+        ],
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "family_member_id": "FAM_003",
+        "entity_type": "family_member",
+        "section_id": "family_history",
+        "record": {
+          "part": "row_table",
+          "record_key": "siblings",
+          "index": 3
+        },
+        "living_status": {
+          "value": "living",
+          "raw_value": "Living",
+          "field_label": "Living/Deceased",
+          "template_field": "family_history.living_status",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              125.1,
+              483.0,
+              214.9,
+              497.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_siblings_living_status"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "relation": {
+          "value": "siblings",
+          "raw_value": "Siblings",
+          "field_label": "Relation",
+          "template_field": "family_history.relation",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              125.1,
+              483.0,
+              214.9,
+              497.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_siblings_living_status"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "derived from template row label"
+          ]
+        },
+        "conditions": {
+          "value": [
+            "Asthma"
+          ],
+          "raw_value": "Asthma",
+          "field_label": "Medical Conditions",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              274.1,
+              483.0,
+              566.0,
+              497.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "fh_siblings_conditions"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "conditions_ids": [
+          "COND_009"
+        ],
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "consents": [
+      {
+        "consent_id": "CONS_001",
+        "entity_type": "consent",
+        "section_id": "communication_consent",
+        "record": {
+          "part": "fields",
+          "record_key": "voicemail",
+          "index": 1
+        },
+        "category": {
+          "value": "communication",
+          "raw_value": "Communication Consent",
+          "field_label": "section heading 'Communication Consent'",
+          "template_field": "communication_consent.category",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "permission_type": {
+          "value": "voicemail",
+          "raw_value": "Communication Consent",
+          "field_label": "section heading 'Communication Consent'",
+          "template_field": "communication_consent.permission_type",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "question": "May we leave a voicemail?",
+        "decision": {
+          "value": "yes",
+          "raw_value": "yes",
+          "field_label": "May we leave a voicemail?",
+          "template_field": "communication_consent.voicemail",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              161.5,
+              560.0,
+              219.5,
+              570.0
+            ],
+            "label_bbox": null,
+            "acroform_field": [
+              "cons_voicemail_yes",
+              "cons_voicemail_no"
+            ]
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "consent_id": "CONS_002",
+        "entity_type": "consent",
+        "section_id": "communication_consent",
+        "record": {
+          "part": "fields",
+          "record_key": "text_message",
+          "index": 1
+        },
+        "category": {
+          "value": "communication",
+          "raw_value": "Communication Consent",
+          "field_label": "section heading 'Communication Consent'",
+          "template_field": "communication_consent.category",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "permission_type": {
+          "value": "text_message",
+          "raw_value": "Communication Consent",
+          "field_label": "section heading 'Communication Consent'",
+          "template_field": "communication_consent.permission_type",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "question": "May we send text messages?",
+        "decision": {
+          "value": "yes",
+          "raw_value": "yes",
+          "field_label": "May we send text messages?",
+          "template_field": "communication_consent.text_message",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              172.5,
+              581.0,
+              230.5,
+              591.0
+            ],
+            "label_bbox": null,
+            "acroform_field": [
+              "cons_text_yes",
+              "cons_text_no"
+            ]
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "consent_id": "CONS_003",
+        "entity_type": "consent",
+        "section_id": "communication_consent",
+        "record": {
+          "part": "fields",
+          "record_key": "email",
+          "index": 1
+        },
+        "category": {
+          "value": "communication",
+          "raw_value": "Communication Consent",
+          "field_label": "section heading 'Communication Consent'",
+          "template_field": "communication_consent.category",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "permission_type": {
+          "value": "email",
+          "raw_value": "Communication Consent",
+          "field_label": "section heading 'Communication Consent'",
+          "template_field": "communication_consent.permission_type",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "question": "May we contact you by email?",
+        "decision": {
+          "value": "no",
+          "raw_value": "no",
+          "field_label": "May we contact you by email?",
+          "template_field": "communication_consent.email",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 2,
+            "bbox": [
+              174.5,
+              602.0,
+              232.5,
+              612.0
+            ],
+            "label_bbox": null,
+            "acroform_field": [
+              "cons_email_yes",
+              "cons_email_no"
+            ]
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "consent_id": "CONS_004",
+        "entity_type": "consent",
+        "section_id": "release_of_information",
+        "record": {
+          "part": "fields",
+          "record_key": "release_authorized",
+          "index": 1
+        },
+        "category": {
+          "value": "disclosure",
+          "raw_value": "Authorization to Release Information",
+          "field_label": "section heading 'Authorization to Release Information'",
+          "template_field": "release_of_information.category",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              43.7,
+              241.3,
+              59.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "permission_type": {
+          "value": "release_of_health_information",
+          "raw_value": "Authorization to Release Information",
+          "field_label": "section heading 'Authorization to Release Information'",
+          "template_field": "release_of_information.permission_type",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              43.7,
+              241.3,
+              59.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "question": "I authorize the clinic to discuss my health information with the individuals listed below",
+        "decision": {
+          "value": "yes",
+          "raw_value": "yes",
+          "field_label": "I authorize the clinic to discuss my health information with the individuals listed below",
+          "template_field": "release_of_information.release_authorized",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              394.6,
+              71.0,
+              452.6,
+              81.0
+            ],
+            "label_bbox": null,
+            "acroform_field": [
+              "rel_authorized_yes",
+              "rel_authorized_no"
+            ]
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      }
+    ],
+    "authorized_family_members": [
+      {
+        "authorized_family_member_id": "AFM_001",
+        "entity_type": "authorized_family_member",
+        "section_id": "release_of_information",
+        "record": {
+          "part": "table",
+          "record_key": "row1",
+          "index": 1
+        },
+        "name": {
+          "value": "Adaeze Okafor",
+          "raw_value": "Adaeze Okafor",
+          "field_label": "Name",
+          "template_field": "release_of_information.name",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              108.0,
+              257.4,
+              122.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "auth_1_name"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "relationship": {
+          "value": "Spouse",
+          "raw_value": "Spouse",
+          "field_label": "Relationship",
+          "template_field": "release_of_information.relationship",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              263.4,
+              108.0,
+              406.4,
+              122.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "auth_1_relationship"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "phone": {
+          "value": "(312) 555-0172",
+          "raw_value": "312-555-0172",
+          "field_label": "Phone",
+          "template_field": "release_of_information.phone",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              412.4,
+              108.0,
+              566.0,
+              122.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "auth_1_phone"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      }
+    ],
+    "agreements": [
+      {
+        "agreement_id": "AGR_001",
+        "entity_type": "agreement",
+        "section_id": "consent_to_treatment",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "agreement_type": {
+          "value": "consent_to_treatment",
+          "raw_value": "Consent to Treatment",
+          "field_label": "section heading 'Consent to Treatment'",
+          "template_field": "consent_to_treatment.agreement_type",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              157.7,
+              158.8,
+              173.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "title": {
+          "value": "Consent to Treatment",
+          "raw_value": "Consent to Treatment",
+          "field_label": "section heading 'Consent to Treatment'",
+          "template_field": "consent_to_treatment.title",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              157.7,
+              158.8,
+              173.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      },
+      {
+        "agreement_id": "AGR_002",
+        "entity_type": "agreement",
+        "section_id": "hipaa_acknowledgment",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "agreement_type": {
+          "value": "hipaa_acknowledgment",
+          "raw_value": "HIPAA Acknowledgment",
+          "field_label": "section heading 'HIPAA Acknowledgment'",
+          "template_field": "hipaa_acknowledgment.agreement_type",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              242.7,
+              174.2,
+              258.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "title": {
+          "value": "HIPAA Acknowledgment",
+          "raw_value": "HIPAA Acknowledgment",
+          "field_label": "section heading 'HIPAA Acknowledgment'",
+          "template_field": "hipaa_acknowledgment.title",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              242.7,
+              174.2,
+              258.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      },
+      {
+        "agreement_id": "AGR_003",
+        "entity_type": "agreement",
+        "section_id": "financial_agreement",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "agreement_type": {
+          "value": "financial_responsibility",
+          "raw_value": "Financial Responsibility Agreement",
+          "field_label": "section heading 'Financial Responsibility Agreement'",
+          "template_field": "financial_agreement.agreement_type",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              327.7,
+              234.9,
+              343.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "title": {
+          "value": "Financial Responsibility Agreement",
+          "raw_value": "Financial Responsibility Agreement",
+          "field_label": "section heading 'Financial Responsibility Agreement'",
+          "template_field": "financial_agreement.title",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              327.7,
+              234.9,
+              343.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "template_section",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      }
+    ],
+    "signatures": [
+      {
+        "signature_id": "SIG_001",
+        "entity_type": "signature",
+        "section_id": "consent_to_treatment",
+        "record": {
+          "part": "fields",
+          "record_key": "signature",
+          "index": 1
+        },
+        "signature_present": {
+          "value": true,
+          "raw_value": "Samuel Okafor",
+          "field_label": "Patient Signature",
+          "template_field": "consent_to_treatment.signature",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              114.5,
+              212.0,
+              244.8,
+              226.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "agr_treatment_signature"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "signature_evidence": "typed_text"
+        },
+        "printed_name": {
+          "value": "Samuel Okafor",
+          "raw_value": "Samuel Okafor",
+          "field_label": "Printed Name",
+          "template_field": "consent_to_treatment.printed_name",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              313.3,
+              212.0,
+              431.0,
+              226.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "agr_treatment_printed_name"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "signed_date": {
+          "value": "2026-10-28",
+          "raw_value": "10/28/2026",
+          "field_label": "Date",
+          "template_field": "consent_to_treatment.signed_date",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              463.5,
+              212.0,
+              564.0,
+              226.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "agr_treatment_date"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      },
+      {
+        "signature_id": "SIG_002",
+        "entity_type": "signature",
+        "section_id": "hipaa_acknowledgment",
+        "record": {
+          "part": "fields",
+          "record_key": "signature",
+          "index": 1
+        },
+        "signature_present": {
+          "value": true,
+          "raw_value": "Samuel Okafor",
+          "field_label": "Patient Signature",
+          "template_field": "hipaa_acknowledgment.signature",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              114.5,
+              297.0,
+              244.8,
+              311.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "agr_hipaa_signature"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "signature_evidence": "typed_text"
+        },
+        "printed_name": {
+          "value": "Samuel Okafor",
+          "raw_value": "Samuel Okafor",
+          "field_label": "Printed Name",
+          "template_field": "hipaa_acknowledgment.printed_name",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              313.3,
+              297.0,
+              431.0,
+              311.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "agr_hipaa_printed_name"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "signed_date": {
+          "value": "2026-10-28",
+          "raw_value": "10/28/2026",
+          "field_label": "Date",
+          "template_field": "hipaa_acknowledgment.signed_date",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              463.5,
+              297.0,
+              564.0,
+              311.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "agr_hipaa_date"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      },
+      {
+        "signature_id": "SIG_003",
+        "entity_type": "signature",
+        "section_id": "financial_agreement",
+        "record": {
+          "part": "fields",
+          "record_key": "signature",
+          "index": 1
+        },
+        "signature_present": {
+          "value": true,
+          "raw_value": "Samuel Okafor",
+          "field_label": "Patient Signature",
+          "template_field": "financial_agreement.signature",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              114.5,
+              382.0,
+              244.8,
+              396.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "agr_financial_signature"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "signature_evidence": "typed_text"
+        },
+        "printed_name": {
+          "value": "Samuel Okafor",
+          "raw_value": "Samuel Okafor",
+          "field_label": "Printed Name",
+          "template_field": "financial_agreement.printed_name",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              313.3,
+              382.0,
+              431.0,
+              396.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "agr_financial_printed_name"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "signed_date": {
+          "value": "2026-10-28",
+          "raw_value": "10/28/2026",
+          "field_label": "Date",
+          "template_field": "financial_agreement.signed_date",
+          "source": {
+            "filename": "intake_A_fillable_okafor.pdf",
+            "page": 3,
+            "bbox": [
+              463.5,
+              382.0,
+              564.0,
+              396.0
+            ],
+            "label_bbox": null,
+            "acroform_field": "agr_financial_date"
+          },
+          "extraction_method": "acroform",
+          "confidence": 0.98,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "relationship_id": "REL_001",
+      "subject": "PAT_001",
+      "predicate": "HAS_SPOUSE",
+      "object": "SPO_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "spouse details entered in the reference template's 'Spouse Information' form fields of the patient's own intake form",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "spouse_info",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              220.7,
+              148.0,
+              236.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              102.5,
+              247.0,
+              271.4,
+              261.0
+            ],
+            "attribute": "spouse_info.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              334.9,
+              247.0,
+              415.0,
+              261.0
+            ],
+            "attribute": "spouse_info.date_of_birth"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              454.6,
+              247.0,
+              564.0,
+              261.0
+            ],
+            "attribute": "spouse_info.phone"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_002",
+      "subject": "PAT_001",
+      "predicate": "HAS_EMERGENCY_CONTACT",
+      "object": "EMC_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "emergency contact details entered in the reference template's 'Emergency Contact' form fields of the patient's own intake form",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "emergency_contact",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              277.7,
+              148.0,
+              293.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              103.0,
+              304.0,
+              244.8,
+              318.0
+            ],
+            "attribute": "emergency_contact.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              348.3,
+              304.0,
+              415.0,
+              318.0
+            ],
+            "attribute": "emergency_contact.relationship"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              454.6,
+              304.0,
+              564.0,
+              318.0
+            ],
+            "attribute": "emergency_contact.phone"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_003",
+      "subject": "INS_001",
+      "predicate": "ISSUED_BY",
+      "object": "INSCO_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Insurance Company' recorded in the same section as the insurance policy",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "primary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              334.7,
+              140.3,
+              350.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              126.0,
+              361.0,
+              351.2,
+              375.0
+            ],
+            "attribute": "primary_insurance.insurance_company"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_004",
+      "subject": "PAT_001",
+      "predicate": "HAS_INSURANCE",
+      "object": "INS_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "insurance policy details entered in the reference template's 'Primary Insurance' form fields of the patient's own intake form",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "primary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              334.7,
+              140.3,
+              350.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              126.0,
+              361.0,
+              351.2,
+              375.0
+            ],
+            "attribute": "primary_insurance.insurance_company"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              432.7,
+              361.0,
+              564.0,
+              375.0
+            ],
+            "attribute": "primary_insurance.phone"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              125.0,
+              382.0,
+              244.8,
+              396.0
+            ],
+            "attribute": "primary_insurance.policy_holder.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              348.3,
+              382.0,
+              415.0,
+              396.0
+            ],
+            "attribute": "primary_insurance.policy_holder.relationship_to_patient"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              477.1,
+              382.0,
+              564.0,
+              396.0
+            ],
+            "attribute": "primary_insurance.policy_holder.date_of_birth"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              96.5,
+              403.0,
+              298.0,
+              417.0
+            ],
+            "attribute": "primary_insurance.insurance_id"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_005",
+      "subject": "INS_002",
+      "predicate": "ISSUED_BY",
+      "object": "INSCO_002",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Insurance Company' recorded in the same section as the insurance policy",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "secondary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              433.7,
+              156.3,
+              449.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              126.0,
+              460.0,
+              351.2,
+              474.0
+            ],
+            "attribute": "secondary_insurance.insurance_company"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_006",
+      "subject": "PAT_001",
+      "predicate": "HAS_INSURANCE",
+      "object": "INS_002",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "insurance policy details entered in the reference template's 'Secondary Insurance' form fields of the patient's own intake form",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "secondary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              433.7,
+              156.3,
+              449.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              126.0,
+              460.0,
+              351.2,
+              474.0
+            ],
+            "attribute": "secondary_insurance.insurance_company"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              432.7,
+              460.0,
+              564.0,
+              474.0
+            ],
+            "attribute": "secondary_insurance.phone"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              125.0,
+              481.0,
+              244.8,
+              495.0
+            ],
+            "attribute": "secondary_insurance.policy_holder.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              348.3,
+              481.0,
+              415.0,
+              495.0
+            ],
+            "attribute": "secondary_insurance.policy_holder.relationship_to_patient"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              477.1,
+              481.0,
+              564.0,
+              495.0
+            ],
+            "attribute": "secondary_insurance.policy_holder.date_of_birth"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              96.5,
+              502.0,
+              298.0,
+              516.0
+            ],
+            "attribute": "secondary_insurance.insurance_id"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_007",
+      "subject": "MED_001",
+      "predicate": "PRESCRIBED_BY",
+      "object": "DR_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Prescribing Doctor' recorded on the same table row as the medication",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              532.7,
+              151.2,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              587.0,
+              193.6,
+              601.0
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              396.4,
+              587.0,
+              566.0,
+              601.0
+            ],
+            "attribute": "medications.prescribing_doctor"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_008",
+      "subject": "PAT_001",
+      "predicate": "TAKES_MEDICATION",
+      "object": "MED_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "row 1 entered in the reference template's 'Current Medications' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              532.7,
+              151.2,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              587.0,
+              193.6,
+              601.0
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              199.6,
+              587.0,
+              284.0,
+              601.0
+            ],
+            "attribute": "medications.dosage"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              290.0,
+              587.0,
+              390.4,
+              601.0
+            ],
+            "attribute": "medications.frequency"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              396.4,
+              587.0,
+              566.0,
+              601.0
+            ],
+            "attribute": "medications.prescribing_doctor"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_009",
+      "subject": "MED_002",
+      "predicate": "PRESCRIBED_BY",
+      "object": "DR_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Prescribing Doctor' recorded on the same table row as the medication",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              532.7,
+              151.2,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              605.0,
+              193.6,
+              619.0
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              396.4,
+              605.0,
+              566.0,
+              619.0
+            ],
+            "attribute": "medications.prescribing_doctor"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_010",
+      "subject": "PAT_001",
+      "predicate": "TAKES_MEDICATION",
+      "object": "MED_002",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "row 2 entered in the reference template's 'Current Medications' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              532.7,
+              151.2,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              605.0,
+              193.6,
+              619.0
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              199.6,
+              605.0,
+              284.0,
+              619.0
+            ],
+            "attribute": "medications.dosage"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              290.0,
+              605.0,
+              390.4,
+              619.0
+            ],
+            "attribute": "medications.frequency"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              396.4,
+              605.0,
+              566.0,
+              619.0
+            ],
+            "attribute": "medications.prescribing_doctor"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_011",
+      "subject": "MED_003",
+      "predicate": "PRESCRIBED_BY",
+      "object": "DR_002",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Prescribing Doctor' recorded on the same table row as the medication",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              532.7,
+              151.2,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              623.0,
+              193.6,
+              637.0
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              396.4,
+              623.0,
+              566.0,
+              637.0
+            ],
+            "attribute": "medications.prescribing_doctor"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_012",
+      "subject": "PAT_001",
+      "predicate": "TAKES_MEDICATION",
+      "object": "MED_003",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "row 3 entered in the reference template's 'Current Medications' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              532.7,
+              151.2,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              623.0,
+              193.6,
+              637.0
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              199.6,
+              623.0,
+              284.0,
+              637.0
+            ],
+            "attribute": "medications.dosage"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              290.0,
+              623.0,
+              390.4,
+              637.0
+            ],
+            "attribute": "medications.frequency"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              396.4,
+              623.0,
+              566.0,
+              637.0
+            ],
+            "attribute": "medications.prescribing_doctor"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_013",
+      "subject": "PAT_001",
+      "predicate": "HAS_ALLERGY",
+      "object": "ALG_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "row 1 entered in the reference template's 'Allergies' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "allergies",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              43.7,
+              88.6,
+              59.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              85.0,
+              246.8,
+              99.0
+            ],
+            "attribute": "allergies.allergen"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              252.8,
+              85.0,
+              433.0,
+              99.0
+            ],
+            "attribute": "allergies.reaction"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              439.0,
+              85.0,
+              566.0,
+              99.0
+            ],
+            "attribute": "allergies.severity"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_014",
+      "subject": "PAT_001",
+      "predicate": "HAS_ALLERGY",
+      "object": "ALG_002",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "row 2 entered in the reference template's 'Allergies' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "allergies",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              43.7,
+              88.6,
+              59.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              103.0,
+              246.8,
+              117.0
+            ],
+            "attribute": "allergies.allergen"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              252.8,
+              103.0,
+              433.0,
+              117.0
+            ],
+            "attribute": "allergies.reaction"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              439.0,
+              103.0,
+              566.0,
+              117.0
+            ],
+            "attribute": "allergies.severity"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_015",
+      "subject": "PAT_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "box ticked next to 'Diabetes' entered in the reference template's 'Past Medical History' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "medical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              170.7,
+              152.5,
+              186.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              211.0,
+              50.0,
+              221.0
+            ],
+            "attribute": "medical_history.diabetes"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_016",
+      "subject": "PAT_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_002",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "box ticked next to 'Hypertension' entered in the reference template's 'Past Medical History' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "medical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              170.7,
+              152.5,
+              186.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              173.0,
+              211.0,
+              183.0,
+              221.0
+            ],
+            "attribute": "medical_history.hypertension"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_017",
+      "subject": "PAT_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_003",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "box ticked next to 'Asthma' entered in the reference template's 'Past Medical History' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "medical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              170.7,
+              152.5,
+              186.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              306.0,
+              211.0,
+              316.0,
+              221.0
+            ],
+            "attribute": "medical_history.asthma"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_018",
+      "subject": "PAT_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_004",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "listed under 'Other Conditions' entered in the reference template's 'Past Medical History' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "medical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              170.7,
+              152.5,
+              186.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              113.0,
+              246.0,
+              564.0,
+              260.0
+            ],
+            "attribute": "medical_history.other"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_019",
+      "subject": "SURG_001",
+      "predicate": "PERFORMED_AT",
+      "object": "HOSP_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Hospital' recorded on the same table row as the surgery",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "surgical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              278.7,
+              128.2,
+              294.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              320.0,
+              246.8,
+              334.0
+            ],
+            "attribute": "surgical_history.procedure"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              348.6,
+              320.0,
+              566.0,
+              334.0
+            ],
+            "attribute": "surgical_history.hospital"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_020",
+      "subject": "PAT_001",
+      "predicate": "HAD_SURGERY",
+      "object": "SURG_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "row 1 entered in the reference template's 'Surgical History' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "surgical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              278.7,
+              128.2,
+              294.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              320.0,
+              246.8,
+              334.0
+            ],
+            "attribute": "surgical_history.procedure"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              252.8,
+              320.0,
+              342.6,
+              334.0
+            ],
+            "attribute": "surgical_history.date"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              348.6,
+              320.0,
+              566.0,
+              334.0
+            ],
+            "attribute": "surgical_history.hospital"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_021",
+      "subject": "SURG_002",
+      "predicate": "PERFORMED_AT",
+      "object": "HOSP_002",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Hospital' recorded on the same table row as the surgery",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "surgical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              278.7,
+              128.2,
+              294.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              338.0,
+              246.8,
+              352.0
+            ],
+            "attribute": "surgical_history.procedure"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              348.6,
+              338.0,
+              566.0,
+              352.0
+            ],
+            "attribute": "surgical_history.hospital"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_022",
+      "subject": "PAT_001",
+      "predicate": "HAD_SURGERY",
+      "object": "SURG_002",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "row 2 entered in the reference template's 'Surgical History' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "surgical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              278.7,
+              128.2,
+              294.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              338.0,
+              246.8,
+              352.0
+            ],
+            "attribute": "surgical_history.procedure"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              252.8,
+              338.0,
+              342.6,
+              352.0
+            ],
+            "attribute": "surgical_history.date"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              348.6,
+              338.0,
+              566.0,
+              352.0
+            ],
+            "attribute": "surgical_history.hospital"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_023",
+      "subject": "FAM_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_005",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Hypertension' listed in the 'Medical Conditions' cell of the 'Mother' row of 'Family Medical History'",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              405.7,
+              164.6,
+              421.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              274.1,
+              447.0,
+              566.0,
+              461.0
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_024",
+      "subject": "FAM_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_006",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Type 2 diabetes' listed in the 'Medical Conditions' cell of the 'Mother' row of 'Family Medical History'",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              405.7,
+              164.6,
+              421.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              274.1,
+              447.0,
+              566.0,
+              461.0
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_025",
+      "subject": "PAT_001",
+      "predicate": "HAS_FAMILY_HISTORY",
+      "object": "FAM_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Mother' row entered in the reference template's 'Family Medical History' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              405.7,
+              164.6,
+              421.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              125.1,
+              447.0,
+              214.9,
+              461.0
+            ],
+            "attribute": "family_history.living_status"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              125.1,
+              447.0,
+              214.9,
+              461.0
+            ],
+            "attribute": "family_history.relation"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              220.9,
+              447.0,
+              268.1,
+              461.0
+            ],
+            "attribute": "family_history.age"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              274.1,
+              447.0,
+              566.0,
+              461.0
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_026",
+      "subject": "FAM_002",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_007",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Heart disease' listed in the 'Medical Conditions' cell of the 'Father' row of 'Family Medical History'",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              405.7,
+              164.6,
+              421.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              274.1,
+              465.0,
+              566.0,
+              479.0
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_027",
+      "subject": "FAM_002",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_008",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Stroke' listed in the 'Medical Conditions' cell of the 'Father' row of 'Family Medical History'",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              405.7,
+              164.6,
+              421.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              274.1,
+              465.0,
+              566.0,
+              479.0
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_028",
+      "subject": "PAT_001",
+      "predicate": "HAS_FAMILY_HISTORY",
+      "object": "FAM_002",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Father' row entered in the reference template's 'Family Medical History' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              405.7,
+              164.6,
+              421.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              125.1,
+              465.0,
+              214.9,
+              479.0
+            ],
+            "attribute": "family_history.living_status"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              125.1,
+              465.0,
+              214.9,
+              479.0
+            ],
+            "attribute": "family_history.relation"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              220.9,
+              465.0,
+              268.1,
+              479.0
+            ],
+            "attribute": "family_history.age"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              274.1,
+              465.0,
+              566.0,
+              479.0
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_029",
+      "subject": "FAM_003",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_009",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Asthma' listed in the 'Medical Conditions' cell of the 'Siblings' row of 'Family Medical History'",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              405.7,
+              164.6,
+              421.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              274.1,
+              483.0,
+              566.0,
+              497.0
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_030",
+      "subject": "PAT_001",
+      "predicate": "HAS_FAMILY_HISTORY",
+      "object": "FAM_003",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'Siblings' row entered in the reference template's 'Family Medical History' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              405.7,
+              164.6,
+              421.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              125.1,
+              483.0,
+              214.9,
+              497.0
+            ],
+            "attribute": "family_history.living_status"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              125.1,
+              483.0,
+              214.9,
+              497.0
+            ],
+            "attribute": "family_history.relation"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              274.1,
+              483.0,
+              566.0,
+              497.0
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_031",
+      "subject": "PAT_001",
+      "predicate": "PROVIDES_CONSENT",
+      "object": "CONS_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "answer to 'May we leave a voicemail?' entered in the reference template's 'Communication Consent' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              161.5,
+              560.0,
+              219.5,
+              570.0
+            ],
+            "attribute": "communication_consent.voicemail"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_032",
+      "subject": "CONS_001",
+      "predicate": "AUTHORIZES_COMMUNICATION",
+      "object_value": "voicemail",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'YES' marked for 'May we leave a voicemail?'",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              161.5,
+              560.0,
+              219.5,
+              570.0
+            ],
+            "attribute": "communication_consent.voicemail"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_033",
+      "subject": "PAT_001",
+      "predicate": "PROVIDES_CONSENT",
+      "object": "CONS_002",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "answer to 'May we send text messages?' entered in the reference template's 'Communication Consent' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              172.5,
+              581.0,
+              230.5,
+              591.0
+            ],
+            "attribute": "communication_consent.text_message"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_034",
+      "subject": "CONS_002",
+      "predicate": "AUTHORIZES_COMMUNICATION",
+      "object_value": "text_message",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'YES' marked for 'May we send text messages?'",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              172.5,
+              581.0,
+              230.5,
+              591.0
+            ],
+            "attribute": "communication_consent.text_message"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_035",
+      "subject": "PAT_001",
+      "predicate": "PROVIDES_CONSENT",
+      "object": "CONS_003",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "answer to 'May we contact you by email?' entered in the reference template's 'Communication Consent' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              174.5,
+              602.0,
+              232.5,
+              612.0
+            ],
+            "attribute": "communication_consent.email"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_036",
+      "subject": "CONS_003",
+      "predicate": "DECLINES_COMMUNICATION",
+      "object_value": "email",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "'NO' marked for 'May we contact you by email?'",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              174.5,
+              602.0,
+              232.5,
+              612.0
+            ],
+            "attribute": "communication_consent.email"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_037",
+      "subject": "PAT_001",
+      "predicate": "PROVIDES_CONSENT",
+      "object": "CONS_004",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "answer to 'I authorize the clinic to discuss my health information with the individuals listed below' entered in the reference template's 'Authorization to Release Information' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "release_of_information",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              43.7,
+              241.3,
+              59.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              394.6,
+              71.0,
+              452.6,
+              81.0
+            ],
+            "attribute": "release_of_information.release_authorized"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_038",
+      "subject": "PAT_001",
+      "predicate": "HAS_AUTHORIZED_FAMILY_MEMBER",
+      "object": "AFM_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "row 1 entered in the reference template's 'Authorization to Release Information' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "release_of_information",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              43.7,
+              241.3,
+              59.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              108.0,
+              257.4,
+              122.0
+            ],
+            "attribute": "release_of_information.name"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              263.4,
+              108.0,
+              406.4,
+              122.0
+            ],
+            "attribute": "release_of_information.relationship"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              412.4,
+              108.0,
+              566.0,
+              122.0
+            ],
+            "attribute": "release_of_information.phone"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_039",
+      "subject": "CONS_004",
+      "predicate": "AUTHORIZES_DISCLOSURE_TO",
+      "object": "AFM_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "authorization answered 'YES' and the person is listed in the same section",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "release_of_information",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              43.7,
+              241.3,
+              59.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              394.6,
+              71.0,
+              452.6,
+              81.0
+            ],
+            "attribute": "release_of_information.release_authorized"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              108.0,
+              257.4,
+              122.0
+            ],
+            "attribute": "release_of_information.name"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              263.4,
+              108.0,
+              406.4,
+              122.0
+            ],
+            "attribute": "release_of_information.relationship"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              412.4,
+              108.0,
+              566.0,
+              122.0
+            ],
+            "attribute": "release_of_information.phone"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_040",
+      "subject": "SIG_001",
+      "predicate": "SIGNATURE_FOR",
+      "object": "AGR_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "signature block printed under 'Consent to Treatment' entered in the reference template's 'Consent to Treatment' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "consent_to_treatment",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              157.7,
+              158.8,
+              173.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              114.5,
+              212.0,
+              244.8,
+              226.0
+            ],
+            "attribute": "consent_to_treatment.signature"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              313.3,
+              212.0,
+              431.0,
+              226.0
+            ],
+            "attribute": "consent_to_treatment.printed_name"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              463.5,
+              212.0,
+              564.0,
+              226.0
+            ],
+            "attribute": "consent_to_treatment.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_041",
+      "subject": "SIG_002",
+      "predicate": "SIGNATURE_FOR",
+      "object": "AGR_002",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "signature block printed under 'HIPAA Acknowledgment' entered in the reference template's 'HIPAA Acknowledgment' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "hipaa_acknowledgment",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              242.7,
+              174.2,
+              258.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              114.5,
+              297.0,
+              244.8,
+              311.0
+            ],
+            "attribute": "hipaa_acknowledgment.signature"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              313.3,
+              297.0,
+              431.0,
+              311.0
+            ],
+            "attribute": "hipaa_acknowledgment.printed_name"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              463.5,
+              297.0,
+              564.0,
+              311.0
+            ],
+            "attribute": "hipaa_acknowledgment.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_042",
+      "subject": "SIG_003",
+      "predicate": "SIGNATURE_FOR",
+      "object": "AGR_003",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "signature block printed under 'Financial Responsibility Agreement' entered in the reference template's 'Financial Responsibility Agreement' form fields",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "financial_agreement",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              327.7,
+              234.9,
+              343.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              114.5,
+              382.0,
+              244.8,
+              396.0
+            ],
+            "attribute": "financial_agreement.signature"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              313.3,
+              382.0,
+              431.0,
+              396.0
+            ],
+            "attribute": "financial_agreement.printed_name"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              463.5,
+              382.0,
+              564.0,
+              396.0
+            ],
+            "attribute": "financial_agreement.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_043",
+      "subject": "INS_001",
+      "predicate": "HELD_BY",
+      "object": "PAT_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "policy holder 'Relationship to Patient' is 'Self'",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "primary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              334.7,
+              140.3,
+              350.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              348.3,
+              382.0,
+              415.0,
+              396.0
+            ],
+            "attribute": "primary_insurance.policy_holder.relationship_to_patient"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              125.0,
+              382.0,
+              244.8,
+              396.0
+            ],
+            "attribute": "primary_insurance.policy_holder.name"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_044",
+      "subject": "INS_002",
+      "predicate": "HELD_BY",
+      "object": "SPO_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "relationship is 'Spouse' and the policy holder name matches the spouse section",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "secondary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              433.7,
+              156.3,
+              449.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              348.3,
+              481.0,
+              415.0,
+              495.0
+            ],
+            "attribute": "secondary_insurance.policy_holder.relationship_to_patient"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              125.0,
+              481.0,
+              244.8,
+              495.0
+            ],
+            "attribute": "secondary_insurance.policy_holder.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              102.5,
+              247.0,
+              271.4,
+              261.0
+            ],
+            "attribute": "spouse_info.name"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_045",
+      "subject": "PAT_001",
+      "predicate": "SIGNS",
+      "object": "AGR_001",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "signature found on the 'Patient Signature' line of 'Consent to Treatment' (page 3)",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "consent_to_treatment",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              157.7,
+              158.8,
+              173.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              114.5,
+              212.0,
+              244.8,
+              226.0
+            ],
+            "attribute": "consent_to_treatment.signature"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              313.3,
+              212.0,
+              431.0,
+              226.0
+            ],
+            "attribute": "consent_to_treatment.printed_name"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              463.5,
+              212.0,
+              564.0,
+              226.0
+            ],
+            "attribute": "consent_to_treatment.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_046",
+      "subject": "PAT_001",
+      "predicate": "SIGNS",
+      "object": "AGR_002",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "signature found on the 'Patient Signature' line of 'HIPAA Acknowledgment' (page 3)",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "hipaa_acknowledgment",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              242.7,
+              174.2,
+              258.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              114.5,
+              297.0,
+              244.8,
+              311.0
+            ],
+            "attribute": "hipaa_acknowledgment.signature"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              313.3,
+              297.0,
+              431.0,
+              311.0
+            ],
+            "attribute": "hipaa_acknowledgment.printed_name"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              463.5,
+              297.0,
+              564.0,
+              311.0
+            ],
+            "attribute": "hipaa_acknowledgment.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_047",
+      "subject": "PAT_001",
+      "predicate": "SIGNS",
+      "object": "AGR_003",
+      "support": "explicit",
+      "confidence": 0.98,
+      "basis": "signature found on the 'Patient Signature' line of 'Financial Responsibility Agreement' (page 3)",
+      "evidence": {
+        "source_file": "intake_A_fillable_okafor.pdf",
+        "section_id": "financial_agreement",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              327.7,
+              234.9,
+              343.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              114.5,
+              382.0,
+              244.8,
+              396.0
+            ],
+            "attribute": "financial_agreement.signature"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              313.3,
+              382.0,
+              431.0,
+              396.0
+            ],
+            "attribute": "financial_agreement.printed_name"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              463.5,
+              382.0,
+              564.0,
+              396.0
+            ],
+            "attribute": "financial_agreement.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    }
+  ],
+  "missing_information": [
+    {
+      "ref": "FAM_003",
+      "section_id": "family_history",
+      "entity_id": "FAM_003",
+      "label": "Age",
+      "severity": "incomplete_record",
+      "reason": "record 3 has no value for: Age"
+    }
+  ],
+  "validation": {
+    "status": "completed",
+    "checks": [
+      {
+        "check": "document_isolation",
+        "status": "passed",
+        "checked": 160,
+        "issues": []
+      },
+      {
+        "check": "predicate_signatures",
+        "status": "passed",
+        "checked": 47,
+        "issues": []
+      },
+      {
+        "check": "medication_record_integrity",
+        "status": "passed",
+        "checked": 3,
+        "issues": []
+      },
+      {
+        "check": "insurance_policy_separation",
+        "status": "passed",
+        "checked": 2,
+        "issues": []
+      },
+      {
+        "check": "family_history_separation",
+        "status": "passed",
+        "checked": 12,
+        "issues": []
+      },
+      {
+        "check": "consent_decision_integrity",
+        "status": "passed",
+        "checked": 4,
+        "issues": []
+      },
+      {
+        "check": "signature_agreement_binding",
+        "status": "passed",
+        "checked": 6,
+        "issues": []
+      }
+    ],
+    "errors": [],
+    "warnings": []
+  },
+  "manual_review": [],
+  "unmapped_content": []
+}

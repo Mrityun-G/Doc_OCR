@@ -1,0 +1,300 @@
+{
+  "template_id": "patient_intake_v1",
+  "document_type": "patient_intake",
+  "title": "Patient Intake Form",
+  "reference_pdf": "reference_template.pdf",
+  "note": "STAND-IN reference template. Replace section/field labels, aliases and acroform names with those of the real reference PDF (see README: 'Adapting to the real reference PDF').",
+  "review_threshold": 0.7,
+
+  "subject_entity": {
+    "collection": "patient", "type": "patient", "prefix": "PAT", "container": "object",
+    "section_id": "patient_info", "display_name": ["first_name", "last_name"], "fallback_name": "full_name"
+  },
+
+  "predicates": {
+    "HAS_INSURANCE":                {"subject": ["patient"], "object": ["insurance_policy"]},
+    "ISSUED_BY":                    {"subject": ["insurance_policy"], "object": ["insurance_company"]},
+    "HELD_BY":                      {"subject": ["insurance_policy"], "object": ["patient", "spouse"]},
+    "HAS_SPOUSE":                   {"subject": ["patient"], "object": ["spouse"]},
+    "HAS_EMERGENCY_CONTACT":        {"subject": ["patient"], "object": ["emergency_contact"]},
+    "TAKES_MEDICATION":             {"subject": ["patient"], "object": ["medication"]},
+    "PRESCRIBED_BY":                {"subject": ["medication"], "object": ["doctor"]},
+    "HAS_ALLERGY":                  {"subject": ["patient"], "object": ["allergy"]},
+    "HAS_CONDITION":                {"subject": ["patient", "family_member"], "object": ["medical_condition"]},
+    "HAD_SURGERY":                  {"subject": ["patient"], "object": ["surgery"]},
+    "PERFORMED_AT":                 {"subject": ["surgery"], "object": ["hospital"]},
+    "HAS_FAMILY_HISTORY":           {"subject": ["patient"], "object": ["family_member"]},
+    "PROVIDES_CONSENT":             {"subject": ["patient"], "object": ["consent"]},
+    "AUTHORIZES_COMMUNICATION":     {"subject": ["consent"], "object": ["@literal"]},
+    "DECLINES_COMMUNICATION":       {"subject": ["consent"], "object": ["@literal"]},
+    "AUTHORIZES_DISCLOSURE_TO":     {"subject": ["consent"], "object": ["authorized_family_member"]},
+    "HAS_AUTHORIZED_FAMILY_MEMBER": {"subject": ["patient"], "object": ["authorized_family_member"]},
+    "SIGNATURE_FOR":                {"subject": ["signature"], "object": ["agreement"]},
+    "SIGNS":                        {"subject": ["patient"], "object": ["agreement"]}
+  },
+
+  "sections": [
+    {
+      "section_id": "patient_info",
+      "title": "Patient Information",
+      "aliases": ["patient information", "patient demographics", "demographics", "personal information", "patient details", "patient info"],
+      "fields": {
+        "entity": {"collection": "patient", "type": "patient", "prefix": "PAT", "container": "object", "subject": true},
+        "items": [
+          {"key": "first_name", "label": "First Name", "aliases": ["given name"], "type": "name", "required": true, "acroform": "pat_first_name", "w": 0.4},
+          {"key": "last_name", "label": "Last Name", "aliases": ["surname", "family name"], "type": "name", "required": true, "acroform": "pat_last_name", "w": 0.35},
+          {"key": "date_of_birth", "label": "Date of Birth", "aliases": ["dob", "birth date", "birthdate", "d o b"], "type": "dob", "required": true, "acroform": "pat_dob", "w": 0.25},
+          {"key": "full_name", "label": "Patient Name", "aliases": ["full name", "name of patient", "patient full name", "name"], "type": "name", "render": false, "derive_into": ["first_name", "last_name"]},
+          {"key": "sex", "label": "Sex", "aliases": ["gender", "sex gender"], "type": "enum", "enum": "sex", "acroform": "pat_sex", "w": 0.25},
+          {"key": "marital_status", "label": "Marital Status", "aliases": ["marital"], "type": "enum", "enum": "marital", "acroform": "pat_marital_status", "w": 0.35},
+          {"key": "phone", "label": "Phone", "aliases": ["cell phone", "mobile phone", "home phone", "telephone", "phone number", "mobile", "cell", "primary phone"], "type": "phone", "required": true, "acroform": "pat_phone", "w": 0.4},
+          {"key": "address", "label": "Street Address", "aliases": ["address", "home address", "mailing address"], "type": "text", "acroform": "pat_address", "w": 1.0},
+          {"key": "city", "label": "City", "aliases": ["town"], "type": "text", "acroform": "pat_city", "w": 0.4},
+          {"key": "state", "label": "State", "aliases": ["province"], "type": "state", "acroform": "pat_state", "w": 0.25},
+          {"key": "zip", "label": "ZIP", "aliases": ["zip code", "zipcode", "postal code", "zip postal code"], "type": "zip", "acroform": "pat_zip", "w": 0.35},
+          {"key": "email", "label": "Email", "aliases": ["e mail", "email address", "e mail address"], "type": "email", "acroform": "pat_email", "w": 1.0}
+        ]
+      }
+    },
+    {
+      "section_id": "spouse_info",
+      "title": "Spouse Information",
+      "aliases": ["spouse information", "spouse", "spouse partner", "spouse or partner information", "spouse partner information", "partner information"],
+      "fields": {
+        "entity": {"collection": "spouse", "type": "spouse", "prefix": "SPO", "container": "object", "patient_predicate": "HAS_SPOUSE"},
+        "items": [
+          {"key": "name", "label": "Spouse Name", "aliases": ["name", "full name", "spouse s name", "partner name"], "type": "name", "acroform": "spo_name", "w": 0.45},
+          {"key": "date_of_birth", "label": "Date of Birth", "aliases": ["dob", "birth date"], "type": "dob", "acroform": "spo_dob", "w": 0.27},
+          {"key": "phone", "label": "Phone", "aliases": ["phone number", "cell phone", "mobile phone"], "type": "phone", "acroform": "spo_phone", "w": 0.28}
+        ]
+      }
+    },
+    {
+      "section_id": "emergency_contact",
+      "title": "Emergency Contact",
+      "aliases": ["emergency contact", "emergency contact information", "in case of emergency", "emergency"],
+      "fields": {
+        "entity": {"collection": "emergency_contacts", "type": "emergency_contact", "prefix": "EMC", "patient_predicate": "HAS_EMERGENCY_CONTACT"},
+        "items": [
+          {"key": "name", "label": "Contact Name", "aliases": ["name", "full name", "emergency contact name"], "type": "name", "required": true, "acroform": "emc_name", "w": 0.4},
+          {"key": "relationship", "label": "Relationship to Patient", "aliases": ["relationship", "relation"], "type": "text", "acroform": "emc_relationship", "w": 0.32},
+          {"key": "phone", "label": "Phone", "aliases": ["phone number", "telephone", "cell phone"], "type": "phone", "required": true, "acroform": "emc_phone", "w": 0.28}
+        ]
+      }
+    },
+    {
+      "section_id": "primary_insurance",
+      "title": "Primary Insurance",
+      "aliases": ["primary insurance", "primary insurance information", "primary coverage", "primary insurance coverage", "insurance primary"],
+      "fields": {
+        "entity": {"collection": "insurance_policies", "type": "insurance_policy", "prefix": "INS", "id_field": "policy_id", "patient_predicate": "HAS_INSURANCE", "fixed": {"policy_type": "primary"}},
+        "items": [
+          {"key": "insurance_company", "label": "Insurance Company", "aliases": ["insurance carrier", "carrier", "insurance provider", "insurance name", "insurer", "company"], "type": "text", "required": true, "acroform": "pri_ins_company", "w": 0.6,
+           "link": {"collection": "insurance_companies", "type": "insurance_company", "prefix": "INSCO", "id_field": "company_id", "predicate": "ISSUED_BY"}},
+          {"key": "phone", "label": "Insurance Phone", "aliases": ["phone", "phone number", "customer service phone"], "type": "phone", "acroform": "pri_ins_phone", "w": 0.4},
+          {"key": "policy_holder.name", "label": "Policy Holder Name", "aliases": ["policy holder", "policyholder", "policyholder name", "subscriber name", "subscriber", "insured name", "name of insured"], "type": "name", "acroform": "pri_ins_holder_name", "w": 0.4},
+          {"key": "policy_holder.relationship_to_patient", "label": "Relationship to Patient", "aliases": ["relationship", "relationship to insured", "patient relationship to insured"], "type": "enum", "enum": "holder_relationship", "acroform": "pri_ins_holder_relationship", "w": 0.32},
+          {"key": "policy_holder.date_of_birth", "label": "Holder DOB", "aliases": ["policy holder dob", "subscriber dob", "insured dob", "policy holder date of birth", "subscriber date of birth", "dob", "date of birth"], "type": "dob", "acroform": "pri_ins_holder_dob", "w": 0.28},
+          {"key": "insurance_id", "label": "Insurance ID", "aliases": ["member id", "policy number", "id number", "insurance id number", "subscriber id", "member id number", "policy id", "id number"], "type": "identifier", "required": true, "acroform": "pri_ins_id", "w": 0.5},
+          {"key": "group_number", "label": "Group Number", "aliases": ["group number", "group no", "group", "group id"], "type": "identifier", "acroform": "pri_ins_group", "w": 0.5}
+        ]
+      }
+    },
+    {
+      "section_id": "secondary_insurance",
+      "title": "Secondary Insurance",
+      "aliases": ["secondary insurance", "secondary insurance information", "secondary coverage", "secondary insurance coverage", "insurance secondary", "additional insurance"],
+      "fields": {
+        "entity": {"collection": "insurance_policies", "type": "insurance_policy", "prefix": "INS", "id_field": "policy_id", "patient_predicate": "HAS_INSURANCE", "fixed": {"policy_type": "secondary"}},
+        "items": [
+          {"key": "insurance_company", "label": "Insurance Company", "aliases": ["insurance carrier", "carrier", "insurance provider", "insurance name", "insurer", "company"], "type": "text", "required": true, "acroform": "sec_ins_company", "w": 0.6,
+           "link": {"collection": "insurance_companies", "type": "insurance_company", "prefix": "INSCO", "id_field": "company_id", "predicate": "ISSUED_BY"}},
+          {"key": "phone", "label": "Insurance Phone", "aliases": ["phone", "phone number", "customer service phone"], "type": "phone", "acroform": "sec_ins_phone", "w": 0.4},
+          {"key": "policy_holder.name", "label": "Policy Holder Name", "aliases": ["policy holder", "policyholder", "policyholder name", "subscriber name", "subscriber", "insured name", "name of insured"], "type": "name", "acroform": "sec_ins_holder_name", "w": 0.4},
+          {"key": "policy_holder.relationship_to_patient", "label": "Relationship to Patient", "aliases": ["relationship", "relationship to insured", "patient relationship to insured"], "type": "enum", "enum": "holder_relationship", "acroform": "sec_ins_holder_relationship", "w": 0.32},
+          {"key": "policy_holder.date_of_birth", "label": "Holder DOB", "aliases": ["policy holder dob", "subscriber dob", "insured dob", "policy holder date of birth", "subscriber date of birth", "dob", "date of birth"], "type": "dob", "acroform": "sec_ins_holder_dob", "w": 0.28},
+          {"key": "insurance_id", "label": "Insurance ID", "aliases": ["member id", "policy number", "id number", "insurance id number", "subscriber id", "member id number", "policy id"], "type": "identifier", "required": true, "acroform": "sec_ins_id", "w": 0.5},
+          {"key": "group_number", "label": "Group Number", "aliases": ["group no", "group", "group id"], "type": "identifier", "acroform": "sec_ins_group", "w": 0.5}
+        ]
+      }
+    },
+    {
+      "section_id": "medications",
+      "title": "Current Medications",
+      "aliases": ["current medications", "medications", "medication list", "medication", "current medication list", "medications you currently take", "prescription medications", "list of medications"],
+      "table": {
+        "entity": {"collection": "medications", "type": "medication", "prefix": "MED", "patient_predicate": "TAKES_MEDICATION"},
+        "instructions": "List every prescription and over-the-counter medication you currently take.",
+        "rows": 5, "key_column": "name", "acroform_pattern": "med_{row}_{key}",
+        "columns": [
+          {"key": "name", "label": "Medication Name", "aliases": ["medication", "drug", "drug name", "medicine", "name of medication"], "type": "text", "w": 0.3},
+          {"key": "dosage", "label": "Dosage", "aliases": ["dose", "strength", "amount"], "type": "dosage", "w": 0.17},
+          {"key": "frequency", "label": "Frequency", "aliases": ["how often", "directions", "schedule", "times per day"], "type": "text", "w": 0.2},
+          {"key": "prescribing_doctor", "label": "Prescribing Doctor", "aliases": ["prescribed by", "prescriber", "prescribing physician", "physician", "doctor", "prescribing provider"], "type": "name", "w": 0.33,
+           "link": {"collection": "doctors", "type": "doctor", "prefix": "DR", "predicate": "PRESCRIBED_BY"}}
+        ]
+      }
+    },
+    {
+      "section_id": "allergies",
+      "title": "Allergies",
+      "aliases": ["allergies", "drug allergies", "allergy", "allergies and reactions", "known allergies", "allergy information"],
+      "table": {
+        "entity": {"collection": "allergies", "type": "allergy", "prefix": "ALG", "patient_predicate": "HAS_ALLERGY"},
+        "rows": 4, "key_column": "allergen", "acroform_pattern": "alg_{row}_{key}",
+        "columns": [
+          {"key": "allergen", "label": "Allergen", "aliases": ["allergy", "allergic to", "substance", "medication food"], "type": "text", "w": 0.4},
+          {"key": "reaction", "label": "Reaction", "aliases": ["reaction type", "symptoms"], "type": "text", "w": 0.35},
+          {"key": "severity", "label": "Severity", "aliases": ["how severe"], "type": "enum", "enum": "severity", "w": 0.25}
+        ]
+      }
+    },
+    {
+      "section_id": "medical_history",
+      "title": "Past Medical History",
+      "aliases": ["past medical history", "medical history", "medical conditions", "personal medical history", "health history"],
+      "checklist": {
+        "entity": {"collection": "medical_conditions", "type": "medical_condition", "prefix": "COND", "patient_predicate": "HAS_CONDITION"},
+        "instructions": "Check every condition you have been diagnosed with.",
+        "acroform_pattern": "pmh_{key}",
+        "options": [
+          {"key": "diabetes", "label": "Diabetes", "aliases": ["diabetes mellitus", "type 2 diabetes", "type 1 diabetes"]},
+          {"key": "hypertension", "label": "Hypertension", "aliases": ["high blood pressure"]},
+          {"key": "asthma", "label": "Asthma", "aliases": []},
+          {"key": "heart_disease", "label": "Heart Disease", "aliases": ["heart condition", "coronary artery disease"]},
+          {"key": "cancer", "label": "Cancer", "aliases": []},
+          {"key": "thyroid_disorder", "label": "Thyroid Disorder", "aliases": ["thyroid disease", "thyroid"]},
+          {"key": "depression_anxiety", "label": "Depression/Anxiety", "aliases": ["depression", "anxiety", "depression or anxiety"]},
+          {"key": "arthritis", "label": "Arthritis", "aliases": []}
+        ],
+        "other": {"key": "other", "label": "Other Conditions", "aliases": ["other", "other medical conditions", "conditions", "diagnoses"], "type": "list", "acroform": "pmh_other"}
+      }
+    },
+    {
+      "section_id": "surgical_history",
+      "title": "Surgical History",
+      "aliases": ["surgical history", "surgeries", "past surgeries", "previous surgeries", "operations", "surgical procedures"],
+      "table": {
+        "entity": {"collection": "surgeries", "type": "surgery", "prefix": "SURG", "patient_predicate": "HAD_SURGERY"},
+        "rows": 4, "key_column": "procedure", "acroform_pattern": "surg_{row}_{key}",
+        "columns": [
+          {"key": "procedure", "label": "Procedure", "aliases": ["surgery", "operation", "type of surgery", "surgery procedure"], "type": "text", "w": 0.4},
+          {"key": "date", "label": "Date", "aliases": ["year", "date of surgery", "when"], "type": "date_or_year", "w": 0.18},
+          {"key": "hospital", "label": "Hospital", "aliases": ["facility", "hospital facility", "location", "where performed"], "type": "text", "w": 0.42,
+           "link": {"collection": "hospitals", "type": "hospital", "prefix": "HOSP", "predicate": "PERFORMED_AT"}}
+        ]
+      }
+    },
+    {
+      "section_id": "family_history",
+      "title": "Family Medical History",
+      "aliases": ["family medical history", "family history", "family health history"],
+      "row_table": {
+        "entity": {"collection": "family_members", "type": "family_member", "prefix": "FAM", "patient_predicate": "HAS_FAMILY_HISTORY"},
+        "row_attribute": "relation",
+        "row_header": {"label": "Relation", "aliases": ["family member", "relationship", "relative", "member"], "w": 0.16},
+        "rows": [
+          {"row_key": "mother", "label": "Mother", "aliases": ["mom", "biological mother"]},
+          {"row_key": "father", "label": "Father", "aliases": ["dad", "biological father"]},
+          {"row_key": "siblings", "label": "Siblings", "aliases": ["sibling", "brother", "sister", "brothers", "sisters", "brother sister", "brothers sisters"]},
+          {"row_key": "children", "label": "Children", "aliases": ["child", "son", "daughter", "sons", "daughters"]}
+        ],
+        "acroform_pattern": "fh_{row}_{key}",
+        "default_column": "conditions",
+        "columns": [
+          {"key": "living_status", "label": "Living/Deceased", "aliases": ["living or deceased", "status", "alive deceased"], "type": "enum", "enum": "living", "w": 0.18},
+          {"key": "age", "label": "Age", "aliases": ["current age", "age at death", "age age at death"], "type": "integer", "w": 0.1},
+          {"key": "conditions", "label": "Medical Conditions", "aliases": ["conditions", "health conditions", "health problems", "illnesses", "medical problems"], "type": "list", "w": 0.56,
+           "split_to": {"collection": "medical_conditions", "type": "medical_condition", "prefix": "COND", "predicate": "HAS_CONDITION"}}
+        ]
+      }
+    },
+    {
+      "section_id": "communication_consent",
+      "title": "Communication Consent",
+      "aliases": ["communication consent", "communication preferences", "consent to communicate", "communication authorization", "contact preferences"],
+      "fields": {
+        "entity": {"collection": "consents", "type": "consent", "prefix": "CONS", "patient_predicate": "PROVIDES_CONSENT", "per_field": true, "value_attribute": "decision", "fixed": {"category": "communication"},
+                   "decision_predicates": {"yes": "AUTHORIZES_COMMUNICATION", "no": "DECLINES_COMMUNICATION"}},
+        "items": [
+          {"key": "voicemail", "label": "May we leave a voicemail?", "aliases": ["voicemail", "leave a voicemail", "voice mail", "leave a message", "may we leave a message"], "type": "yes_no", "fixed": {"permission_type": "voicemail"},
+           "acroform": {"yes": "cons_voicemail_yes", "no": "cons_voicemail_no"}},
+          {"key": "text_message", "label": "May we send text messages?", "aliases": ["text message", "text messages", "sms", "texting", "may we text you", "may we send you text messages"], "type": "yes_no", "fixed": {"permission_type": "text_message"},
+           "acroform": {"yes": "cons_text_yes", "no": "cons_text_no"}},
+          {"key": "email", "label": "May we contact you by email?", "aliases": ["email", "e mail", "may we email you", "contact by email", "may we contact you by e mail"], "type": "yes_no", "fixed": {"permission_type": "email"},
+           "acroform": {"yes": "cons_email_yes", "no": "cons_email_no"}}
+        ]
+      }
+    },
+    {
+      "section_id": "release_of_information",
+      "title": "Authorization to Release Information",
+      "aliases": ["authorization to release information", "release of information", "authorized family members", "authorization to discuss health information", "release of medical information"],
+      "fields": {
+        "entity": {"collection": "consents", "type": "consent", "prefix": "CONS", "patient_predicate": "PROVIDES_CONSENT", "per_field": true, "value_attribute": "decision", "fixed": {"category": "disclosure"}},
+        "items": [
+          {"key": "release_authorized", "label": "I authorize the clinic to discuss my health information with the individuals listed below", "aliases": ["i authorize release of my health information to the individuals listed below", "release information to the individuals below", "authorize release of information"],
+           "type": "yes_no", "fixed": {"permission_type": "release_of_health_information"}, "acroform": {"yes": "rel_authorized_yes", "no": "rel_authorized_no"}}
+        ]
+      },
+      "table": {
+        "entity": {"collection": "authorized_family_members", "type": "authorized_family_member", "prefix": "AFM", "patient_predicate": "HAS_AUTHORIZED_FAMILY_MEMBER"},
+        "parent_link": {"part": "fields", "field_key": "release_authorized", "predicate": "AUTHORIZES_DISCLOSURE_TO", "requires_decision": "yes"},
+        "rows": 2, "key_column": "name", "acroform_pattern": "auth_{row}_{key}",
+        "columns": [
+          {"key": "name", "label": "Name", "aliases": ["full name", "authorized person", "person"], "type": "name", "w": 0.42},
+          {"key": "relationship", "label": "Relationship", "aliases": ["relationship to patient", "relation"], "type": "text", "w": 0.28},
+          {"key": "phone", "label": "Phone", "aliases": ["phone number", "telephone"], "type": "phone", "w": 0.3}
+        ]
+      }
+    },
+    {
+      "section_id": "consent_to_treatment",
+      "title": "Consent to Treatment",
+      "aliases": ["consent to treatment", "consent for treatment", "treatment consent", "consent to medical treatment"],
+      "text": "I voluntarily consent to examination and treatment by the clinicians of this practice. I understand that no guarantee has been made about the results of any treatment and that I may withdraw this consent in writing at any time.",
+      "fields": {
+        "entity": {"collection": "agreements", "type": "agreement", "prefix": "AGR", "fixed": {"agreement_type": "consent_to_treatment", "title": "Consent to Treatment"},
+                   "signer_predicate": "SIGNS",
+                   "sub_entities": {"signature": {"collection": "signatures", "type": "signature", "prefix": "SIG", "parent_predicate": "SIGNATURE_FOR"}}},
+        "items": [
+          {"key": "signature", "label": "Patient Signature", "aliases": ["signature", "signature of patient", "patient or guardian signature", "signed"], "type": "signature", "entity_ref": "signature", "required": true, "acroform": "agr_treatment_signature", "w": 0.4},
+          {"key": "printed_name", "label": "Printed Name", "aliases": ["print name", "name", "printed name of patient", "patient name"], "type": "name", "entity_ref": "signature", "acroform": "agr_treatment_printed_name", "w": 0.35},
+          {"key": "signed_date", "label": "Date", "aliases": ["date signed", "signature date"], "type": "date", "entity_ref": "signature", "required": true, "acroform": "agr_treatment_date", "w": 0.25}
+        ]
+      }
+    },
+    {
+      "section_id": "hipaa_acknowledgment",
+      "title": "HIPAA Acknowledgment",
+      "aliases": ["hipaa acknowledgment", "hipaa acknowledgement", "notice of privacy practices", "privacy practices acknowledgment", "privacy practices acknowledgement", "privacy notice acknowledgment", "acknowledgment of receipt of notice of privacy practices"],
+      "text": "I acknowledge that I have received or been offered a copy of this practice's Notice of Privacy Practices, which describes how my health information may be used and disclosed.",
+      "fields": {
+        "entity": {"collection": "agreements", "type": "agreement", "prefix": "AGR", "fixed": {"agreement_type": "hipaa_acknowledgment", "title": "HIPAA Acknowledgment"},
+                   "signer_predicate": "SIGNS",
+                   "sub_entities": {"signature": {"collection": "signatures", "type": "signature", "prefix": "SIG", "parent_predicate": "SIGNATURE_FOR"}}},
+        "items": [
+          {"key": "signature", "label": "Patient Signature", "aliases": ["signature", "signature of patient", "patient or guardian signature", "signed"], "type": "signature", "entity_ref": "signature", "required": true, "acroform": "agr_hipaa_signature", "w": 0.4},
+          {"key": "printed_name", "label": "Printed Name", "aliases": ["print name", "name", "patient name"], "type": "name", "entity_ref": "signature", "acroform": "agr_hipaa_printed_name", "w": 0.35},
+          {"key": "signed_date", "label": "Date", "aliases": ["date signed", "signature date"], "type": "date", "entity_ref": "signature", "required": true, "acroform": "agr_hipaa_date", "w": 0.25}
+        ]
+      }
+    },
+    {
+      "section_id": "financial_agreement",
+      "title": "Financial Responsibility Agreement",
+      "aliases": ["financial responsibility agreement", "financial policy", "financial responsibility", "financial agreement", "payment policy", "financial policy agreement"],
+      "text": "I understand that I am financially responsible for all charges not paid by my insurance. I authorize payment of insurance benefits directly to this practice.",
+      "fields": {
+        "entity": {"collection": "agreements", "type": "agreement", "prefix": "AGR", "fixed": {"agreement_type": "financial_responsibility", "title": "Financial Responsibility Agreement"},
+                   "signer_predicate": "SIGNS",
+                   "sub_entities": {"signature": {"collection": "signatures", "type": "signature", "prefix": "SIG", "parent_predicate": "SIGNATURE_FOR"}}},
+        "items": [
+          {"key": "signature", "label": "Patient Signature", "aliases": ["signature", "signature of patient", "patient or guardian signature", "responsible party signature", "signed"], "type": "signature", "entity_ref": "signature", "required": true, "acroform": "agr_financial_signature", "w": 0.4},
+          {"key": "printed_name", "label": "Printed Name", "aliases": ["print name", "name", "patient name"], "type": "name", "entity_ref": "signature", "acroform": "agr_financial_printed_name", "w": 0.35},
+          {"key": "signed_date", "label": "Date", "aliases": ["date signed", "signature date"], "type": "date", "entity_ref": "signature", "required": true, "acroform": "agr_financial_date", "w": 0.25}
+        ]
+      }
+    }
+  ]
+}

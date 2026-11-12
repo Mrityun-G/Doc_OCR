@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "docintel/document.schema.json",
+  "title": "Relationship-preserving document extraction (one source PDF)",
+  "type": "object",
+  "required": ["schema_version", "document_id", "document_type", "template_id", "source", "processing", "sections",
+               "entities", "relationships", "missing_information", "validation", "manual_review", "unmapped_content"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "document_id": {"type": "string", "pattern": "^DOC_\\d{3,}$"},
+    "document_type": {"type": "string"},
+    "template_id": {"type": "string"},
+    "source": {
+      "type": "object",
+      "required": ["filename", "sha256", "page_count", "has_acroform", "pages_without_text_layer", "ocr_pages"],
+      "properties": {
+        "filename": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "page_count": {"type": "integer", "minimum": 1},
+        "has_acroform": {"type": "boolean"},
+        "pages_without_text_layer": {"type": "array", "items": {"type": "integer"}},
+        "ocr_pages": {"type": "array", "items": {"type": "integer"}}
+      }
+    },
+    "processing": {
+      "type": "object",
+      "required": ["engine", "processed_at", "extraction_mode", "review_threshold", "status", "coordinate_system"],
+      "properties": {
+        "status": {"enum": ["completed", "completed_with_warnings", "needs_review", "needs_ocr", "failed_validation"]},
+        "extraction_mode": {"type": "string"}
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["section_id", "title", "source_heading", "identified_by", "pages", "entity_ids"],
+        "properties": {
+          "entity_ids": {"type": "array", "items": {"$ref": "#/$defs/entity_id"}},
+          "pages": {"type": "array", "items": {"type": "integer"}}
+        }
+      }
+    },
+    "entities": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {"type": "null"},
+          {"$ref": "#/$defs/entity"},
+          {"type": "array", "items": {"$ref": "#/$defs/entity"}}
+        ]
+      }
+    },
+    "relationships": {"type": "array", "items": {"$ref": "#/$defs/relationship"}},
+    "missing_information": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ref", "section_id", "label", "severity", "reason"],
+        "properties": {
+          "severity": {"enum": ["required", "not_provided", "section_not_found", "no_records", "incomplete_record"]}
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["status", "checks", "errors", "warnings"],
+      "properties": {
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["check", "status", "checked", "issues"],
+            "properties": {"status": {"enum": ["passed", "warning", "review", "failed"]}}
+          }
+        }
+      }
+    },
+    "manual_review": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["review_id", "kind", "ref", "reason"],
+        "properties": {
+          "review_id": {"type": "string", "pattern": "^REV_\\d{3,}$"},
+          "kind": {"enum": ["attribute", "relationship", "validation", "section", "page"]}
+        }
+      }
+    },
+    "unmapped_content": {"type": "array"}
+  },
+
+  "$defs": {
+    "entity_id": {"type": "string", "pattern": "^[A-Z]+_\\d{3,}$"},
+    "bbox": {"oneOf": [{"type": "null"}, {"type": "array", "items": {"type": "number"}, "minItems": 4, "maxItems": 4}]},
+
+    "trace": {
+      "description": "One extracted attribute with full source traceability.",
+      "type": "object",
+      "required": ["value", "raw_value", "field_label", "template_field", "source", "extraction_method", "confidence", "validation"],
+      "properties": {
+        "field_label": {"type": "string", "description": "label as printed in the source document"},
+        "template_field": {"type": "string", "pattern": "^[a-z_]+(\\.[a-z0-9_]+)+$"},
+        "source": {
+          "type": "object",
+          "required": ["filename", "page", "bbox"],
+          "properties": {
+            "filename": {"type": "string"},
+            "page": {"type": ["integer", "null"]},
+            "bbox": {"$ref": "#/$defs/bbox"},
+            "label_bbox": {"$ref": "#/$defs/bbox"}
+          }
+        },
+        "extraction_method": {"type": "string"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "validation": {
+          "type": "object",
+          "required": ["status", "messages"],
+          "properties": {
+            "status": {"enum": ["valid", "warning", "invalid", "needs_review"]},
+            "messages": {"type": "array", "items": {"type": "string"}}
+          }
+        }
+      }
+    },
+
+    "entity": {
+      "type": "object",
+      "required": ["entity_type", "section_id", "record", "source_pages"],
+      "properties": {
+        "entity_type": {"type": "string"},
+        "section_id": {"type": "string"},
+        "record": {
+          "type": "object",
+          "required": ["part", "record_key", "index"],
+          "properties": {"part": {"enum": ["fields", "table", "row_table", "checklist", "derived"]}}
+        },
+        "source_pages": {"type": "array", "items": {"type": "integer"}}
+      },
+      "patternProperties": {
+        "^(?!section_id$).*_id$": {"oneOf": [{"$ref": "#/$defs/entity_id"}, {"$ref": "#/$defs/trace"}],
+                                    "description": "entity reference (e.g. prescribing_doctor_id) or a traced attribute whose name ends in _id (e.g. insurance_id)"},
+        "_ids$": {"type": "array", "items": {"$ref": "#/$defs/entity_id"}}
+      }
+    },
+
+    "relationship": {
+      "type": "object",
+      "required": ["relationship_id", "subject", "predicate", "support", "confidence", "basis", "evidence", "review_required"],
+      "properties": {
+        "relationship_id": {"type": "string", "pattern": "^REL_\\d{3,}$"},
+        "subject": {"$ref": "#/$defs/entity_id"},
+        "predicate": {"type": "string", "pattern": "^[A-Z_]+$"},
+        "object": {"$ref": "#/$defs/entity_id"},
+        "object_value": {"type": "string"},
+        "support": {"enum": ["explicit", "uncertain"]},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "basis": {"type": "string"},
+        "evidence": {
+          "type": "object",
+          "required": ["source_file", "section_id", "pages", "locations"],
+          "properties": {
+            "pages": {"type": "array", "items": {"type": "integer"}},
+            "locations": {"type": "array", "items": {"type": "object", "required": ["page", "bbox", "attribute"]}}
+          }
+        },
+        "uncertainty_reasons": {"type": "array", "items": {"type": "string"}}
+      },
+      "oneOf": [{"required": ["object"]}, {"required": ["object_value"]}]
+    }
+  }
+}

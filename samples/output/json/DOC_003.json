@@ -1,0 +1,6629 @@
+{
+  "schema_version": "1.0",
+  "document_id": "DOC_003",
+  "document_type": "patient_intake",
+  "template_id": "patient_intake_v1",
+  "source": {
+    "filename": "intake_C_other_clinic_rivera.pdf",
+    "sha256": "51ad708c3ee91f1c7b4806812b9721ea6eef00204ac69e40793edf9482557706",
+    "page_count": 2,
+    "has_acroform": false,
+    "pages_without_text_layer": [],
+    "ocr_pages": []
+  },
+  "processing": {
+    "engine": "docintel 1.0.0",
+    "processed_at": "2026-11-12T07:12:40+00:00",
+    "extraction_mode": "layout",
+    "review_threshold": 0.7,
+    "status": "needs_review",
+    "coordinate_system": "PDF points; origin top-left; bbox = [x0, y0, x1, y1]"
+  },
+  "sections": [
+    {
+      "section_id": "patient_info",
+      "title": "Patient Information",
+      "source_heading": "PATIENT DEMOGRAPHICS",
+      "identified_by": "heading",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          78.8,
+          174.8,
+          93.2
+        ]
+      },
+      "entity_ids": [
+        "PAT_001"
+      ]
+    },
+    {
+      "section_id": "spouse_info",
+      "title": "Spouse Information",
+      "source_heading": "SPOUSE / PARTNER",
+      "identified_by": "heading",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          174.8,
+          143.3,
+          189.2
+        ]
+      },
+      "entity_ids": [
+        "SPO_001"
+      ]
+    },
+    {
+      "section_id": "emergency_contact",
+      "title": "Emergency Contact",
+      "source_heading": "IN CASE OF EMERGENCY",
+      "identified_by": "heading",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          220.8,
+          170.7,
+          235.2
+        ]
+      },
+      "entity_ids": [
+        "EMC_001"
+      ]
+    },
+    {
+      "section_id": "primary_insurance",
+      "title": "Primary Insurance",
+      "source_heading": "PRIMARY INSURANCE",
+      "identified_by": "heading",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          267.8,
+          153.7,
+          282.2
+        ]
+      },
+      "entity_ids": [
+        "INS_001",
+        "INSCO_001"
+      ]
+    },
+    {
+      "section_id": "secondary_insurance",
+      "title": "Secondary Insurance",
+      "source_heading": "SECONDARY INSURANCE",
+      "identified_by": "heading",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          316.0,
+          267.8,
+          448.4,
+          282.2
+        ]
+      },
+      "entity_ids": [
+        "INS_002",
+        "INSCO_002"
+      ]
+    },
+    {
+      "section_id": "medications",
+      "title": "Current Medications",
+      "source_heading": "MEDICATION LIST",
+      "identified_by": "heading",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          408.8,
+          132.2,
+          423.2
+        ]
+      },
+      "entity_ids": [
+        "MED_001",
+        "DR_001",
+        "MED_002",
+        "MED_003",
+        "DR_002",
+        "MED_004"
+      ]
+    },
+    {
+      "section_id": "allergies",
+      "title": "Allergies",
+      "source_heading": "DRUG ALLERGIES",
+      "identified_by": "heading",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          548.8,
+          133.9,
+          563.2
+        ]
+      },
+      "entity_ids": [
+        "ALG_001",
+        "ALG_002"
+      ]
+    },
+    {
+      "section_id": "medical_history",
+      "title": "Past Medical History",
+      "source_heading": "MEDICAL CONDITIONS",
+      "identified_by": "heading",
+      "pages": [
+        1,
+        2
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          638.8,
+          156.7,
+          653.2
+        ]
+      },
+      "entity_ids": [
+        "COND_001",
+        "COND_002",
+        "COND_003",
+        "COND_004"
+      ]
+    },
+    {
+      "section_id": "surgical_history",
+      "title": "Surgical History",
+      "source_heading": "SURGICAL HISTORY",
+      "identified_by": "heading",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          38.8,
+          144.4,
+          53.2
+        ]
+      },
+      "entity_ids": [
+        "SURG_001",
+        "HOSP_001",
+        "SURG_002",
+        "HOSP_002"
+      ]
+    },
+    {
+      "section_id": "family_history",
+      "title": "Family Medical History",
+      "source_heading": "FAMILY HISTORY",
+      "identified_by": "heading",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          128.8,
+          128.7,
+          143.2
+        ]
+      },
+      "entity_ids": [
+        "FAM_001",
+        "COND_005",
+        "COND_006",
+        "FAM_002",
+        "COND_007",
+        "COND_008"
+      ]
+    },
+    {
+      "section_id": "communication_consent",
+      "title": "Communication Consent",
+      "source_heading": "COMMUNICATION PREFERENCES",
+      "identified_by": "heading",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          193.8,
+          213.2,
+          208.2
+        ]
+      },
+      "entity_ids": [
+        "CONS_001",
+        "CONS_002",
+        "CONS_003"
+      ]
+    },
+    {
+      "section_id": "release_of_information",
+      "title": "Authorization to Release Information",
+      "source_heading": "RELEASE OF INFORMATION",
+      "identified_by": "heading",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          274.8,
+          184.1,
+          289.2
+        ]
+      },
+      "entity_ids": [
+        "CONS_004",
+        "AFM_001"
+      ]
+    },
+    {
+      "section_id": "consent_to_treatment",
+      "title": "Consent to Treatment",
+      "source_heading": "CONSENT FOR TREATMENT",
+      "identified_by": "heading",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          363.8,
+          184.1,
+          378.2
+        ]
+      },
+      "entity_ids": [
+        "AGR_001",
+        "SIG_001"
+      ]
+    },
+    {
+      "section_id": "hipaa_acknowledgment",
+      "title": "HIPAA Acknowledgment",
+      "source_heading": "PRIVACY PRACTICES ACKNOWLEDGMENT",
+      "identified_by": "heading",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          435.8,
+          260.5,
+          450.2
+        ]
+      },
+      "entity_ids": [
+        "AGR_002",
+        "SIG_002"
+      ]
+    },
+    {
+      "section_id": "financial_agreement",
+      "title": "Financial Responsibility Agreement",
+      "source_heading": "FINANCIAL POLICY",
+      "identified_by": "heading",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          507.8,
+          138.6,
+          522.2
+        ]
+      },
+      "entity_ids": [
+        "AGR_003",
+        "SIG_003"
+      ]
+    }
+  ],
+  "entities": {
+    "patient": {
+      "patient_id": "PAT_001",
+      "entity_type": "patient",
+      "section_id": "patient_info",
+      "record": {
+        "part": "fields",
+        "record_key": "main",
+        "index": 1
+      },
+      "full_name": {
+        "value": "Rivera, Maria L.",
+        "raw_value": "Rivera, Maria L.",
+        "field_label": "Patient Name",
+        "template_field": "patient_info.full_name",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            102.8,
+            99.8,
+            169.9,
+            112.8
+          ],
+          "label_bbox": [
+            40.0,
+            99.8,
+            100.2,
+            112.8
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "date_of_birth": {
+        "value": "1985-07-14",
+        "raw_value": "7/14/1985",
+        "field_label": "DOB",
+        "template_field": "patient_info.date_of_birth",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            355.9,
+            99.8,
+            398.1,
+            112.8
+          ],
+          "label_bbox": [
+            330.0,
+            99.8,
+            353.2,
+            112.8
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "sex": {
+        "value": "female",
+        "raw_value": "Female",
+        "field_label": "Gender",
+        "template_field": "patient_info.sex",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            497.0,
+            99.8,
+            528.6,
+            112.8
+          ],
+          "label_bbox": [
+            460.0,
+            99.8,
+            494.3,
+            112.8
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "address": {
+        "value": "42 Elm Street",
+        "raw_value": "42 Elm Street",
+        "field_label": "Street Address",
+        "template_field": "patient_info.address",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            108.1,
+            115.8,
+            165.7,
+            128.8
+          ],
+          "label_bbox": [
+            40.0,
+            115.8,
+            105.5,
+            128.8
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "marital_status": {
+        "value": "married",
+        "raw_value": "Married",
+        "field_label": "Marital Status",
+        "template_field": "patient_info.marital_status",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            393.4,
+            115.8,
+            425.6,
+            128.8
+          ],
+          "label_bbox": [
+            330.0,
+            115.8,
+            390.7,
+            128.8
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "city": {
+        "value": "Springfield",
+        "raw_value": "Springfield",
+        "field_label": "City",
+        "template_field": "patient_info.city",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            61.6,
+            131.8,
+            106.5,
+            144.8
+          ],
+          "label_bbox": [
+            40.0,
+            131.8,
+            59.0,
+            144.8
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "state": {
+        "value": "IL",
+        "raw_value": "IL",
+        "field_label": "State",
+        "template_field": "patient_info.state",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            141.9,
+            131.8,
+            149.8,
+            144.8
+          ],
+          "label_bbox": [
+            114.4,
+            131.8,
+            139.3,
+            144.8
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "zip": {
+        "value": "62704",
+        "raw_value": "62704",
+        "field_label": "Zip",
+        "template_field": "patient_info.zip",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            176.2,
+            131.8,
+            202.6,
+            144.8
+          ],
+          "label_bbox": [
+            157.8,
+            131.8,
+            173.6,
+            144.8
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "phone": {
+        "value": "(217) 555-0143",
+        "raw_value": "217.555.0143",
+        "field_label": "Mobile Phone",
+        "template_field": "patient_info.phone",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            103.4,
+            147.8,
+            161.5,
+            160.8
+          ],
+          "label_bbox": [
+            40.0,
+            147.8,
+            100.7,
+            160.8
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "email": {
+        "value": "maria.rivera@example.com",
+        "raw_value": "maria.rivera@example.com",
+        "field_label": "E-mail",
+        "template_field": "patient_info.email",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            362.2,
+            147.8,
+            478.5,
+            160.8
+          ],
+          "label_bbox": [
+            330.0,
+            147.8,
+            359.6,
+            160.8
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "first_name": {
+        "value": "Maria",
+        "raw_value": "Rivera, Maria L.",
+        "field_label": "Patient Name",
+        "template_field": "patient_info.first_name",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            102.8,
+            99.8,
+            169.9,
+            112.8
+          ],
+          "label_bbox": [
+            40.0,
+            99.8,
+            100.2,
+            112.8
+          ]
+        },
+        "extraction_method": "derived_from_full_name",
+        "confidence": 0.85,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        },
+        "notes": [
+          "derived by splitting 'Rivera, Maria L.' as 'Last, First'"
+        ]
+      },
+      "last_name": {
+        "value": "Rivera",
+        "raw_value": "Rivera, Maria L.",
+        "field_label": "Patient Name",
+        "template_field": "patient_info.last_name",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            102.8,
+            99.8,
+            169.9,
+            112.8
+          ],
+          "label_bbox": [
+            40.0,
+            99.8,
+            100.2,
+            112.8
+          ]
+        },
+        "extraction_method": "derived_from_full_name",
+        "confidence": 0.85,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        },
+        "notes": [
+          "derived by splitting 'Rivera, Maria L.' as 'Last, First'"
+        ]
+      },
+      "source_pages": [
+        1
+      ]
+    },
+    "spouse": {
+      "spouse_id": "SPO_001",
+      "entity_type": "spouse",
+      "section_id": "spouse_info",
+      "record": {
+        "part": "fields",
+        "record_key": "main",
+        "index": 1
+      },
+      "name": {
+        "value": "Daniel Rivera",
+        "raw_value": "Daniel Rivera",
+        "field_label": "Name",
+        "template_field": "spouse_info.name",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            70.6,
+            194.8,
+            127.6,
+            207.8
+          ],
+          "label_bbox": [
+            40.0,
+            194.8,
+            68.0,
+            207.8
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "date_of_birth": {
+        "value": "1983-03-22",
+        "raw_value": "03-22-1983",
+        "field_label": "Date of Birth",
+        "template_field": "spouse_info.date_of_birth",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            308.1,
+            194.8,
+            356.7,
+            207.8
+          ],
+          "label_bbox": [
+            250.0,
+            194.8,
+            305.4,
+            207.8
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "phone": {
+        "value": "(217) 555-0190",
+        "raw_value": "(217) 555-0190",
+        "field_label": "Phone",
+        "template_field": "spouse_info.phone",
+        "source": {
+          "filename": "intake_C_other_clinic_rivera.pdf",
+          "page": 1,
+          "bbox": [
+            452.7,
+            194.8,
+            517.7,
+            207.8
+          ],
+          "label_bbox": [
+            420.0,
+            194.8,
+            450.1,
+            207.8
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "source_pages": [
+        1
+      ]
+    },
+    "emergency_contacts": [
+      {
+        "emergency_contact_id": "EMC_001",
+        "entity_type": "emergency_contact",
+        "section_id": "emergency_contact",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "name": {
+          "value": "Ana Lopez",
+          "raw_value": "Ana Lopez",
+          "field_label": "Contact Name",
+          "template_field": "emergency_contact.name",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              106.0,
+              240.8,
+              151.4,
+              253.8
+            ],
+            "label_bbox": [
+              40.0,
+              240.8,
+              103.4,
+              253.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "relationship": {
+          "value": "Sister",
+          "raw_value": "Sister",
+          "field_label": "Relationship",
+          "template_field": "emergency_contact.relationship",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              307.6,
+              240.8,
+              331.8,
+              253.8
+            ],
+            "label_bbox": [
+              250.0,
+              240.8,
+              304.9,
+              253.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "phone": {
+          "value": "(217) 555-0177",
+          "raw_value": "217-555-0177",
+          "field_label": "Phone",
+          "template_field": "emergency_contact.phone",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              452.7,
+              240.8,
+              511.9,
+              253.8
+            ],
+            "label_bbox": [
+              420.0,
+              240.8,
+              450.1,
+              253.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "insurance_policies": [
+      {
+        "policy_id": "INS_001",
+        "entity_type": "insurance_policy",
+        "section_id": "primary_insurance",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "policy_type": {
+          "value": "primary",
+          "raw_value": "PRIMARY INSURANCE",
+          "field_label": "section heading 'PRIMARY INSURANCE'",
+          "template_field": "primary_insurance.policy_type",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              267.8,
+              153.7,
+              282.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "insurance_company": {
+          "value": "Blue River Health",
+          "raw_value": "Blue River Health",
+          "field_label": "Carrier",
+          "template_field": "primary_insurance.insurance_company",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              74.3,
+              287.8,
+              148.2,
+              300.8
+            ],
+            "label_bbox": [
+              40.0,
+              287.8,
+              71.7,
+              300.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "policy_holder": {
+          "name": {
+            "value": "Maria Rivera",
+            "raw_value": "Maria Rivera",
+            "field_label": "Subscriber Name",
+            "template_field": "primary_insurance.policy_holder.name",
+            "source": {
+              "filename": "intake_C_other_clinic_rivera.pdf",
+              "page": 1,
+              "bbox": [
+                118.7,
+                302.8,
+                172.5,
+                315.8
+              ],
+              "label_bbox": [
+                40.0,
+                302.8,
+                116.0,
+                315.8
+              ]
+            },
+            "extraction_method": "layout_key_value",
+            "confidence": 0.92,
+            "validation": {
+              "status": "valid",
+              "messages": []
+            }
+          },
+          "relationship_to_patient": {
+            "value": "self",
+            "raw_value": "Self",
+            "field_label": "Relationship to Patient",
+            "template_field": "primary_insurance.policy_holder.relationship_to_patient",
+            "source": {
+              "filename": "intake_C_other_clinic_rivera.pdf",
+              "page": 1,
+              "bbox": [
+                140.3,
+                317.8,
+                156.7,
+                330.8
+              ],
+              "label_bbox": [
+                40.0,
+                317.8,
+                137.7,
+                330.8
+              ]
+            },
+            "extraction_method": "layout_key_value",
+            "confidence": 0.92,
+            "validation": {
+              "status": "valid",
+              "messages": []
+            }
+          },
+          "date_of_birth": {
+            "value": "1985-07-14",
+            "raw_value": "07/14/1985",
+            "field_label": "Subscriber DOB",
+            "template_field": "primary_insurance.policy_holder.date_of_birth",
+            "source": {
+              "filename": "intake_C_other_clinic_rivera.pdf",
+              "page": 1,
+              "bbox": [
+                113.9,
+                332.8,
+                161.4,
+                345.8
+              ],
+              "label_bbox": [
+                40.0,
+                332.8,
+                111.3,
+                345.8
+              ]
+            },
+            "extraction_method": "layout_key_value",
+            "confidence": 0.92,
+            "validation": {
+              "status": "valid",
+              "messages": []
+            }
+          }
+        },
+        "insurance_id": {
+          "value": "BRH-4471920",
+          "raw_value": "BRH-4471920",
+          "field_label": "Member ID",
+          "template_field": "primary_insurance.insurance_id",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              92.3,
+              347.8,
+              152.5,
+              360.8
+            ],
+            "label_bbox": [
+              40.0,
+              347.8,
+              89.6,
+              360.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "group_number": {
+          "value": "GRP-2210",
+          "raw_value": "GRP-2210",
+          "field_label": "Group #",
+          "template_field": "primary_insurance.group_number",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              79.6,
+              362.8,
+              124.5,
+              375.8
+            ],
+            "label_bbox": [
+              40.0,
+              362.8,
+              77.0,
+              375.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "phone": {
+          "value": "(800) 555-0101",
+          "raw_value": "800-555-0101",
+          "field_label": "Phone",
+          "template_field": "primary_insurance.phone",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              72.7,
+              377.8,
+              131.9,
+              390.8
+            ],
+            "label_bbox": [
+              40.0,
+              377.8,
+              70.1,
+              390.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "insurance_company_id": "INSCO_001",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "policy_id": "INS_002",
+        "entity_type": "insurance_policy",
+        "section_id": "secondary_insurance",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "policy_type": {
+          "value": "secondary",
+          "raw_value": "SECONDARY INSURANCE",
+          "field_label": "section heading 'SECONDARY INSURANCE'",
+          "template_field": "secondary_insurance.policy_type",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              316.0,
+              267.8,
+              448.4,
+              282.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "insurance_company": {
+          "value": "Lakeside Mutual",
+          "raw_value": "Lakeside Mutual",
+          "field_label": "Carrier",
+          "template_field": "secondary_insurance.insurance_company",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              350.3,
+              287.8,
+              419.5,
+              300.8
+            ],
+            "label_bbox": [
+              316.0,
+              287.8,
+              347.7,
+              300.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "policy_holder": {
+          "name": {
+            "value": "Daniel Rivera",
+            "raw_value": "Daniel Rivera",
+            "field_label": "Subscriber Name",
+            "template_field": "secondary_insurance.policy_holder.name",
+            "source": {
+              "filename": "intake_C_other_clinic_rivera.pdf",
+              "page": 1,
+              "bbox": [
+                394.7,
+                302.8,
+                451.7,
+                315.8
+              ],
+              "label_bbox": [
+                316.0,
+                302.8,
+                392.0,
+                315.8
+              ]
+            },
+            "extraction_method": "layout_key_value",
+            "confidence": 0.92,
+            "validation": {
+              "status": "valid",
+              "messages": []
+            }
+          },
+          "relationship_to_patient": {
+            "value": "spouse",
+            "raw_value": "Spouse",
+            "field_label": "Relationship to Patient",
+            "template_field": "secondary_insurance.policy_holder.relationship_to_patient",
+            "source": {
+              "filename": "intake_C_other_clinic_rivera.pdf",
+              "page": 1,
+              "bbox": [
+                416.3,
+                317.8,
+                448.5,
+                330.8
+              ],
+              "label_bbox": [
+                316.0,
+                317.8,
+                413.7,
+                330.8
+              ]
+            },
+            "extraction_method": "layout_key_value",
+            "confidence": 0.92,
+            "validation": {
+              "status": "valid",
+              "messages": []
+            }
+          },
+          "date_of_birth": {
+            "value": "1983-03-22",
+            "raw_value": "03/22/1983",
+            "field_label": "Subscriber DOB",
+            "template_field": "secondary_insurance.policy_holder.date_of_birth",
+            "source": {
+              "filename": "intake_C_other_clinic_rivera.pdf",
+              "page": 1,
+              "bbox": [
+                389.9,
+                332.8,
+                437.4,
+                345.8
+              ],
+              "label_bbox": [
+                316.0,
+                332.8,
+                387.3,
+                345.8
+              ]
+            },
+            "extraction_method": "layout_key_value",
+            "confidence": 0.92,
+            "validation": {
+              "status": "valid",
+              "messages": []
+            }
+          }
+        },
+        "insurance_id": {
+          "value": "LKM-88120",
+          "raw_value": "LKM-88120",
+          "field_label": "Member ID",
+          "template_field": "secondary_insurance.insurance_id",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              368.3,
+              347.8,
+              417.4,
+              360.8
+            ],
+            "label_bbox": [
+              316.0,
+              347.8,
+              365.6,
+              360.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "group_number": {
+          "value": "5590-A",
+          "raw_value": "5590-A",
+          "field_label": "Group #",
+          "template_field": "secondary_insurance.group_number",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              355.6,
+              362.8,
+              386.2,
+              375.8
+            ],
+            "label_bbox": [
+              316.0,
+              362.8,
+              353.0,
+              375.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "phone": {
+          "value": "(800) 555-0199",
+          "raw_value": "800-555-0199",
+          "field_label": "Phone",
+          "template_field": "secondary_insurance.phone",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              348.7,
+              377.8,
+              407.9,
+              390.8
+            ],
+            "label_bbox": [
+              316.0,
+              377.8,
+              346.1,
+              390.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "insurance_company_id": "INSCO_002",
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "insurance_companies": [
+      {
+        "company_id": "INSCO_001",
+        "entity_type": "insurance_company",
+        "section_id": "primary_insurance",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Blue River Health",
+          "raw_value": "Blue River Health",
+          "field_label": "Carrier",
+          "template_field": "primary_insurance.insurance_company",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              74.3,
+              287.8,
+              148.2,
+              300.8
+            ],
+            "label_bbox": [
+              40.0,
+              287.8,
+              71.7,
+              300.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from INS_001.insurance_company"
+          ]
+        },
+        "referenced_by": [
+          "INS_001"
+        ],
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "company_id": "INSCO_002",
+        "entity_type": "insurance_company",
+        "section_id": "secondary_insurance",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Lakeside Mutual",
+          "raw_value": "Lakeside Mutual",
+          "field_label": "Carrier",
+          "template_field": "secondary_insurance.insurance_company",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              350.3,
+              287.8,
+              419.5,
+              300.8
+            ],
+            "label_bbox": [
+              316.0,
+              287.8,
+              347.7,
+              300.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from INS_002.insurance_company"
+          ]
+        },
+        "referenced_by": [
+          "INS_002"
+        ],
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "medications": [
+      {
+        "medication_id": "MED_001",
+        "entity_type": "medication",
+        "section_id": "medications",
+        "record": {
+          "part": "table",
+          "record_key": "row1",
+          "index": 1
+        },
+        "name": {
+          "value": "Metformin",
+          "raw_value": "Metformin",
+          "field_label": "Drug",
+          "template_field": "medications.name",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              459.8,
+              82.2,
+              472.8
+            ],
+            "label_bbox": [
+              40.0,
+              442.4,
+              61.0,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor": {
+          "value": "Dr. Alan Chen",
+          "raw_value": "Dr. Alan Chen",
+          "field_label": "Prescribed By",
+          "template_field": "medications.prescribing_doctor",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              200.0,
+              459.8,
+              259.7,
+              472.8
+            ],
+            "label_bbox": [
+              200.0,
+              442.4,
+              260.5,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "dosage": {
+          "value": "500 mg",
+          "raw_value": "500 mg",
+          "field_label": "Dose",
+          "template_field": "medications.dosage",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              340.0,
+              459.8,
+              371.7,
+              472.8
+            ],
+            "label_bbox": [
+              340.0,
+              442.4,
+              362.0,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "frequency": {
+          "value": "Twice daily",
+          "raw_value": "Twice daily",
+          "field_label": "How Often",
+          "template_field": "medications.frequency",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              430.0,
+              459.8,
+              477.0,
+              472.8
+            ],
+            "label_bbox": [
+              430.0,
+              442.4,
+              475.0,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor_id": "DR_001",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "medication_id": "MED_002",
+        "entity_type": "medication",
+        "section_id": "medications",
+        "record": {
+          "part": "table",
+          "record_key": "row2",
+          "index": 2
+        },
+        "name": {
+          "value": "Lisinopril",
+          "raw_value": "Lisinopril",
+          "field_label": "Drug",
+          "template_field": "medications.name",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              477.8,
+              77.5,
+              490.8
+            ],
+            "label_bbox": [
+              40.0,
+              442.4,
+              61.0,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor": {
+          "value": "Dr. Alan Chen",
+          "raw_value": "Dr. Alan Chen",
+          "field_label": "Prescribed By",
+          "template_field": "medications.prescribing_doctor",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              200.0,
+              477.8,
+              259.7,
+              490.8
+            ],
+            "label_bbox": [
+              200.0,
+              442.4,
+              260.5,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "dosage": {
+          "value": "10 mg",
+          "raw_value": "10 mg",
+          "field_label": "Dose",
+          "template_field": "medications.dosage",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              340.0,
+              477.8,
+              366.4,
+              490.8
+            ],
+            "label_bbox": [
+              340.0,
+              442.4,
+              362.0,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "frequency": {
+          "value": "Once daily",
+          "raw_value": "Once daily",
+          "field_label": "How Often",
+          "template_field": "medications.frequency",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              430.0,
+              477.8,
+              474.9,
+              490.8
+            ],
+            "label_bbox": [
+              430.0,
+              442.4,
+              475.0,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor_id": "DR_001",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "medication_id": "MED_003",
+        "entity_type": "medication",
+        "section_id": "medications",
+        "record": {
+          "part": "table",
+          "record_key": "row3",
+          "index": 3
+        },
+        "name": {
+          "value": "Sertraline",
+          "raw_value": "Sertraline",
+          "field_label": "Drug",
+          "template_field": "medications.name",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              495.8,
+              80.7,
+              508.8
+            ],
+            "label_bbox": [
+              40.0,
+              442.4,
+              61.0,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor": {
+          "value": "Dr. Priya Nair",
+          "raw_value": "Dr. Priya Nair",
+          "field_label": "Prescribed By",
+          "template_field": "medications.prescribing_doctor",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              200.0,
+              495.8,
+              257.0,
+              508.8
+            ],
+            "label_bbox": [
+              200.0,
+              442.4,
+              260.5,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "dosage": {
+          "value": "50 mg",
+          "raw_value": "50 mg",
+          "field_label": "Dose",
+          "template_field": "medications.dosage",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              340.0,
+              495.8,
+              366.4,
+              508.8
+            ],
+            "label_bbox": [
+              340.0,
+              442.4,
+              362.0,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "frequency": {
+          "value": "Once daily",
+          "raw_value": "Once daily",
+          "field_label": "How Often",
+          "template_field": "medications.frequency",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              430.0,
+              495.8,
+              474.9,
+              508.8
+            ],
+            "label_bbox": [
+              430.0,
+              442.4,
+              475.0,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor_id": "DR_002",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "medication_id": "MED_004",
+        "entity_type": "medication",
+        "section_id": "medications",
+        "record": {
+          "part": "table",
+          "record_key": "row4",
+          "index": 4,
+          "integrity_issues": [
+            "row text wraps onto a following line; merged values must be confirmed"
+          ]
+        },
+        "name": {
+          "value": "Vitamin D3",
+          "raw_value": "Vitamin D3",
+          "field_label": "Drug",
+          "template_field": "medications.name",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              513.8,
+              86.5,
+              526.8
+            ],
+            "label_bbox": [
+              40.0,
+              442.4,
+              61.0,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "dosage": {
+          "value": "1000 IU",
+          "raw_value": "1000 IU",
+          "field_label": "Dose",
+          "template_field": "medications.dosage",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              340.0,
+              513.8,
+              373.3,
+              526.8
+            ],
+            "label_bbox": [
+              340.0,
+              442.4,
+              362.0,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "frequency": {
+          "value": "Daily (with breakfast)",
+          "raw_value": "Daily (with breakfast)",
+          "field_label": "How Often",
+          "template_field": "medications.frequency",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              430.0,
+              513.8,
+              494.9,
+              536.8
+            ],
+            "label_bbox": [
+              430.0,
+              442.4,
+              475.0,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.55,
+          "validation": {
+            "status": "needs_review",
+            "messages": []
+          },
+          "notes": [
+            "value continues on a following line with no row key; merged into the row above"
+          ]
+        },
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "doctors": [
+      {
+        "doctor_id": "DR_001",
+        "entity_type": "doctor",
+        "section_id": "medications",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Dr. Alan Chen",
+          "raw_value": "Dr. Alan Chen",
+          "field_label": "Prescribed By",
+          "template_field": "medications.prescribing_doctor",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              200.0,
+              459.8,
+              259.7,
+              472.8
+            ],
+            "label_bbox": [
+              200.0,
+              442.4,
+              260.5,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from MED_001.prescribing_doctor"
+          ]
+        },
+        "referenced_by": [
+          "MED_001",
+          "MED_002"
+        ],
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "doctor_id": "DR_002",
+        "entity_type": "doctor",
+        "section_id": "medications",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Dr. Priya Nair",
+          "raw_value": "Dr. Priya Nair",
+          "field_label": "Prescribed By",
+          "template_field": "medications.prescribing_doctor",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              200.0,
+              495.8,
+              257.0,
+              508.8
+            ],
+            "label_bbox": [
+              200.0,
+              442.4,
+              260.5,
+              454.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from MED_003.prescribing_doctor"
+          ]
+        },
+        "referenced_by": [
+          "MED_003"
+        ],
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "allergies": [
+      {
+        "allergy_id": "ALG_001",
+        "entity_type": "allergy",
+        "section_id": "allergies",
+        "record": {
+          "part": "table",
+          "record_key": "row1",
+          "index": 1
+        },
+        "allergen": {
+          "value": "Penicillin",
+          "raw_value": "Penicillin",
+          "field_label": "Allergen",
+          "template_field": "allergies.allergen",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              584.8,
+              77.5,
+              597.8
+            ],
+            "label_bbox": [
+              40.0,
+              567.4,
+              76.0,
+              579.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "reaction": {
+          "value": "Hives",
+          "raw_value": "Hives",
+          "field_label": "Reaction",
+          "template_field": "allergies.reaction",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              200.0,
+              584.8,
+              223.7,
+              597.8
+            ],
+            "label_bbox": [
+              200.0,
+              567.4,
+              238.0,
+              579.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "severity": {
+          "value": "moderate",
+          "raw_value": "Moderate",
+          "field_label": "Severity",
+          "template_field": "allergies.severity",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              360.0,
+              584.8,
+              400.1,
+              597.8
+            ],
+            "label_bbox": [
+              360.0,
+              567.4,
+              395.0,
+              579.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "allergy_id": "ALG_002",
+        "entity_type": "allergy",
+        "section_id": "allergies",
+        "record": {
+          "part": "table",
+          "record_key": "row2",
+          "index": 2
+        },
+        "allergen": {
+          "value": "Shellfish",
+          "raw_value": "Shellfish",
+          "field_label": "Allergen",
+          "template_field": "allergies.allergen",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              602.8,
+              75.9,
+              615.8
+            ],
+            "label_bbox": [
+              40.0,
+              567.4,
+              76.0,
+              579.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "reaction": {
+          "value": "Throat swelling",
+          "raw_value": "Throat swelling",
+          "field_label": "Reaction",
+          "template_field": "allergies.reaction",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              200.0,
+              602.8,
+              263.9,
+              615.8
+            ],
+            "label_bbox": [
+              200.0,
+              567.4,
+              238.0,
+              579.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "severity": {
+          "value": "severe",
+          "raw_value": "Severe",
+          "field_label": "Severity",
+          "template_field": "allergies.severity",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              360.0,
+              602.8,
+              390.1,
+              615.8
+            ],
+            "label_bbox": [
+              360.0,
+              567.4,
+              395.0,
+              579.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "medical_conditions": [
+      {
+        "medical_condition_id": "COND_001",
+        "entity_type": "medical_condition",
+        "section_id": "medical_history",
+        "record": {
+          "part": "checklist",
+          "record_key": "diabetes",
+          "index": 1
+        },
+        "name": {
+          "value": "Diabetes",
+          "raw_value": "Diabetes",
+          "field_label": "Diabetes",
+          "template_field": "medical_history.diabetes",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              658.8,
+              91.7,
+              671.8
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "layout_checkbox",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "checklist_option": "diabetes",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "medical_condition_id": "COND_002",
+        "entity_type": "medical_condition",
+        "section_id": "medical_history",
+        "record": {
+          "part": "checklist",
+          "record_key": "hypertension",
+          "index": 2
+        },
+        "name": {
+          "value": "Hypertension",
+          "raw_value": "Hypertension",
+          "field_label": "Hypertension",
+          "template_field": "medical_history.hypertension",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              173.0,
+              658.8,
+              243.2,
+              671.8
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "layout_checkbox",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "checklist_option": "hypertension",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "medical_condition_id": "COND_003",
+        "entity_type": "medical_condition",
+        "section_id": "medical_history",
+        "record": {
+          "part": "checklist",
+          "record_key": "depression_anxiety",
+          "index": 3
+        },
+        "name": {
+          "value": "Depression/Anxiety",
+          "raw_value": "Depression/Anxiety",
+          "field_label": "Depression/Anxiety",
+          "template_field": "medical_history.depression_anxiety",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              306.0,
+              675.8,
+              402.1,
+              688.8
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "layout_checkbox",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "checklist_option": "depression_anxiety",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "medical_condition_id": "COND_004",
+        "entity_type": "medical_condition",
+        "section_id": "medical_history",
+        "record": {
+          "part": "checklist",
+          "record_key": "other",
+          "index": 4
+        },
+        "name": {
+          "value": "Migraines",
+          "raw_value": "Migraines",
+          "field_label": "Other",
+          "template_field": "medical_history.other",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 1,
+            "bbox": [
+              69.0,
+              693.8,
+              110.2,
+              706.8
+            ],
+            "label_bbox": [
+              40.0,
+              693.8,
+              66.4,
+              706.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'Migraines'"
+          ]
+        },
+        "checklist_option": null,
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "medical_condition_id": "COND_005",
+        "entity_type": "medical_condition",
+        "section_id": "family_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Type 2 diabetes",
+          "raw_value": "Type 2 diabetes, hypertension",
+          "field_label": "Mother",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              74.8,
+              148.8,
+              269.7,
+              161.8
+            ],
+            "label_bbox": [
+              40.0,
+              148.8,
+              72.2,
+              161.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.85,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'Type 2 diabetes, hypertension'"
+          ]
+        },
+        "owner_id": "FAM_001",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_006",
+        "entity_type": "medical_condition",
+        "section_id": "family_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "hypertension",
+          "raw_value": "Type 2 diabetes, hypertension",
+          "field_label": "Mother",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              74.8,
+              148.8,
+              269.7,
+              161.8
+            ],
+            "label_bbox": [
+              40.0,
+              148.8,
+              72.2,
+              161.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.85,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'Type 2 diabetes, hypertension'"
+          ]
+        },
+        "owner_id": "FAM_001",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_007",
+        "entity_type": "medical_condition",
+        "section_id": "family_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Heart disease",
+          "raw_value": "Heart disease, stroke",
+          "field_label": "Father",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              72.7,
+              164.8,
+              248.0,
+              177.8
+            ],
+            "label_bbox": [
+              40.0,
+              164.8,
+              70.1,
+              177.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.85,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'Heart disease, stroke'"
+          ]
+        },
+        "owner_id": "FAM_002",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_008",
+        "entity_type": "medical_condition",
+        "section_id": "family_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "stroke",
+          "raw_value": "Heart disease, stroke",
+          "field_label": "Father",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              72.7,
+              164.8,
+              248.0,
+              177.8
+            ],
+            "label_bbox": [
+              40.0,
+              164.8,
+              70.1,
+              177.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.85,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'Heart disease, stroke'"
+          ]
+        },
+        "owner_id": "FAM_002",
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "surgeries": [
+      {
+        "surgery_id": "SURG_001",
+        "entity_type": "surgery",
+        "section_id": "surgical_history",
+        "record": {
+          "part": "table",
+          "record_key": "row1",
+          "index": 1
+        },
+        "procedure": {
+          "value": "Appendectomy",
+          "raw_value": "Appendectomy",
+          "field_label": "Surgery",
+          "template_field": "surgical_history.procedure",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              74.8,
+              103.4,
+              87.8
+            ],
+            "label_bbox": [
+              40.0,
+              57.4,
+              74.0,
+              69.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "date": {
+          "value": "2009",
+          "raw_value": "2009",
+          "field_label": "Year",
+          "template_field": "surgical_history.date",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              250.0,
+              74.8,
+              271.1,
+              87.8
+            ],
+            "label_bbox": [
+              250.0,
+              57.4,
+              269.5,
+              69.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": [
+              "year only"
+            ]
+          }
+        },
+        "hospital": {
+          "value": "Springfield General Hospital",
+          "raw_value": "Springfield General Hospital",
+          "field_label": "Facility",
+          "template_field": "surgical_history.hospital",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              330.0,
+              74.8,
+              448.3,
+              87.8
+            ],
+            "label_bbox": [
+              330.0,
+              57.4,
+              361.0,
+              69.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "hospital_id": "HOSP_001",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "surgery_id": "SURG_002",
+        "entity_type": "surgery",
+        "section_id": "surgical_history",
+        "record": {
+          "part": "table",
+          "record_key": "row2",
+          "index": 2
+        },
+        "procedure": {
+          "value": "Cesarean section",
+          "raw_value": "Cesarean section",
+          "field_label": "Surgery",
+          "template_field": "surgical_history.procedure",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              92.8,
+              113.9,
+              105.8
+            ],
+            "label_bbox": [
+              40.0,
+              57.4,
+              74.0,
+              69.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "date": {
+          "value": "2016",
+          "raw_value": "2016",
+          "field_label": "Year",
+          "template_field": "surgical_history.date",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              250.0,
+              92.8,
+              271.1,
+              105.8
+            ],
+            "label_bbox": [
+              250.0,
+              57.4,
+              269.5,
+              69.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": [
+              "year only"
+            ]
+          }
+        },
+        "hospital": {
+          "value": "St. Mary's Medical Center",
+          "raw_value": "St. Mary's Medical Center",
+          "field_label": "Facility",
+          "template_field": "surgical_history.hospital",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              330.0,
+              92.8,
+              438.5,
+              105.8
+            ],
+            "label_bbox": [
+              330.0,
+              57.4,
+              361.0,
+              69.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "hospital_id": "HOSP_002",
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "hospitals": [
+      {
+        "hospital_id": "HOSP_001",
+        "entity_type": "hospital",
+        "section_id": "surgical_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Springfield General Hospital",
+          "raw_value": "Springfield General Hospital",
+          "field_label": "Facility",
+          "template_field": "surgical_history.hospital",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              330.0,
+              74.8,
+              448.3,
+              87.8
+            ],
+            "label_bbox": [
+              330.0,
+              57.4,
+              361.0,
+              69.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from SURG_001.hospital"
+          ]
+        },
+        "referenced_by": [
+          "SURG_001"
+        ],
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "hospital_id": "HOSP_002",
+        "entity_type": "hospital",
+        "section_id": "surgical_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "St. Mary's Medical Center",
+          "raw_value": "St. Mary's Medical Center",
+          "field_label": "Facility",
+          "template_field": "surgical_history.hospital",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              330.0,
+              92.8,
+              438.5,
+              105.8
+            ],
+            "label_bbox": [
+              330.0,
+              57.4,
+              361.0,
+              69.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from SURG_002.hospital"
+          ]
+        },
+        "referenced_by": [
+          "SURG_002"
+        ],
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "family_members": [
+      {
+        "family_member_id": "FAM_001",
+        "entity_type": "family_member",
+        "section_id": "family_history",
+        "record": {
+          "part": "row_table",
+          "record_key": "mother",
+          "index": 1
+        },
+        "relation": {
+          "value": "mother",
+          "raw_value": "Mother",
+          "field_label": "Mother",
+          "template_field": "family_history.relation",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              148.8,
+              72.2,
+              161.8
+            ],
+            "label_bbox": [
+              40.0,
+              148.8,
+              72.2,
+              161.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.85,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "living_status": {
+          "value": "living",
+          "raw_value": "Living",
+          "field_label": "Mother",
+          "template_field": "family_history.living_status",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              74.8,
+              148.8,
+              269.7,
+              161.8
+            ],
+            "label_bbox": [
+              40.0,
+              148.8,
+              72.2,
+              161.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.85,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "age": {
+          "value": 66,
+          "raw_value": "66",
+          "field_label": "Mother",
+          "template_field": "family_history.age",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              74.8,
+              148.8,
+              269.7,
+              161.8
+            ],
+            "label_bbox": [
+              40.0,
+              148.8,
+              72.2,
+              161.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.85,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "conditions": {
+          "value": [
+            "Type 2 diabetes",
+            "hypertension"
+          ],
+          "raw_value": "Type 2 diabetes, hypertension",
+          "field_label": "Mother",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              74.8,
+              148.8,
+              269.7,
+              161.8
+            ],
+            "label_bbox": [
+              40.0,
+              148.8,
+              72.2,
+              161.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.85,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "conditions_ids": [
+          "COND_005",
+          "COND_006"
+        ],
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "family_member_id": "FAM_002",
+        "entity_type": "family_member",
+        "section_id": "family_history",
+        "record": {
+          "part": "row_table",
+          "record_key": "father",
+          "index": 2
+        },
+        "relation": {
+          "value": "father",
+          "raw_value": "Father",
+          "field_label": "Father",
+          "template_field": "family_history.relation",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              164.8,
+              70.1,
+              177.8
+            ],
+            "label_bbox": [
+              40.0,
+              164.8,
+              70.1,
+              177.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.85,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "living_status": {
+          "value": "deceased",
+          "raw_value": "Deceased",
+          "field_label": "Father",
+          "template_field": "family_history.living_status",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              72.7,
+              164.8,
+              248.0,
+              177.8
+            ],
+            "label_bbox": [
+              40.0,
+              164.8,
+              70.1,
+              177.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.85,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "age": {
+          "value": 70,
+          "raw_value": "70",
+          "field_label": "Father",
+          "template_field": "family_history.age",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              72.7,
+              164.8,
+              248.0,
+              177.8
+            ],
+            "label_bbox": [
+              40.0,
+              164.8,
+              70.1,
+              177.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.85,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "conditions": {
+          "value": [
+            "Heart disease",
+            "stroke"
+          ],
+          "raw_value": "Heart disease, stroke",
+          "field_label": "Father",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              72.7,
+              164.8,
+              248.0,
+              177.8
+            ],
+            "label_bbox": [
+              40.0,
+              164.8,
+              70.1,
+              177.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.85,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "conditions_ids": [
+          "COND_007",
+          "COND_008"
+        ],
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "consents": [
+      {
+        "consent_id": "CONS_001",
+        "entity_type": "consent",
+        "section_id": "communication_consent",
+        "record": {
+          "part": "fields",
+          "record_key": "voicemail",
+          "index": 1
+        },
+        "category": {
+          "value": "communication",
+          "raw_value": "COMMUNICATION PREFERENCES",
+          "field_label": "section heading 'COMMUNICATION PREFERENCES'",
+          "template_field": "communication_consent.category",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              193.8,
+              213.2,
+              208.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "permission_type": {
+          "value": "voicemail",
+          "raw_value": "COMMUNICATION PREFERENCES",
+          "field_label": "section heading 'COMMUNICATION PREFERENCES'",
+          "template_field": "communication_consent.permission_type",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              193.8,
+              213.2,
+              208.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "question": "May we leave a voicemail?",
+        "decision": {
+          "value": "yes",
+          "raw_value": "[X] Yes [ ] No",
+          "field_label": "May we leave a voicemail",
+          "template_field": "communication_consent.voicemail",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              161.4,
+              213.8,
+              222.7,
+              226.8
+            ],
+            "label_bbox": [
+              40.0,
+              213.8,
+              153.5,
+              226.8
+            ]
+          },
+          "extraction_method": "layout_checkbox",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "consent_id": "CONS_002",
+        "entity_type": "consent",
+        "section_id": "communication_consent",
+        "record": {
+          "part": "fields",
+          "record_key": "text_message",
+          "index": 1
+        },
+        "category": {
+          "value": "communication",
+          "raw_value": "COMMUNICATION PREFERENCES",
+          "field_label": "section heading 'COMMUNICATION PREFERENCES'",
+          "template_field": "communication_consent.category",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              193.8,
+              213.2,
+              208.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "permission_type": {
+          "value": "text_message",
+          "raw_value": "COMMUNICATION PREFERENCES",
+          "field_label": "section heading 'COMMUNICATION PREFERENCES'",
+          "template_field": "communication_consent.permission_type",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              193.8,
+              213.2,
+              208.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "question": "May we send text messages?",
+        "decision": {
+          "value": null,
+          "raw_value": "[X] Yes [X] No",
+          "field_label": "May we send text messages",
+          "template_field": "communication_consent.text_message",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              173.1,
+              229.8,
+              238.0,
+              242.8
+            ],
+            "label_bbox": [
+              40.0,
+              229.8,
+              165.1,
+              242.8
+            ]
+          },
+          "extraction_method": "layout_checkbox",
+          "confidence": 0.9,
+          "validation": {
+            "status": "needs_review",
+            "messages": [
+              "yes/no answer could not be resolved"
+            ]
+          },
+          "notes": [
+            "could not resolve a single yes/no answer from '[X] Yes [X] No'"
+          ]
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "consent_id": "CONS_003",
+        "entity_type": "consent",
+        "section_id": "communication_consent",
+        "record": {
+          "part": "fields",
+          "record_key": "email",
+          "index": 1
+        },
+        "category": {
+          "value": "communication",
+          "raw_value": "COMMUNICATION PREFERENCES",
+          "field_label": "section heading 'COMMUNICATION PREFERENCES'",
+          "template_field": "communication_consent.category",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              193.8,
+              213.2,
+              208.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "permission_type": {
+          "value": "email",
+          "raw_value": "COMMUNICATION PREFERENCES",
+          "field_label": "section heading 'COMMUNICATION PREFERENCES'",
+          "template_field": "communication_consent.permission_type",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              193.8,
+              213.2,
+              208.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "question": "May we contact you by email?",
+        "decision": {
+          "value": "no",
+          "raw_value": "[ ] Yes [X] No",
+          "field_label": "May we contact you by email",
+          "template_field": "communication_consent.email",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              175.2,
+              245.8,
+              236.4,
+              258.8
+            ],
+            "label_bbox": [
+              40.0,
+              245.8,
+              167.2,
+              258.8
+            ]
+          },
+          "extraction_method": "layout_checkbox",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "consent_id": "CONS_004",
+        "entity_type": "consent",
+        "section_id": "release_of_information",
+        "record": {
+          "part": "fields",
+          "record_key": "release_authorized",
+          "index": 1
+        },
+        "category": {
+          "value": "disclosure",
+          "raw_value": "RELEASE OF INFORMATION",
+          "field_label": "section heading 'RELEASE OF INFORMATION'",
+          "template_field": "release_of_information.category",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              274.8,
+              184.1,
+              289.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "permission_type": {
+          "value": "release_of_health_information",
+          "raw_value": "RELEASE OF INFORMATION",
+          "field_label": "section heading 'RELEASE OF INFORMATION'",
+          "template_field": "release_of_information.permission_type",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              274.8,
+              184.1,
+              289.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "question": "I authorize the clinic to discuss my health information with the individuals listed below",
+        "decision": {
+          "value": "yes",
+          "raw_value": "[X] Yes [ ] No",
+          "field_label": "I authorize release of my health information to the individuals listed below",
+          "template_field": "release_of_information.release_authorized",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              358.4,
+              294.8,
+              419.6,
+              307.8
+            ],
+            "label_bbox": [
+              40.0,
+              294.8,
+              350.5,
+              307.8
+            ]
+          },
+          "extraction_method": "layout_checkbox",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "authorized_family_members": [
+      {
+        "authorized_family_member_id": "AFM_001",
+        "entity_type": "authorized_family_member",
+        "section_id": "release_of_information",
+        "record": {
+          "part": "table",
+          "record_key": "row1",
+          "index": 1
+        },
+        "name": {
+          "value": "Daniel Rivera",
+          "raw_value": "Daniel Rivera",
+          "field_label": "Name",
+          "template_field": "release_of_information.name",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              330.8,
+              97.0,
+              343.8
+            ],
+            "label_bbox": [
+              40.0,
+              313.4,
+              64.5,
+              325.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "relationship": {
+          "value": "Husband",
+          "raw_value": "Husband",
+          "field_label": "Relationship",
+          "template_field": "release_of_information.relationship",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              250.0,
+              330.8,
+              288.0,
+              343.8
+            ],
+            "label_bbox": [
+              250.0,
+              313.4,
+              304.0,
+              325.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "phone": {
+          "value": "(217) 555-0190",
+          "raw_value": "217-555-0190",
+          "field_label": "Phone",
+          "template_field": "release_of_information.phone",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              400.0,
+              330.8,
+              459.1,
+              343.8
+            ],
+            "label_bbox": [
+              400.0,
+              313.4,
+              427.5,
+              325.8
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "agreements": [
+      {
+        "agreement_id": "AGR_001",
+        "entity_type": "agreement",
+        "section_id": "consent_to_treatment",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "agreement_type": {
+          "value": "consent_to_treatment",
+          "raw_value": "CONSENT FOR TREATMENT",
+          "field_label": "section heading 'CONSENT FOR TREATMENT'",
+          "template_field": "consent_to_treatment.agreement_type",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              363.8,
+              184.1,
+              378.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "title": {
+          "value": "Consent to Treatment",
+          "raw_value": "CONSENT FOR TREATMENT",
+          "field_label": "section heading 'CONSENT FOR TREATMENT'",
+          "template_field": "consent_to_treatment.title",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              363.8,
+              184.1,
+              378.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "agreement_id": "AGR_002",
+        "entity_type": "agreement",
+        "section_id": "hipaa_acknowledgment",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "agreement_type": {
+          "value": "hipaa_acknowledgment",
+          "raw_value": "PRIVACY PRACTICES ACKNOWLEDGMENT",
+          "field_label": "section heading 'PRIVACY PRACTICES ACKNOWLEDGMENT'",
+          "template_field": "hipaa_acknowledgment.agreement_type",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              435.8,
+              260.5,
+              450.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "title": {
+          "value": "HIPAA Acknowledgment",
+          "raw_value": "PRIVACY PRACTICES ACKNOWLEDGMENT",
+          "field_label": "section heading 'PRIVACY PRACTICES ACKNOWLEDGMENT'",
+          "template_field": "hipaa_acknowledgment.title",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              435.8,
+              260.5,
+              450.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "agreement_id": "AGR_003",
+        "entity_type": "agreement",
+        "section_id": "financial_agreement",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "agreement_type": {
+          "value": "financial_responsibility",
+          "raw_value": "FINANCIAL POLICY",
+          "field_label": "section heading 'FINANCIAL POLICY'",
+          "template_field": "financial_agreement.agreement_type",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              507.8,
+              138.6,
+              522.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "title": {
+          "value": "Financial Responsibility Agreement",
+          "raw_value": "FINANCIAL POLICY",
+          "field_label": "section heading 'FINANCIAL POLICY'",
+          "template_field": "financial_agreement.title",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              507.8,
+              138.6,
+              522.2
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "signatures": [
+      {
+        "signature_id": "SIG_001",
+        "entity_type": "signature",
+        "section_id": "consent_to_treatment",
+        "record": {
+          "part": "fields",
+          "record_key": "signature",
+          "index": 1
+        },
+        "signature_present": {
+          "value": true,
+          "raw_value": true,
+          "field_label": "Patient Signature",
+          "template_field": "consent_to_treatment.signature",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              128.0,
+              400.0,
+              232.0,
+              418.0
+            ],
+            "label_bbox": [
+              40.0,
+              404.8,
+              115.5,
+              417.8
+            ]
+          },
+          "extraction_method": "signature_ink_detection",
+          "confidence": 0.75,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "signature_evidence": "ink_strokes"
+        },
+        "printed_name": {
+          "value": "Maria Rivera",
+          "raw_value": "Maria Rivera",
+          "field_label": "Print Name",
+          "template_field": "consent_to_treatment.printed_name",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              352.8,
+              404.8,
+              406.6,
+              417.8
+            ],
+            "label_bbox": [
+              300.0,
+              404.8,
+              350.2,
+              417.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "signed_date": {
+          "value": "2026-11-03",
+          "raw_value": "11/03/2026",
+          "field_label": "Date",
+          "template_field": "consent_to_treatment.signed_date",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              495.3,
+              404.8,
+              542.9,
+              417.8
+            ],
+            "label_bbox": [
+              470.0,
+              404.8,
+              492.7,
+              417.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": [
+              "numeric date interpreted as MM/DD (US form convention)"
+            ]
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "signature_id": "SIG_002",
+        "entity_type": "signature",
+        "section_id": "hipaa_acknowledgment",
+        "record": {
+          "part": "fields",
+          "record_key": "signature",
+          "index": 1
+        },
+        "signature_present": {
+          "value": true,
+          "raw_value": "/s/ Maria Rivera",
+          "field_label": "Signature",
+          "template_field": "hipaa_acknowledgment.signature",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              85.9,
+              476.8,
+              152.5,
+              489.8
+            ],
+            "label_bbox": [
+              40.0,
+              476.8,
+              83.3,
+              489.8
+            ]
+          },
+          "extraction_method": "signature_typed_text",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "signature_evidence": "typed_text"
+        },
+        "signed_date": {
+          "value": "2026-11-03",
+          "raw_value": "11/03/2026",
+          "field_label": "Date",
+          "template_field": "hipaa_acknowledgment.signed_date",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              495.3,
+              476.8,
+              542.9,
+              489.8
+            ],
+            "label_bbox": [
+              470.0,
+              476.8,
+              492.7,
+              489.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": [
+              "numeric date interpreted as MM/DD (US form convention)"
+            ]
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "signature_id": "SIG_003",
+        "entity_type": "signature",
+        "section_id": "financial_agreement",
+        "record": {
+          "part": "fields",
+          "record_key": "signature",
+          "index": 1
+        },
+        "signature_present": {
+          "value": true,
+          "raw_value": true,
+          "field_label": "Signature",
+          "template_field": "financial_agreement.signature",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              95.0,
+              544.0,
+              199.0,
+              562.0
+            ],
+            "label_bbox": [
+              40.0,
+              548.8,
+              83.3,
+              561.8
+            ]
+          },
+          "extraction_method": "signature_ink_detection",
+          "confidence": 0.75,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "signature_evidence": "ink_strokes"
+        },
+        "printed_name": {
+          "value": "Ana Lopez",
+          "raw_value": "Ana Lopez",
+          "field_label": "Print Name",
+          "template_field": "financial_agreement.printed_name",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              352.8,
+              548.8,
+              398.2,
+              561.8
+            ],
+            "label_bbox": [
+              300.0,
+              548.8,
+              350.2,
+              561.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "signed_date": {
+          "value": "2026-11-03",
+          "raw_value": "11/03/2026",
+          "field_label": "Date",
+          "template_field": "financial_agreement.signed_date",
+          "source": {
+            "filename": "intake_C_other_clinic_rivera.pdf",
+            "page": 2,
+            "bbox": [
+              495.3,
+              548.8,
+              542.9,
+              561.8
+            ],
+            "label_bbox": [
+              470.0,
+              548.8,
+              492.7,
+              561.8
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": [
+              "numeric date interpreted as MM/DD (US form convention)"
+            ]
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "relationship_id": "REL_001",
+      "subject": "PAT_001",
+      "predicate": "HAS_SPOUSE",
+      "object": "SPO_001",
+      "support": "explicit",
+      "confidence": 0.92,
+      "basis": "spouse details inside section 'Spouse Information' (heading 'SPOUSE / PARTNER', page 1) of the patient's own intake form",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "spouse_info",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              174.8,
+              143.3,
+              189.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              70.6,
+              194.8,
+              127.6,
+              207.8
+            ],
+            "attribute": "spouse_info.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              308.1,
+              194.8,
+              356.7,
+              207.8
+            ],
+            "attribute": "spouse_info.date_of_birth"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              452.7,
+              194.8,
+              517.7,
+              207.8
+            ],
+            "attribute": "spouse_info.phone"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_002",
+      "subject": "PAT_001",
+      "predicate": "HAS_EMERGENCY_CONTACT",
+      "object": "EMC_001",
+      "support": "explicit",
+      "confidence": 0.92,
+      "basis": "emergency contact details inside section 'Emergency Contact' (heading 'IN CASE OF EMERGENCY', page 1) of the patient's own intake form",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "emergency_contact",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              220.8,
+              170.7,
+              235.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              106.0,
+              240.8,
+              151.4,
+              253.8
+            ],
+            "attribute": "emergency_contact.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              307.6,
+              240.8,
+              331.8,
+              253.8
+            ],
+            "attribute": "emergency_contact.relationship"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              452.7,
+              240.8,
+              511.9,
+              253.8
+            ],
+            "attribute": "emergency_contact.phone"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_003",
+      "subject": "INS_001",
+      "predicate": "ISSUED_BY",
+      "object": "INSCO_001",
+      "support": "explicit",
+      "confidence": 0.92,
+      "basis": "'Carrier' recorded in the same section as the insurance policy",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "primary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              267.8,
+              153.7,
+              282.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              74.3,
+              287.8,
+              148.2,
+              300.8
+            ],
+            "attribute": "primary_insurance.insurance_company"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_004",
+      "subject": "PAT_001",
+      "predicate": "HAS_INSURANCE",
+      "object": "INS_001",
+      "support": "explicit",
+      "confidence": 0.92,
+      "basis": "insurance policy details inside section 'Primary Insurance' (heading 'PRIMARY INSURANCE', page 1) of the patient's own intake form",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "primary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              267.8,
+              153.7,
+              282.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              74.3,
+              287.8,
+              148.2,
+              300.8
+            ],
+            "attribute": "primary_insurance.insurance_company"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              118.7,
+              302.8,
+              172.5,
+              315.8
+            ],
+            "attribute": "primary_insurance.policy_holder.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              140.3,
+              317.8,
+              156.7,
+              330.8
+            ],
+            "attribute": "primary_insurance.policy_holder.relationship_to_patient"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              113.9,
+              332.8,
+              161.4,
+              345.8
+            ],
+            "attribute": "primary_insurance.policy_holder.date_of_birth"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              92.3,
+              347.8,
+              152.5,
+              360.8
+            ],
+            "attribute": "primary_insurance.insurance_id"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              79.6,
+              362.8,
+              124.5,
+              375.8
+            ],
+            "attribute": "primary_insurance.group_number"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_005",
+      "subject": "INS_002",
+      "predicate": "ISSUED_BY",
+      "object": "INSCO_002",
+      "support": "explicit",
+      "confidence": 0.92,
+      "basis": "'Carrier' recorded in the same section as the insurance policy",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "secondary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              316.0,
+              267.8,
+              448.4,
+              282.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              350.3,
+              287.8,
+              419.5,
+              300.8
+            ],
+            "attribute": "secondary_insurance.insurance_company"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_006",
+      "subject": "PAT_001",
+      "predicate": "HAS_INSURANCE",
+      "object": "INS_002",
+      "support": "explicit",
+      "confidence": 0.92,
+      "basis": "insurance policy details inside section 'Secondary Insurance' (heading 'SECONDARY INSURANCE', page 1) of the patient's own intake form",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "secondary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              316.0,
+              267.8,
+              448.4,
+              282.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              350.3,
+              287.8,
+              419.5,
+              300.8
+            ],
+            "attribute": "secondary_insurance.insurance_company"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              394.7,
+              302.8,
+              451.7,
+              315.8
+            ],
+            "attribute": "secondary_insurance.policy_holder.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              416.3,
+              317.8,
+              448.5,
+              330.8
+            ],
+            "attribute": "secondary_insurance.policy_holder.relationship_to_patient"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              389.9,
+              332.8,
+              437.4,
+              345.8
+            ],
+            "attribute": "secondary_insurance.policy_holder.date_of_birth"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              368.3,
+              347.8,
+              417.4,
+              360.8
+            ],
+            "attribute": "secondary_insurance.insurance_id"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              355.6,
+              362.8,
+              386.2,
+              375.8
+            ],
+            "attribute": "secondary_insurance.group_number"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_007",
+      "subject": "MED_001",
+      "predicate": "PRESCRIBED_BY",
+      "object": "DR_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'Prescribed By' recorded on the same table row as the medication",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              408.8,
+              132.2,
+              423.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              459.8,
+              82.2,
+              472.8
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              200.0,
+              459.8,
+              259.7,
+              472.8
+            ],
+            "attribute": "medications.prescribing_doctor"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_008",
+      "subject": "PAT_001",
+      "predicate": "TAKES_MEDICATION",
+      "object": "MED_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "row 1 inside section 'Current Medications' (heading 'MEDICATION LIST', page 1)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              408.8,
+              132.2,
+              423.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              459.8,
+              82.2,
+              472.8
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              200.0,
+              459.8,
+              259.7,
+              472.8
+            ],
+            "attribute": "medications.prescribing_doctor"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              340.0,
+              459.8,
+              371.7,
+              472.8
+            ],
+            "attribute": "medications.dosage"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              430.0,
+              459.8,
+              477.0,
+              472.8
+            ],
+            "attribute": "medications.frequency"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_009",
+      "subject": "MED_002",
+      "predicate": "PRESCRIBED_BY",
+      "object": "DR_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'Prescribed By' recorded on the same table row as the medication",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              408.8,
+              132.2,
+              423.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              477.8,
+              77.5,
+              490.8
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              200.0,
+              477.8,
+              259.7,
+              490.8
+            ],
+            "attribute": "medications.prescribing_doctor"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_010",
+      "subject": "PAT_001",
+      "predicate": "TAKES_MEDICATION",
+      "object": "MED_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "row 2 inside section 'Current Medications' (heading 'MEDICATION LIST', page 1)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              408.8,
+              132.2,
+              423.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              477.8,
+              77.5,
+              490.8
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              200.0,
+              477.8,
+              259.7,
+              490.8
+            ],
+            "attribute": "medications.prescribing_doctor"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              340.0,
+              477.8,
+              366.4,
+              490.8
+            ],
+            "attribute": "medications.dosage"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              430.0,
+              477.8,
+              474.9,
+              490.8
+            ],
+            "attribute": "medications.frequency"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_011",
+      "subject": "MED_003",
+      "predicate": "PRESCRIBED_BY",
+      "object": "DR_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'Prescribed By' recorded on the same table row as the medication",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              408.8,
+              132.2,
+              423.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              495.8,
+              80.7,
+              508.8
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              200.0,
+              495.8,
+              257.0,
+              508.8
+            ],
+            "attribute": "medications.prescribing_doctor"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_012",
+      "subject": "PAT_001",
+      "predicate": "TAKES_MEDICATION",
+      "object": "MED_003",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "row 3 inside section 'Current Medications' (heading 'MEDICATION LIST', page 1)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              408.8,
+              132.2,
+              423.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              495.8,
+              80.7,
+              508.8
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              200.0,
+              495.8,
+              257.0,
+              508.8
+            ],
+            "attribute": "medications.prescribing_doctor"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              340.0,
+              495.8,
+              366.4,
+              508.8
+            ],
+            "attribute": "medications.dosage"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              430.0,
+              495.8,
+              474.9,
+              508.8
+            ],
+            "attribute": "medications.frequency"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_013",
+      "subject": "PAT_001",
+      "predicate": "TAKES_MEDICATION",
+      "object": "MED_004",
+      "support": "uncertain",
+      "confidence": 0.55,
+      "basis": "row 4 inside section 'Current Medications' (heading 'MEDICATION LIST', page 1)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              408.8,
+              132.2,
+              423.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              513.8,
+              86.5,
+              526.8
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              340.0,
+              513.8,
+              373.3,
+              526.8
+            ],
+            "attribute": "medications.dosage"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              430.0,
+              513.8,
+              494.9,
+              536.8
+            ],
+            "attribute": "medications.frequency"
+          }
+        ]
+      },
+      "review_required": true,
+      "uncertainty_reasons": [
+        "row text wraps onto a following line; merged values must be confirmed",
+        "relationship confidence 0.55 is below the review threshold"
+      ]
+    },
+    {
+      "relationship_id": "REL_014",
+      "subject": "PAT_001",
+      "predicate": "HAS_ALLERGY",
+      "object": "ALG_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "row 1 inside section 'Allergies' (heading 'DRUG ALLERGIES', page 1)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "allergies",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              548.8,
+              133.9,
+              563.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              584.8,
+              77.5,
+              597.8
+            ],
+            "attribute": "allergies.allergen"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              200.0,
+              584.8,
+              223.7,
+              597.8
+            ],
+            "attribute": "allergies.reaction"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              360.0,
+              584.8,
+              400.1,
+              597.8
+            ],
+            "attribute": "allergies.severity"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_015",
+      "subject": "PAT_001",
+      "predicate": "HAS_ALLERGY",
+      "object": "ALG_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "row 2 inside section 'Allergies' (heading 'DRUG ALLERGIES', page 1)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "allergies",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              548.8,
+              133.9,
+              563.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              602.8,
+              75.9,
+              615.8
+            ],
+            "attribute": "allergies.allergen"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              200.0,
+              602.8,
+              263.9,
+              615.8
+            ],
+            "attribute": "allergies.reaction"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              360.0,
+              602.8,
+              390.1,
+              615.8
+            ],
+            "attribute": "allergies.severity"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_016",
+      "subject": "PAT_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "box ticked next to 'Diabetes' inside section 'Past Medical History' (heading 'MEDICAL CONDITIONS', page 1)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "medical_history",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              638.8,
+              156.7,
+              653.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              658.8,
+              91.7,
+              671.8
+            ],
+            "attribute": "medical_history.diabetes"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_017",
+      "subject": "PAT_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "box ticked next to 'Hypertension' inside section 'Past Medical History' (heading 'MEDICAL CONDITIONS', page 1)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "medical_history",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              638.8,
+              156.7,
+              653.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              173.0,
+              658.8,
+              243.2,
+              671.8
+            ],
+            "attribute": "medical_history.hypertension"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_018",
+      "subject": "PAT_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_003",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "box ticked next to 'Depression/Anxiety' inside section 'Past Medical History' (heading 'MEDICAL CONDITIONS', page 1)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "medical_history",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              638.8,
+              156.7,
+              653.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              306.0,
+              675.8,
+              402.1,
+              688.8
+            ],
+            "attribute": "medical_history.depression_anxiety"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_019",
+      "subject": "PAT_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_004",
+      "support": "explicit",
+      "confidence": 0.92,
+      "basis": "listed under 'Other' inside section 'Past Medical History' (heading 'MEDICAL CONDITIONS', page 1)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "medical_history",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              638.8,
+              156.7,
+              653.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              69.0,
+              693.8,
+              110.2,
+              706.8
+            ],
+            "attribute": "medical_history.other"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_020",
+      "subject": "SURG_001",
+      "predicate": "PERFORMED_AT",
+      "object": "HOSP_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'Facility' recorded on the same table row as the surgery",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "surgical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              38.8,
+              144.4,
+              53.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              74.8,
+              103.4,
+              87.8
+            ],
+            "attribute": "surgical_history.procedure"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              330.0,
+              74.8,
+              448.3,
+              87.8
+            ],
+            "attribute": "surgical_history.hospital"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_021",
+      "subject": "PAT_001",
+      "predicate": "HAD_SURGERY",
+      "object": "SURG_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "row 1 inside section 'Surgical History' (heading 'SURGICAL HISTORY', page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "surgical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              38.8,
+              144.4,
+              53.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              74.8,
+              103.4,
+              87.8
+            ],
+            "attribute": "surgical_history.procedure"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              250.0,
+              74.8,
+              271.1,
+              87.8
+            ],
+            "attribute": "surgical_history.date"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              330.0,
+              74.8,
+              448.3,
+              87.8
+            ],
+            "attribute": "surgical_history.hospital"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_022",
+      "subject": "SURG_002",
+      "predicate": "PERFORMED_AT",
+      "object": "HOSP_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'Facility' recorded on the same table row as the surgery",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "surgical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              38.8,
+              144.4,
+              53.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              92.8,
+              113.9,
+              105.8
+            ],
+            "attribute": "surgical_history.procedure"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              330.0,
+              92.8,
+              438.5,
+              105.8
+            ],
+            "attribute": "surgical_history.hospital"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_023",
+      "subject": "PAT_001",
+      "predicate": "HAD_SURGERY",
+      "object": "SURG_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "row 2 inside section 'Surgical History' (heading 'SURGICAL HISTORY', page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "surgical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              38.8,
+              144.4,
+              53.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              92.8,
+              113.9,
+              105.8
+            ],
+            "attribute": "surgical_history.procedure"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              250.0,
+              92.8,
+              271.1,
+              105.8
+            ],
+            "attribute": "surgical_history.date"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              330.0,
+              92.8,
+              438.5,
+              105.8
+            ],
+            "attribute": "surgical_history.hospital"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_024",
+      "subject": "FAM_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_005",
+      "support": "explicit",
+      "confidence": 0.85,
+      "basis": "'Type 2 diabetes' listed in the 'Medical Conditions' cell of the 'Mother' row of 'Family Medical History'",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              128.8,
+              128.7,
+              143.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              74.8,
+              148.8,
+              269.7,
+              161.8
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_025",
+      "subject": "FAM_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_006",
+      "support": "explicit",
+      "confidence": 0.85,
+      "basis": "'hypertension' listed in the 'Medical Conditions' cell of the 'Mother' row of 'Family Medical History'",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              128.8,
+              128.7,
+              143.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              74.8,
+              148.8,
+              269.7,
+              161.8
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_026",
+      "subject": "PAT_001",
+      "predicate": "HAS_FAMILY_HISTORY",
+      "object": "FAM_001",
+      "support": "explicit",
+      "confidence": 0.85,
+      "basis": "'Mother' row inside section 'Family Medical History' (heading 'FAMILY HISTORY', page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              128.8,
+              128.7,
+              143.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              148.8,
+              72.2,
+              161.8
+            ],
+            "attribute": "family_history.relation"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              74.8,
+              148.8,
+              269.7,
+              161.8
+            ],
+            "attribute": "family_history.living_status"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              74.8,
+              148.8,
+              269.7,
+              161.8
+            ],
+            "attribute": "family_history.age"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              74.8,
+              148.8,
+              269.7,
+              161.8
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_027",
+      "subject": "FAM_002",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_007",
+      "support": "explicit",
+      "confidence": 0.85,
+      "basis": "'Heart disease' listed in the 'Medical Conditions' cell of the 'Father' row of 'Family Medical History'",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              128.8,
+              128.7,
+              143.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              72.7,
+              164.8,
+              248.0,
+              177.8
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_028",
+      "subject": "FAM_002",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_008",
+      "support": "explicit",
+      "confidence": 0.85,
+      "basis": "'stroke' listed in the 'Medical Conditions' cell of the 'Father' row of 'Family Medical History'",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              128.8,
+              128.7,
+              143.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              72.7,
+              164.8,
+              248.0,
+              177.8
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_029",
+      "subject": "PAT_001",
+      "predicate": "HAS_FAMILY_HISTORY",
+      "object": "FAM_002",
+      "support": "explicit",
+      "confidence": 0.85,
+      "basis": "'Father' row inside section 'Family Medical History' (heading 'FAMILY HISTORY', page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              128.8,
+              128.7,
+              143.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              164.8,
+              70.1,
+              177.8
+            ],
+            "attribute": "family_history.relation"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              72.7,
+              164.8,
+              248.0,
+              177.8
+            ],
+            "attribute": "family_history.living_status"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              72.7,
+              164.8,
+              248.0,
+              177.8
+            ],
+            "attribute": "family_history.age"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              72.7,
+              164.8,
+              248.0,
+              177.8
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_030",
+      "subject": "PAT_001",
+      "predicate": "PROVIDES_CONSENT",
+      "object": "CONS_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "answer to 'May we leave a voicemail' inside section 'Communication Consent' (heading 'COMMUNICATION PREFERENCES', page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              193.8,
+              213.2,
+              208.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              161.4,
+              213.8,
+              222.7,
+              226.8
+            ],
+            "attribute": "communication_consent.voicemail"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_031",
+      "subject": "CONS_001",
+      "predicate": "AUTHORIZES_COMMUNICATION",
+      "object_value": "voicemail",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'YES' marked for 'May we leave a voicemail?'",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              193.8,
+              213.2,
+              208.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              161.4,
+              213.8,
+              222.7,
+              226.8
+            ],
+            "attribute": "communication_consent.voicemail"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_032",
+      "subject": "PAT_001",
+      "predicate": "PROVIDES_CONSENT",
+      "object": "CONS_002",
+      "support": "uncertain",
+      "confidence": 0.9,
+      "basis": "answer to 'May we send text messages' inside section 'Communication Consent' (heading 'COMMUNICATION PREFERENCES', page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              193.8,
+              213.2,
+              208.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              173.1,
+              229.8,
+              238.0,
+              242.8
+            ],
+            "attribute": "communication_consent.text_message"
+          }
+        ]
+      },
+      "review_required": true,
+      "uncertainty_reasons": [
+        "answer to 'May we send text messages?' needs review (yes/no answer could not be resolved)"
+      ]
+    },
+    {
+      "relationship_id": "REL_033",
+      "subject": "PAT_001",
+      "predicate": "PROVIDES_CONSENT",
+      "object": "CONS_003",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "answer to 'May we contact you by email' inside section 'Communication Consent' (heading 'COMMUNICATION PREFERENCES', page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              193.8,
+              213.2,
+              208.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              175.2,
+              245.8,
+              236.4,
+              258.8
+            ],
+            "attribute": "communication_consent.email"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_034",
+      "subject": "CONS_003",
+      "predicate": "DECLINES_COMMUNICATION",
+      "object_value": "email",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'NO' marked for 'May we contact you by email?'",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              193.8,
+              213.2,
+              208.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              175.2,
+              245.8,
+              236.4,
+              258.8
+            ],
+            "attribute": "communication_consent.email"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_035",
+      "subject": "PAT_001",
+      "predicate": "PROVIDES_CONSENT",
+      "object": "CONS_004",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "answer to 'I authorize release of my health information to the individuals listed below' inside section 'Authorization to Release Information' (heading 'RELEASE OF INFORMATION', page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "release_of_information",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              274.8,
+              184.1,
+              289.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              358.4,
+              294.8,
+              419.6,
+              307.8
+            ],
+            "attribute": "release_of_information.release_authorized"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_036",
+      "subject": "PAT_001",
+      "predicate": "HAS_AUTHORIZED_FAMILY_MEMBER",
+      "object": "AFM_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "row 1 inside section 'Authorization to Release Information' (heading 'RELEASE OF INFORMATION', page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "release_of_information",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              274.8,
+              184.1,
+              289.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              330.8,
+              97.0,
+              343.8
+            ],
+            "attribute": "release_of_information.name"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              250.0,
+              330.8,
+              288.0,
+              343.8
+            ],
+            "attribute": "release_of_information.relationship"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              400.0,
+              330.8,
+              459.1,
+              343.8
+            ],
+            "attribute": "release_of_information.phone"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_037",
+      "subject": "CONS_004",
+      "predicate": "AUTHORIZES_DISCLOSURE_TO",
+      "object": "AFM_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "authorization answered 'YES' and the person is listed in the same section",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "release_of_information",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              274.8,
+              184.1,
+              289.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              358.4,
+              294.8,
+              419.6,
+              307.8
+            ],
+            "attribute": "release_of_information.release_authorized"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              330.8,
+              97.0,
+              343.8
+            ],
+            "attribute": "release_of_information.name"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              250.0,
+              330.8,
+              288.0,
+              343.8
+            ],
+            "attribute": "release_of_information.relationship"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              400.0,
+              330.8,
+              459.1,
+              343.8
+            ],
+            "attribute": "release_of_information.phone"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_038",
+      "subject": "SIG_001",
+      "predicate": "SIGNATURE_FOR",
+      "object": "AGR_001",
+      "support": "explicit",
+      "confidence": 0.75,
+      "basis": "signature block printed under 'Consent to Treatment' inside section 'Consent to Treatment' (heading 'CONSENT FOR TREATMENT', page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "consent_to_treatment",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              363.8,
+              184.1,
+              378.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              128.0,
+              400.0,
+              232.0,
+              418.0
+            ],
+            "attribute": "consent_to_treatment.signature"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              352.8,
+              404.8,
+              406.6,
+              417.8
+            ],
+            "attribute": "consent_to_treatment.printed_name"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              495.3,
+              404.8,
+              542.9,
+              417.8
+            ],
+            "attribute": "consent_to_treatment.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_039",
+      "subject": "SIG_002",
+      "predicate": "SIGNATURE_FOR",
+      "object": "AGR_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "signature block printed under 'HIPAA Acknowledgment' inside section 'HIPAA Acknowledgment' (heading 'PRIVACY PRACTICES ACKNOWLEDGMENT', page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "hipaa_acknowledgment",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              435.8,
+              260.5,
+              450.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              85.9,
+              476.8,
+              152.5,
+              489.8
+            ],
+            "attribute": "hipaa_acknowledgment.signature"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              495.3,
+              476.8,
+              542.9,
+              489.8
+            ],
+            "attribute": "hipaa_acknowledgment.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_040",
+      "subject": "SIG_003",
+      "predicate": "SIGNATURE_FOR",
+      "object": "AGR_003",
+      "support": "explicit",
+      "confidence": 0.75,
+      "basis": "signature block printed under 'Financial Responsibility Agreement' inside section 'Financial Responsibility Agreement' (heading 'FINANCIAL POLICY', page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "financial_agreement",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              507.8,
+              138.6,
+              522.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              95.0,
+              544.0,
+              199.0,
+              562.0
+            ],
+            "attribute": "financial_agreement.signature"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              352.8,
+              548.8,
+              398.2,
+              561.8
+            ],
+            "attribute": "financial_agreement.printed_name"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              495.3,
+              548.8,
+              542.9,
+              561.8
+            ],
+            "attribute": "financial_agreement.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_041",
+      "subject": "INS_001",
+      "predicate": "HELD_BY",
+      "object": "PAT_001",
+      "support": "explicit",
+      "confidence": 0.92,
+      "basis": "policy holder 'Relationship to Patient' is 'Self'",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "primary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              267.8,
+              153.7,
+              282.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              140.3,
+              317.8,
+              156.7,
+              330.8
+            ],
+            "attribute": "primary_insurance.policy_holder.relationship_to_patient"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              118.7,
+              302.8,
+              172.5,
+              315.8
+            ],
+            "attribute": "primary_insurance.policy_holder.name"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_042",
+      "subject": "INS_002",
+      "predicate": "HELD_BY",
+      "object": "SPO_001",
+      "support": "explicit",
+      "confidence": 0.92,
+      "basis": "relationship is 'Spouse' and the policy holder name matches the spouse section",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "secondary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              316.0,
+              267.8,
+              448.4,
+              282.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              416.3,
+              317.8,
+              448.5,
+              330.8
+            ],
+            "attribute": "secondary_insurance.policy_holder.relationship_to_patient"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              394.7,
+              302.8,
+              451.7,
+              315.8
+            ],
+            "attribute": "secondary_insurance.policy_holder.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              70.6,
+              194.8,
+              127.6,
+              207.8
+            ],
+            "attribute": "spouse_info.name"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_043",
+      "subject": "PAT_001",
+      "predicate": "SIGNS",
+      "object": "AGR_001",
+      "support": "explicit",
+      "confidence": 0.75,
+      "basis": "signature found on the 'Patient Signature' line of 'Consent to Treatment' (page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "consent_to_treatment",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              363.8,
+              184.1,
+              378.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              128.0,
+              400.0,
+              232.0,
+              418.0
+            ],
+            "attribute": "consent_to_treatment.signature"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              352.8,
+              404.8,
+              406.6,
+              417.8
+            ],
+            "attribute": "consent_to_treatment.printed_name"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              495.3,
+              404.8,
+              542.9,
+              417.8
+            ],
+            "attribute": "consent_to_treatment.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_044",
+      "subject": "PAT_001",
+      "predicate": "SIGNS",
+      "object": "AGR_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "signature found on the 'Signature' line of 'HIPAA Acknowledgment' (page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "hipaa_acknowledgment",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              435.8,
+              260.5,
+              450.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              85.9,
+              476.8,
+              152.5,
+              489.8
+            ],
+            "attribute": "hipaa_acknowledgment.signature"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              495.3,
+              476.8,
+              542.9,
+              489.8
+            ],
+            "attribute": "hipaa_acknowledgment.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_045",
+      "subject": "PAT_001",
+      "predicate": "SIGNS",
+      "object": "AGR_003",
+      "support": "uncertain",
+      "confidence": 0.75,
+      "basis": "signature found on the 'Signature' line of 'Financial Responsibility Agreement' (page 2)",
+      "evidence": {
+        "source_file": "intake_C_other_clinic_rivera.pdf",
+        "section_id": "financial_agreement",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              507.8,
+              138.6,
+              522.2
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              95.0,
+              544.0,
+              199.0,
+              562.0
+            ],
+            "attribute": "financial_agreement.signature"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              352.8,
+              548.8,
+              398.2,
+              561.8
+            ],
+            "attribute": "financial_agreement.printed_name"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              495.3,
+              548.8,
+              542.9,
+              561.8
+            ],
+            "attribute": "financial_agreement.signed_date"
+          }
+        ]
+      },
+      "review_required": true,
+      "uncertainty_reasons": [
+        "printed name 'Ana Lopez' differs from patient 'Maria Rivera'; the signer may be a guardian or representative"
+      ]
+    }
+  ],
+  "missing_information": [
+    {
+      "ref": "hipaa_acknowledgment.printed_name",
+      "section_id": "hipaa_acknowledgment",
+      "entity_id": "SIG_002",
+      "label": "Printed Name",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "MED_004",
+      "section_id": "medications",
+      "entity_id": "MED_004",
+      "label": "Prescribing Doctor",
+      "severity": "incomplete_record",
+      "reason": "record 4 has no value for: Prescribing Doctor"
+    }
+  ],
+  "validation": {
+    "status": "needs_review",
+    "checks": [
+      {
+        "check": "document_isolation",
+        "status": "passed",
+        "checked": 157,
+        "issues": []
+      },
+      {
+        "check": "predicate_signatures",
+        "status": "passed",
+        "checked": 45,
+        "issues": []
+      },
+      {
+        "check": "medication_record_integrity",
+        "status": "review",
+        "checked": 4,
+        "issues": [
+          {
+            "severity": "review",
+            "ref": "MED_004",
+            "message": "row text wraps onto a following line; merged values must be confirmed"
+          }
+        ]
+      },
+      {
+        "check": "insurance_policy_separation",
+        "status": "passed",
+        "checked": 2,
+        "issues": []
+      },
+      {
+        "check": "family_history_separation",
+        "status": "passed",
+        "checked": 10,
+        "issues": []
+      },
+      {
+        "check": "consent_decision_integrity",
+        "status": "review",
+        "checked": 4,
+        "issues": [
+          {
+            "severity": "review",
+            "ref": "CONS_002",
+            "message": "consent decision for 'text_message' could not be resolved"
+          }
+        ]
+      },
+      {
+        "check": "signature_agreement_binding",
+        "status": "passed",
+        "checked": 6,
+        "issues": []
+      }
+    ],
+    "errors": [],
+    "warnings": [
+      {
+        "code": "medication_record_integrity",
+        "ref": "MED_004",
+        "message": "row text wraps onto a following line; merged values must be confirmed"
+      },
+      {
+        "code": "consent_decision_integrity",
+        "ref": "CONS_002",
+        "message": "consent decision for 'text_message' could not be resolved"
+      }
+    ]
+  },
+  "manual_review": [
+    {
+      "review_id": "REV_001",
+      "kind": "validation",
+      "ref": "MED_004",
+      "reason": "[medication_record_integrity] row text wraps onto a following line; merged values must be confirmed"
+    },
+    {
+      "review_id": "REV_002",
+      "kind": "validation",
+      "ref": "CONS_002",
+      "reason": "[consent_decision_integrity] consent decision for 'text_message' could not be resolved"
+    },
+    {
+      "review_id": "REV_003",
+      "kind": "attribute",
+      "ref": "MED_004.frequency",
+      "field_label": "How Often",
+      "value": "Daily (with breakfast)",
+      "status": "needs_review",
+      "reason": "value continues on a following line with no row key; merged into the row above",
+      "page": 1,
+      "bbox": [
+        430.0,
+        513.8,
+        494.9,
+        536.8
+      ]
+    },
+    {
+      "review_id": "REV_004",
+      "kind": "attribute",
+      "ref": "CONS_002.decision",
+      "field_label": "May we send text messages",
+      "value": null,
+      "status": "needs_review",
+      "reason": "yes/no answer could not be resolved; could not resolve a single yes/no answer from '[X] Yes [X] No'",
+      "page": 2,
+      "bbox": [
+        173.1,
+        229.8,
+        238.0,
+        242.8
+      ]
+    },
+    {
+      "review_id": "REV_005",
+      "kind": "relationship",
+      "ref": "REL_013",
+      "relationship": "PAT_001 TAKES_MEDICATION MED_004",
+      "reason": "row text wraps onto a following line; merged values must be confirmed; relationship confidence 0.55 is below the review threshold",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "review_id": "REV_006",
+      "kind": "relationship",
+      "ref": "REL_032",
+      "relationship": "PAT_001 PROVIDES_CONSENT CONS_002",
+      "reason": "answer to 'May we send text messages?' needs review (yes/no answer could not be resolved)",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "review_id": "REV_007",
+      "kind": "relationship",
+      "ref": "REL_045",
+      "relationship": "PAT_001 SIGNS AGR_003",
+      "reason": "printed name 'Ana Lopez' differs from patient 'Maria Rivera'; the signer may be a guardian or representative",
+      "pages": [
+        2
+      ]
+    }
+  ],
+  "unmapped_content": []
+}

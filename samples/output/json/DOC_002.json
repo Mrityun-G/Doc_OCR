@@ -1,0 +1,4213 @@
+{
+  "schema_version": "1.0",
+  "document_id": "DOC_002",
+  "document_type": "patient_intake",
+  "template_id": "patient_intake_v1",
+  "source": {
+    "filename": "intake_B_flattened_lindqvist.pdf",
+    "sha256": "c1f55e7e73e886ea29b82da4fc4e8242a8f1bb92e98d21ac3dc7d5e54559f978",
+    "page_count": 3,
+    "has_acroform": false,
+    "pages_without_text_layer": [],
+    "ocr_pages": []
+  },
+  "processing": {
+    "engine": "docintel 1.0.0",
+    "processed_at": "2026-11-12T07:12:39+00:00",
+    "extraction_mode": "layout",
+    "review_threshold": 0.7,
+    "status": "needs_review",
+    "coordinate_system": "PDF points; origin top-left; bbox = [x0, y0, x1, y1]"
+  },
+  "sections": [
+    {
+      "section_id": "patient_info",
+      "title": "Patient Information",
+      "source_heading": "Patient Information",
+      "identified_by": "heading",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          79.7,
+          144.8,
+          95.5
+        ]
+      },
+      "entity_ids": [
+        "PAT_001"
+      ]
+    },
+    {
+      "section_id": "spouse_info",
+      "title": "Spouse Information",
+      "source_heading": "Spouse Information",
+      "identified_by": "heading",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          220.7,
+          148.0,
+          236.5
+        ]
+      },
+      "entity_ids": []
+    },
+    {
+      "section_id": "emergency_contact",
+      "title": "Emergency Contact",
+      "source_heading": "Emergency Contact",
+      "identified_by": "heading",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          277.7,
+          148.0,
+          293.5
+        ]
+      },
+      "entity_ids": [
+        "EMC_001"
+      ]
+    },
+    {
+      "section_id": "primary_insurance",
+      "title": "Primary Insurance",
+      "source_heading": "Primary Insurance",
+      "identified_by": "heading",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          334.7,
+          140.3,
+          350.5
+        ]
+      },
+      "entity_ids": [
+        "INS_001",
+        "INSCO_001"
+      ]
+    },
+    {
+      "section_id": "secondary_insurance",
+      "title": "Secondary Insurance",
+      "source_heading": "Secondary Insurance",
+      "identified_by": "heading",
+      "pages": [
+        1
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          433.7,
+          156.3,
+          449.5
+        ]
+      },
+      "entity_ids": []
+    },
+    {
+      "section_id": "medications",
+      "title": "Current Medications",
+      "source_heading": "Current Medications",
+      "identified_by": "heading",
+      "pages": [
+        1,
+        2
+      ],
+      "heading_location": {
+        "page": 1,
+        "bbox": [
+          40.0,
+          532.7,
+          151.2,
+          548.5
+        ]
+      },
+      "entity_ids": [
+        "MED_001",
+        "DR_001",
+        "MED_002"
+      ]
+    },
+    {
+      "section_id": "allergies",
+      "title": "Allergies",
+      "source_heading": "Allergies",
+      "identified_by": "heading",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          43.7,
+          88.6,
+          59.5
+        ]
+      },
+      "entity_ids": [
+        "ALG_001"
+      ]
+    },
+    {
+      "section_id": "medical_history",
+      "title": "Past Medical History",
+      "source_heading": "Past Medical History",
+      "identified_by": "heading",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          170.7,
+          152.5,
+          186.5
+        ]
+      },
+      "entity_ids": [
+        "COND_001",
+        "COND_002"
+      ]
+    },
+    {
+      "section_id": "surgical_history",
+      "title": "Surgical History",
+      "source_heading": "Surgical History",
+      "identified_by": "heading",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          278.7,
+          128.2,
+          294.5
+        ]
+      },
+      "entity_ids": []
+    },
+    {
+      "section_id": "family_history",
+      "title": "Family Medical History",
+      "source_heading": "Family Medical History",
+      "identified_by": "heading",
+      "pages": [
+        2
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          405.7,
+          164.6,
+          421.5
+        ]
+      },
+      "entity_ids": [
+        "FAM_001",
+        "COND_003",
+        "FAM_002",
+        "COND_004",
+        "COND_005"
+      ]
+    },
+    {
+      "section_id": "communication_consent",
+      "title": "Communication Consent",
+      "source_heading": "Communication Consent",
+      "identified_by": "heading",
+      "pages": [
+        2,
+        3
+      ],
+      "heading_location": {
+        "page": 2,
+        "bbox": [
+          40.0,
+          532.7,
+          176.1,
+          548.5
+        ]
+      },
+      "entity_ids": [
+        "CONS_001",
+        "CONS_002",
+        "CONS_003"
+      ]
+    },
+    {
+      "section_id": "release_of_information",
+      "title": "Authorization to Release Information",
+      "source_heading": "Authorization to Release Information",
+      "identified_by": "heading",
+      "pages": [
+        3
+      ],
+      "heading_location": {
+        "page": 3,
+        "bbox": [
+          40.0,
+          43.7,
+          241.3,
+          59.5
+        ]
+      },
+      "entity_ids": [
+        "CONS_004"
+      ]
+    },
+    {
+      "section_id": "consent_to_treatment",
+      "title": "Consent to Treatment",
+      "source_heading": "Consent to Treatment",
+      "identified_by": "heading",
+      "pages": [
+        3
+      ],
+      "heading_location": {
+        "page": 3,
+        "bbox": [
+          40.0,
+          157.7,
+          158.8,
+          173.5
+        ]
+      },
+      "entity_ids": [
+        "AGR_001",
+        "SIG_001"
+      ]
+    },
+    {
+      "section_id": "hipaa_acknowledgment",
+      "title": "HIPAA Acknowledgment",
+      "source_heading": "HIPAA Acknowledgment",
+      "identified_by": "heading",
+      "pages": [
+        3
+      ],
+      "heading_location": {
+        "page": 3,
+        "bbox": [
+          40.0,
+          242.7,
+          174.2,
+          258.5
+        ]
+      },
+      "entity_ids": [
+        "AGR_002",
+        "SIG_002"
+      ]
+    },
+    {
+      "section_id": "financial_agreement",
+      "title": "Financial Responsibility Agreement",
+      "source_heading": "Financial Responsibility Agreement",
+      "identified_by": "heading",
+      "pages": [
+        3
+      ],
+      "heading_location": {
+        "page": 3,
+        "bbox": [
+          40.0,
+          327.7,
+          234.9,
+          343.5
+        ]
+      },
+      "entity_ids": [
+        "AGR_003",
+        "SIG_003"
+      ]
+    }
+  ],
+  "entities": {
+    "patient": {
+      "patient_id": "PAT_001",
+      "entity_type": "patient",
+      "section_id": "patient_info",
+      "record": {
+        "part": "fields",
+        "record_key": "main",
+        "index": 1
+      },
+      "first_name": {
+        "value": "Grace",
+        "raw_value": "Grace",
+        "field_label": "First Name",
+        "template_field": "patient_info.first_name",
+        "source": {
+          "filename": "intake_B_flattened_lindqvist.pdf",
+          "page": 1,
+          "bbox": [
+            90.7,
+            106.0,
+            115.2,
+            118.4
+          ],
+          "label_bbox": [
+            40.0,
+            106.3,
+            86.5,
+            118.7
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "last_name": {
+        "value": "Lindqvist",
+        "raw_value": "Lindqvist",
+        "field_label": "Last Name",
+        "template_field": "patient_info.last_name",
+        "source": {
+          "filename": "intake_B_flattened_lindqvist.pdf",
+          "page": 1,
+          "bbox": [
+            303.0,
+            106.0,
+            338.5,
+            118.4
+          ],
+          "label_bbox": [
+            252.8,
+            106.3,
+            298.8,
+            118.7
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "date_of_birth": {
+        "value": "1990-11-02",
+        "raw_value": "11/02/1990",
+        "field_label": "Date of Birth",
+        "template_field": "patient_info.date_of_birth",
+        "source": {
+          "filename": "intake_B_flattened_lindqvist.pdf",
+          "page": 1,
+          "bbox": [
+            495.7,
+            106.0,
+            540.8,
+            118.4
+          ],
+          "label_bbox": [
+            439.0,
+            106.3,
+            491.5,
+            118.7
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": [
+            "numeric date interpreted as MM/DD (US form convention)"
+          ]
+        }
+      },
+      "sex": {
+        "value": "female",
+        "raw_value": "F",
+        "field_label": "Sex",
+        "template_field": "patient_info.sex",
+        "source": {
+          "filename": "intake_B_flattened_lindqvist.pdf",
+          "page": 1,
+          "bbox": [
+            62.2,
+            127.0,
+            67.7,
+            139.4
+          ],
+          "label_bbox": [
+            40.0,
+            127.3,
+            58.0,
+            139.7
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "marital_status": {
+        "value": "single",
+        "raw_value": "Single",
+        "field_label": "Marital Status",
+        "template_field": "patient_info.marital_status",
+        "source": {
+          "filename": "intake_B_flattened_lindqvist.pdf",
+          "page": 1,
+          "bbox": [
+            234.7,
+            127.0,
+            259.7,
+            139.4
+          ],
+          "label_bbox": [
+            173.0,
+            127.3,
+            230.5,
+            139.7
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "phone": {
+        "value": "(651) 555-0163",
+        "raw_value": "651-555-0163",
+        "field_label": "Phone",
+        "template_field": "patient_info.phone",
+        "source": {
+          "filename": "intake_B_flattened_lindqvist.pdf",
+          "page": 1,
+          "bbox": [
+            391.9,
+            127.0,
+            448.0,
+            139.4
+          ],
+          "label_bbox": [
+            359.2,
+            127.3,
+            387.7,
+            139.7
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "address": {
+        "value": "77 Birch Hollow Road",
+        "raw_value": "77 Birch Hollow Road",
+        "field_label": "Street Address",
+        "template_field": "patient_info.address",
+        "source": {
+          "filename": "intake_B_flattened_lindqvist.pdf",
+          "page": 1,
+          "bbox": [
+            106.2,
+            148.0,
+            192.8,
+            160.4
+          ],
+          "label_bbox": [
+            40.0,
+            148.3,
+            102.0,
+            160.7
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "city": {
+        "value": "Saint Paul",
+        "raw_value": "Saint Paul",
+        "field_label": "City",
+        "template_field": "patient_info.city",
+        "source": {
+          "filename": "intake_B_flattened_lindqvist.pdf",
+          "page": 1,
+          "bbox": [
+            62.2,
+            169.0,
+            103.2,
+            181.4
+          ],
+          "label_bbox": [
+            40.0,
+            169.3,
+            58.0,
+            181.7
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "state": {
+        "value": "MN",
+        "raw_value": "Minnesota",
+        "field_label": "State",
+        "template_field": "patient_info.state",
+        "source": {
+          "filename": "intake_B_flattened_lindqvist.pdf",
+          "page": 1,
+          "bbox": [
+            280.5,
+            169.0,
+            322.0,
+            181.4
+          ],
+          "label_bbox": [
+            252.8,
+            169.3,
+            276.3,
+            181.7
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": [
+            "state name normalised to MN"
+          ]
+        }
+      },
+      "zip": {
+        "value": "55105",
+        "raw_value": "55105",
+        "field_label": "ZIP",
+        "template_field": "patient_info.zip",
+        "source": {
+          "filename": "intake_B_flattened_lindqvist.pdf",
+          "page": 1,
+          "bbox": [
+            406.5,
+            169.0,
+            431.5,
+            181.4
+          ],
+          "label_bbox": [
+            385.8,
+            169.3,
+            402.3,
+            181.7
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "valid",
+          "messages": []
+        }
+      },
+      "email": {
+        "value": "grace.lindqvist@example",
+        "raw_value": "grace.lindqvist@example",
+        "field_label": "Email",
+        "template_field": "patient_info.email",
+        "source": {
+          "filename": "intake_B_flattened_lindqvist.pdf",
+          "page": 1,
+          "bbox": [
+            69.2,
+            190.0,
+            169.9,
+            202.4
+          ],
+          "label_bbox": [
+            40.0,
+            190.3,
+            65.0,
+            202.7
+          ]
+        },
+        "extraction_method": "layout_key_value",
+        "confidence": 0.92,
+        "validation": {
+          "status": "invalid",
+          "messages": [
+            "not a valid e-mail address"
+          ]
+        }
+      },
+      "source_pages": [
+        1
+      ]
+    },
+    "spouse": null,
+    "emergency_contacts": [
+      {
+        "emergency_contact_id": "EMC_001",
+        "entity_type": "emergency_contact",
+        "section_id": "emergency_contact",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "name": {
+          "value": "Ingrid Lindqvist",
+          "raw_value": "Ingrid Lindqvist",
+          "field_label": "Contact Name",
+          "template_field": "emergency_contact.name",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              104.2,
+              304.0,
+              164.7,
+              316.4
+            ],
+            "label_bbox": [
+              40.0,
+              304.3,
+              100.0,
+              316.7
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "relationship": {
+          "value": "Mother",
+          "raw_value": "Mother",
+          "field_label": "Relationship to Patient",
+          "template_field": "emergency_contact.relationship",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              349.5,
+              304.0,
+              377.6,
+              316.4
+            ],
+            "label_bbox": [
+              252.8,
+              304.3,
+              345.3,
+              316.7
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "phone": {
+          "value": "(651) 555-0110",
+          "raw_value": "651-555-0110",
+          "field_label": "Phone",
+          "template_field": "emergency_contact.phone",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              455.8,
+              304.0,
+              511.8,
+              316.4
+            ],
+            "label_bbox": [
+              423.0,
+              304.3,
+              451.6,
+              316.7
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "insurance_policies": [
+      {
+        "policy_id": "INS_001",
+        "entity_type": "insurance_policy",
+        "section_id": "primary_insurance",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "policy_type": {
+          "value": "primary",
+          "raw_value": "Primary Insurance",
+          "field_label": "section heading 'Primary Insurance'",
+          "template_field": "primary_insurance.policy_type",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              40.0,
+              334.7,
+              140.3,
+              350.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "insurance_company": {
+          "value": "Northstar Health Cooperative",
+          "raw_value": "Northstar Health Cooperative",
+          "field_label": "Insurance Company",
+          "template_field": "primary_insurance.insurance_company",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              127.2,
+              361.0,
+              243.8,
+              373.4
+            ],
+            "label_bbox": [
+              40.0,
+              361.3,
+              123.0,
+              373.7
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "phone": {
+          "value": "(888) 555-0102",
+          "raw_value": "888-555-0102",
+          "field_label": "Insurance Phone",
+          "template_field": "primary_insurance.phone",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              433.9,
+              361.0,
+              490.0,
+              373.4
+            ],
+            "label_bbox": [
+              359.2,
+              361.3,
+              429.7,
+              373.7
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "policy_holder": {
+          "name": {
+            "value": "Grace Lindqvist",
+            "raw_value": "Grace Lindqvist",
+            "field_label": "Policy Holder Name",
+            "template_field": "primary_insurance.policy_holder.name",
+            "source": {
+              "filename": "intake_B_flattened_lindqvist.pdf",
+              "page": 1,
+              "bbox": [
+                126.2,
+                382.0,
+                188.7,
+                394.4
+              ],
+              "label_bbox": [
+                40.0,
+                382.3,
+                122.0,
+                394.7
+              ]
+            },
+            "extraction_method": "layout_key_value",
+            "confidence": 0.92,
+            "validation": {
+              "status": "valid",
+              "messages": []
+            }
+          },
+          "relationship_to_patient": {
+            "value": "self",
+            "raw_value": "Self",
+            "field_label": "Relationship to Patient",
+            "template_field": "primary_insurance.policy_holder.relationship_to_patient",
+            "source": {
+              "filename": "intake_B_flattened_lindqvist.pdf",
+              "page": 1,
+              "bbox": [
+                349.5,
+                382.0,
+                365.1,
+                394.4
+              ],
+              "label_bbox": [
+                252.8,
+                382.3,
+                345.3,
+                394.7
+              ]
+            },
+            "extraction_method": "layout_key_value",
+            "confidence": 0.92,
+            "validation": {
+              "status": "valid",
+              "messages": []
+            }
+          },
+          "date_of_birth": {
+            "value": "1990-11-02",
+            "raw_value": "11/02/1990",
+            "field_label": "Holder DOB",
+            "template_field": "primary_insurance.policy_holder.date_of_birth",
+            "source": {
+              "filename": "intake_B_flattened_lindqvist.pdf",
+              "page": 1,
+              "bbox": [
+                478.3,
+                382.0,
+                523.3,
+                394.4
+              ],
+              "label_bbox": [
+                423.0,
+                382.3,
+                474.1,
+                394.7
+              ]
+            },
+            "extraction_method": "layout_key_value",
+            "confidence": 0.92,
+            "validation": {
+              "status": "valid",
+              "messages": [
+                "numeric date interpreted as MM/DD (US form convention)"
+              ]
+            }
+          }
+        },
+        "insurance_id": {
+          "value": "NHC-30019284",
+          "raw_value": "NHC-30019284",
+          "field_label": "Insurance ID",
+          "template_field": "primary_insurance.insurance_id",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              97.7,
+              403.0,
+              160.2,
+              415.4
+            ],
+            "label_bbox": [
+              40.0,
+              403.3,
+              93.5,
+              415.7
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "group_number": {
+          "value": "88213",
+          "raw_value": "88213",
+          "field_label": "Group Number",
+          "template_field": "primary_insurance.group_number",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              372.2,
+              403.0,
+              397.2,
+              415.4
+            ],
+            "label_bbox": [
+              306.0,
+              403.3,
+              368.0,
+              415.7
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "insurance_company_id": "INSCO_001",
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "insurance_companies": [
+      {
+        "company_id": "INSCO_001",
+        "entity_type": "insurance_company",
+        "section_id": "primary_insurance",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Northstar Health Cooperative",
+          "raw_value": "Northstar Health Cooperative",
+          "field_label": "Insurance Company",
+          "template_field": "primary_insurance.insurance_company",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              127.2,
+              361.0,
+              243.8,
+              373.4
+            ],
+            "label_bbox": [
+              40.0,
+              361.3,
+              123.0,
+              373.7
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from INS_001.insurance_company"
+          ]
+        },
+        "referenced_by": [
+          "INS_001"
+        ],
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "medications": [
+      {
+        "medication_id": "MED_001",
+        "entity_type": "medication",
+        "section_id": "medications",
+        "record": {
+          "part": "table",
+          "record_key": "row1",
+          "index": 1
+        },
+        "name": {
+          "value": "Levothyroxine",
+          "raw_value": "Levothyroxine",
+          "field_label": "Medication Name",
+          "template_field": "medications.name",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              41.2,
+              587.0,
+              97.2,
+              599.4
+            ],
+            "label_bbox": [
+              42.0,
+              572.9,
+              111.9,
+              584.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "dosage": {
+          "value": "75 mcg",
+          "raw_value": "75 mcg",
+          "field_label": "Dosage",
+          "template_field": "medications.dosage",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              200.8,
+              587.0,
+              230.3,
+              599.4
+            ],
+            "label_bbox": [
+              201.6,
+              572.9,
+              232.3,
+              584.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "frequency": {
+          "value": "Every morning",
+          "raw_value": "Every morning",
+          "field_label": "Frequency",
+          "template_field": "medications.frequency",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              291.2,
+              587.0,
+              349.3,
+              599.4
+            ],
+            "label_bbox": [
+              292.0,
+              572.9,
+              335.0,
+              584.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor": {
+          "value": "Dr. Erik Holm",
+          "raw_value": "Dr. Erik Holm",
+          "field_label": "Prescribing Doctor",
+          "template_field": "medications.prescribing_doctor",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              397.6,
+              587.0,
+              451.1,
+              599.4
+            ],
+            "label_bbox": [
+              398.4,
+              572.9,
+              475.0,
+              584.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "prescribing_doctor_id": "DR_001",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "medication_id": "MED_002",
+        "entity_type": "medication",
+        "section_id": "medications",
+        "record": {
+          "part": "table",
+          "record_key": "row2",
+          "index": 2
+        },
+        "name": {
+          "value": "Ibuprofen",
+          "raw_value": "Ibuprofen",
+          "field_label": "Medication Name",
+          "template_field": "medications.name",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              41.2,
+              605.0,
+              79.2,
+              617.4
+            ],
+            "label_bbox": [
+              42.0,
+              572.9,
+              111.9,
+              584.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "dosage": {
+          "value": "200 mg",
+          "raw_value": "200 mg",
+          "field_label": "Dosage",
+          "template_field": "medications.dosage",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              200.8,
+              605.0,
+              230.8,
+              617.4
+            ],
+            "label_bbox": [
+              201.6,
+              572.9,
+              232.3,
+              584.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "frequency": {
+          "value": "As needed for pain",
+          "raw_value": "As needed for pain",
+          "field_label": "Frequency",
+          "template_field": "medications.frequency",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              291.2,
+              605.0,
+              366.8,
+              617.4
+            ],
+            "label_bbox": [
+              292.0,
+              572.9,
+              335.0,
+              584.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "doctors": [
+      {
+        "doctor_id": "DR_001",
+        "entity_type": "doctor",
+        "section_id": "medications",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Dr. Erik Holm",
+          "raw_value": "Dr. Erik Holm",
+          "field_label": "Prescribing Doctor",
+          "template_field": "medications.prescribing_doctor",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 1,
+            "bbox": [
+              397.6,
+              587.0,
+              451.1,
+              599.4
+            ],
+            "label_bbox": [
+              398.4,
+              572.9,
+              475.0,
+              584.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "entity created from MED_001.prescribing_doctor"
+          ]
+        },
+        "referenced_by": [
+          "MED_001"
+        ],
+        "source_pages": [
+          1
+        ]
+      }
+    ],
+    "allergies": [
+      {
+        "allergy_id": "ALG_001",
+        "entity_type": "allergy",
+        "section_id": "allergies",
+        "record": {
+          "part": "table",
+          "record_key": "row1",
+          "index": 1
+        },
+        "allergen": {
+          "value": "Sulfa drugs",
+          "raw_value": "Sulfa drugs",
+          "field_label": "Allergen",
+          "template_field": "allergies.allergen",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              41.2,
+              85.0,
+              86.7,
+              97.4
+            ],
+            "label_bbox": [
+              42.0,
+              70.9,
+              76.0,
+              82.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "reaction": {
+          "value": "Rash",
+          "raw_value": "Rash",
+          "field_label": "Reaction",
+          "template_field": "allergies.reaction",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              254.0,
+              85.0,
+              275.0,
+              97.4
+            ],
+            "label_bbox": [
+              254.8,
+              70.9,
+              290.7,
+              82.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "severity": {
+          "value": "mild",
+          "raw_value": "Mild",
+          "field_label": "Severity",
+          "template_field": "allergies.severity",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              440.2,
+              85.0,
+              456.7,
+              97.4
+            ],
+            "label_bbox": [
+              441.0,
+              70.9,
+              474.1,
+              82.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "medical_conditions": [
+      {
+        "medical_condition_id": "COND_001",
+        "entity_type": "medical_condition",
+        "section_id": "medical_history",
+        "record": {
+          "part": "checklist",
+          "record_key": "thyroid_disorder",
+          "index": 1
+        },
+        "name": {
+          "value": "Thyroid Disorder",
+          "raw_value": "Thyroid Disorder",
+          "field_label": "Thyroid Disorder",
+          "template_field": "medical_history.thyroid_disorder",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              173.0,
+              228.3,
+              253.5,
+              240.7
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "layout_checkbox+vector_checkbox",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "checklist_option": "thyroid_disorder",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_002",
+        "entity_type": "medical_condition",
+        "section_id": "medical_history",
+        "record": {
+          "part": "checklist",
+          "record_key": "depression_anxiety",
+          "index": 2
+        },
+        "name": {
+          "value": "Depression/Anxiety",
+          "raw_value": "Depression/Anxiety",
+          "field_label": "Depression/Anxiety",
+          "template_field": "medical_history.depression_anxiety",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              306.0,
+              228.3,
+              397.5,
+              240.7
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "layout_checkbox+vector_checkbox",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "checklist_option": "depression_anxiety",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_003",
+        "entity_type": "medical_condition",
+        "section_id": "family_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Hypothyroidism",
+          "raw_value": "Hypothyroidism",
+          "field_label": "Medical Conditions",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              275.3,
+              447.0,
+              337.3,
+              459.4
+            ],
+            "label_bbox": [
+              276.1,
+              432.9,
+              354.0,
+              444.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'Hypothyroidism'"
+          ]
+        },
+        "owner_id": "FAM_001",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_004",
+        "entity_type": "medical_condition",
+        "section_id": "family_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "High cholesterol",
+          "raw_value": "High cholesterol, Gout",
+          "field_label": "Medical Conditions",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              275.3,
+              465.0,
+              364.3,
+              477.4
+            ],
+            "label_bbox": [
+              276.1,
+              432.9,
+              354.0,
+              444.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'High cholesterol, Gout'"
+          ]
+        },
+        "owner_id": "FAM_002",
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "medical_condition_id": "COND_005",
+        "entity_type": "medical_condition",
+        "section_id": "family_history",
+        "record": {
+          "part": "derived",
+          "record_key": null,
+          "index": 1
+        },
+        "name": {
+          "value": "Gout",
+          "raw_value": "High cholesterol, Gout",
+          "field_label": "Medical Conditions",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              275.3,
+              465.0,
+              364.3,
+              477.4
+            ],
+            "label_bbox": [
+              276.1,
+              432.9,
+              354.0,
+              444.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "notes": [
+            "item split from list value 'High cholesterol, Gout'"
+          ]
+        },
+        "owner_id": "FAM_002",
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "surgeries": [],
+    "hospitals": [],
+    "family_members": [
+      {
+        "family_member_id": "FAM_001",
+        "entity_type": "family_member",
+        "section_id": "family_history",
+        "record": {
+          "part": "row_table",
+          "record_key": "mother",
+          "index": 1
+        },
+        "relation": {
+          "value": "mother",
+          "raw_value": "Mother",
+          "field_label": "Relation",
+          "template_field": "family_history.relation",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              42.0,
+              447.3,
+              70.0,
+              459.7
+            ],
+            "label_bbox": [
+              42.0,
+              432.9,
+              75.5,
+              444.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "living_status": {
+          "value": "living",
+          "raw_value": "Living",
+          "field_label": "Living/Deceased",
+          "template_field": "family_history.living_status",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              126.3,
+              447.0,
+              149.8,
+              459.4
+            ],
+            "label_bbox": [
+              127.1,
+              432.9,
+              194.2,
+              444.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "age": {
+          "value": 62,
+          "raw_value": "62",
+          "field_label": "Age",
+          "template_field": "family_history.age",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              222.1,
+              447.0,
+              232.1,
+              459.4
+            ],
+            "label_bbox": [
+              222.9,
+              432.9,
+              238.9,
+              444.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "conditions": {
+          "value": [
+            "Hypothyroidism"
+          ],
+          "raw_value": "Hypothyroidism",
+          "field_label": "Medical Conditions",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              275.3,
+              447.0,
+              337.3,
+              459.4
+            ],
+            "label_bbox": [
+              276.1,
+              432.9,
+              354.0,
+              444.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "conditions_ids": [
+          "COND_003"
+        ],
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "family_member_id": "FAM_002",
+        "entity_type": "family_member",
+        "section_id": "family_history",
+        "record": {
+          "part": "row_table",
+          "record_key": "father",
+          "index": 2
+        },
+        "relation": {
+          "value": "father",
+          "raw_value": "Father",
+          "field_label": "Relation",
+          "template_field": "family_history.relation",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              42.0,
+              465.3,
+              68.0,
+              477.7
+            ],
+            "label_bbox": [
+              42.0,
+              432.9,
+              75.5,
+              444.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "living_status": {
+          "value": "living",
+          "raw_value": "Living",
+          "field_label": "Living/Deceased",
+          "template_field": "family_history.living_status",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              126.3,
+              465.0,
+              149.8,
+              477.4
+            ],
+            "label_bbox": [
+              127.1,
+              432.9,
+              194.2,
+              444.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "age": {
+          "value": 64,
+          "raw_value": "64",
+          "field_label": "Age",
+          "template_field": "family_history.age",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              222.1,
+              465.0,
+              232.1,
+              477.4
+            ],
+            "label_bbox": [
+              222.9,
+              432.9,
+              238.9,
+              444.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "conditions": {
+          "value": [
+            "High cholesterol",
+            "Gout"
+          ],
+          "raw_value": "High cholesterol, Gout",
+          "field_label": "Medical Conditions",
+          "template_field": "family_history.conditions",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              275.3,
+              465.0,
+              364.3,
+              477.4
+            ],
+            "label_bbox": [
+              276.1,
+              432.9,
+              354.0,
+              444.6
+            ]
+          },
+          "extraction_method": "layout_table",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "conditions_ids": [
+          "COND_004",
+          "COND_005"
+        ],
+        "source_pages": [
+          2
+        ]
+      }
+    ],
+    "consents": [
+      {
+        "consent_id": "CONS_001",
+        "entity_type": "consent",
+        "section_id": "communication_consent",
+        "record": {
+          "part": "fields",
+          "record_key": "voicemail",
+          "index": 1
+        },
+        "category": {
+          "value": "communication",
+          "raw_value": "Communication Consent",
+          "field_label": "section heading 'Communication Consent'",
+          "template_field": "communication_consent.category",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "permission_type": {
+          "value": "voicemail",
+          "raw_value": "Communication Consent",
+          "field_label": "section heading 'Communication Consent'",
+          "template_field": "communication_consent.permission_type",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "question": "May we leave a voicemail?",
+        "decision": {
+          "value": "no",
+          "raw_value": "[ ] Yes [X] No",
+          "field_label": "May we leave a voicemail",
+          "template_field": "communication_consent.voicemail",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              161.5,
+              559.3,
+              235.0,
+              571.7
+            ],
+            "label_bbox": [
+              40.0,
+              559.3,
+              147.5,
+              571.7
+            ]
+          },
+          "extraction_method": "layout_checkbox+vector_checkbox",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "consent_id": "CONS_002",
+        "entity_type": "consent",
+        "section_id": "communication_consent",
+        "record": {
+          "part": "fields",
+          "record_key": "text_message",
+          "index": 1
+        },
+        "category": {
+          "value": "communication",
+          "raw_value": "Communication Consent",
+          "field_label": "section heading 'Communication Consent'",
+          "template_field": "communication_consent.category",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "permission_type": {
+          "value": "text_message",
+          "raw_value": "Communication Consent",
+          "field_label": "section heading 'Communication Consent'",
+          "template_field": "communication_consent.permission_type",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "question": "May we send text messages?",
+        "decision": {
+          "value": "yes",
+          "raw_value": "[X] Yes [ ] No",
+          "field_label": "May we send text messages",
+          "template_field": "communication_consent.text_message",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              172.5,
+              580.3,
+              246.1,
+              592.7
+            ],
+            "label_bbox": [
+              40.0,
+              580.3,
+              158.5,
+              592.7
+            ]
+          },
+          "extraction_method": "layout_checkbox+vector_checkbox",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "consent_id": "CONS_003",
+        "entity_type": "consent",
+        "section_id": "communication_consent",
+        "record": {
+          "part": "fields",
+          "record_key": "email",
+          "index": 1
+        },
+        "category": {
+          "value": "communication",
+          "raw_value": "Communication Consent",
+          "field_label": "section heading 'Communication Consent'",
+          "template_field": "communication_consent.category",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "permission_type": {
+          "value": "email",
+          "raw_value": "Communication Consent",
+          "field_label": "section heading 'Communication Consent'",
+          "template_field": "communication_consent.permission_type",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "question": "May we contact you by email?",
+        "decision": {
+          "value": "yes",
+          "raw_value": "[X] Yes [ ] No",
+          "field_label": "May we contact you by email",
+          "template_field": "communication_consent.email",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 2,
+            "bbox": [
+              174.5,
+              601.3,
+              248.0,
+              613.7
+            ],
+            "label_bbox": [
+              40.0,
+              601.3,
+              160.5,
+              613.7
+            ]
+          },
+          "extraction_method": "layout_checkbox+vector_checkbox",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          2
+        ]
+      },
+      {
+        "consent_id": "CONS_004",
+        "entity_type": "consent",
+        "section_id": "release_of_information",
+        "record": {
+          "part": "fields",
+          "record_key": "release_authorized",
+          "index": 1
+        },
+        "category": {
+          "value": "disclosure",
+          "raw_value": "Authorization to Release Information",
+          "field_label": "section heading 'Authorization to Release Information'",
+          "template_field": "release_of_information.category",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              43.7,
+              241.3,
+              59.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "permission_type": {
+          "value": "release_of_health_information",
+          "raw_value": "Authorization to Release Information",
+          "field_label": "section heading 'Authorization to Release Information'",
+          "template_field": "release_of_information.permission_type",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              43.7,
+              241.3,
+              59.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "question": "I authorize the clinic to discuss my health information with the individuals listed below",
+        "decision": {
+          "value": "no",
+          "raw_value": "[ ] Yes [X] No",
+          "field_label": "I authorize the clinic to discuss my health information with the individuals listed below",
+          "template_field": "release_of_information.release_authorized",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              394.6,
+              70.3,
+              468.1,
+              82.7
+            ],
+            "label_bbox": [
+              40.0,
+              70.3,
+              380.6,
+              82.7
+            ]
+          },
+          "extraction_method": "layout_checkbox+vector_checkbox",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      }
+    ],
+    "authorized_family_members": [],
+    "agreements": [
+      {
+        "agreement_id": "AGR_001",
+        "entity_type": "agreement",
+        "section_id": "consent_to_treatment",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "agreement_type": {
+          "value": "consent_to_treatment",
+          "raw_value": "Consent to Treatment",
+          "field_label": "section heading 'Consent to Treatment'",
+          "template_field": "consent_to_treatment.agreement_type",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              157.7,
+              158.8,
+              173.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "title": {
+          "value": "Consent to Treatment",
+          "raw_value": "Consent to Treatment",
+          "field_label": "section heading 'Consent to Treatment'",
+          "template_field": "consent_to_treatment.title",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              157.7,
+              158.8,
+              173.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      },
+      {
+        "agreement_id": "AGR_002",
+        "entity_type": "agreement",
+        "section_id": "hipaa_acknowledgment",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "agreement_type": {
+          "value": "hipaa_acknowledgment",
+          "raw_value": "HIPAA Acknowledgment",
+          "field_label": "section heading 'HIPAA Acknowledgment'",
+          "template_field": "hipaa_acknowledgment.agreement_type",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              242.7,
+              174.2,
+              258.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "title": {
+          "value": "HIPAA Acknowledgment",
+          "raw_value": "HIPAA Acknowledgment",
+          "field_label": "section heading 'HIPAA Acknowledgment'",
+          "template_field": "hipaa_acknowledgment.title",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              242.7,
+              174.2,
+              258.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      },
+      {
+        "agreement_id": "AGR_003",
+        "entity_type": "agreement",
+        "section_id": "financial_agreement",
+        "record": {
+          "part": "fields",
+          "record_key": "main",
+          "index": 1
+        },
+        "agreement_type": {
+          "value": "financial_responsibility",
+          "raw_value": "Financial Responsibility Agreement",
+          "field_label": "section heading 'Financial Responsibility Agreement'",
+          "template_field": "financial_agreement.agreement_type",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              327.7,
+              234.9,
+              343.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "title": {
+          "value": "Financial Responsibility Agreement",
+          "raw_value": "Financial Responsibility Agreement",
+          "field_label": "section heading 'Financial Responsibility Agreement'",
+          "template_field": "financial_agreement.title",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              40.0,
+              327.7,
+              234.9,
+              343.5
+            ],
+            "label_bbox": null
+          },
+          "extraction_method": "section_context",
+          "confidence": 0.95,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      }
+    ],
+    "signatures": [
+      {
+        "signature_id": "SIG_001",
+        "entity_type": "signature",
+        "section_id": "consent_to_treatment",
+        "record": {
+          "part": "fields",
+          "record_key": "signature",
+          "index": 1
+        },
+        "signature_present": {
+          "value": true,
+          "raw_value": "Grace Lindqvist",
+          "field_label": "Patient Signature",
+          "template_field": "consent_to_treatment.signature",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              115.7,
+              212.0,
+              178.3,
+              224.4
+            ],
+            "label_bbox": [
+              40.0,
+              212.3,
+              111.5,
+              224.7
+            ]
+          },
+          "extraction_method": "signature_typed_text",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "signature_evidence": "typed_text"
+        },
+        "printed_name": {
+          "value": "Grace Lindqvist",
+          "raw_value": "Grace Lindqvist",
+          "field_label": "Printed Name",
+          "template_field": "consent_to_treatment.printed_name",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              314.5,
+              212.0,
+              377.0,
+              224.4
+            ],
+            "label_bbox": [
+              252.8,
+              212.3,
+              310.3,
+              224.7
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          }
+        },
+        "signed_date": {
+          "value": "2026-11-05",
+          "raw_value": "11/05/2026",
+          "field_label": "Date",
+          "template_field": "consent_to_treatment.signed_date",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              464.7,
+              212.0,
+              509.7,
+              224.4
+            ],
+            "label_bbox": [
+              439.0,
+              212.3,
+              460.5,
+              224.7
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": [
+              "numeric date interpreted as MM/DD (US form convention)"
+            ]
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      },
+      {
+        "signature_id": "SIG_002",
+        "entity_type": "signature",
+        "section_id": "hipaa_acknowledgment",
+        "record": {
+          "part": "fields",
+          "record_key": "signature",
+          "index": 1
+        },
+        "signature_present": {
+          "value": true,
+          "raw_value": "Grace Lindqvist",
+          "field_label": "Patient Signature",
+          "template_field": "hipaa_acknowledgment.signature",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              115.7,
+              297.0,
+              178.3,
+              309.4
+            ],
+            "label_bbox": [
+              40.0,
+              297.3,
+              111.5,
+              309.7
+            ]
+          },
+          "extraction_method": "signature_typed_text",
+          "confidence": 0.9,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "signature_evidence": "typed_text"
+        },
+        "signed_date": {
+          "value": "2026-11-05",
+          "raw_value": "11/05/2026",
+          "field_label": "Date",
+          "template_field": "hipaa_acknowledgment.signed_date",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              464.7,
+              297.0,
+              509.7,
+              309.4
+            ],
+            "label_bbox": [
+              439.0,
+              297.3,
+              460.5,
+              309.7
+            ]
+          },
+          "extraction_method": "layout_key_value",
+          "confidence": 0.92,
+          "validation": {
+            "status": "valid",
+            "messages": [
+              "numeric date interpreted as MM/DD (US form convention)"
+            ]
+          }
+        },
+        "source_pages": [
+          3
+        ]
+      },
+      {
+        "signature_id": "SIG_003",
+        "entity_type": "signature",
+        "section_id": "financial_agreement",
+        "record": {
+          "part": "fields",
+          "record_key": "signature",
+          "index": 1
+        },
+        "signature_present": {
+          "value": false,
+          "raw_value": false,
+          "field_label": "Patient Signature",
+          "template_field": "financial_agreement.signature",
+          "source": {
+            "filename": "intake_B_flattened_lindqvist.pdf",
+            "page": 3,
+            "bbox": [
+              111.5,
+              366.3,
+              252.8,
+              400.7
+            ],
+            "label_bbox": [
+              40.0,
+              382.3,
+              111.5,
+              394.7
+            ]
+          },
+          "extraction_method": "signature_detection",
+          "confidence": 0.75,
+          "validation": {
+            "status": "valid",
+            "messages": []
+          },
+          "signature_evidence": "none",
+          "notes": [
+            "signature line found but empty"
+          ]
+        },
+        "source_pages": [
+          3
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "relationship_id": "REL_001",
+      "subject": "PAT_001",
+      "predicate": "HAS_EMERGENCY_CONTACT",
+      "object": "EMC_001",
+      "support": "explicit",
+      "confidence": 0.92,
+      "basis": "emergency contact details inside section 'Emergency Contact' (heading 'Emergency Contact', page 1) of the patient's own intake form",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "emergency_contact",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              277.7,
+              148.0,
+              293.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              104.2,
+              304.0,
+              164.7,
+              316.4
+            ],
+            "attribute": "emergency_contact.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              349.5,
+              304.0,
+              377.6,
+              316.4
+            ],
+            "attribute": "emergency_contact.relationship"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              455.8,
+              304.0,
+              511.8,
+              316.4
+            ],
+            "attribute": "emergency_contact.phone"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_002",
+      "subject": "INS_001",
+      "predicate": "ISSUED_BY",
+      "object": "INSCO_001",
+      "support": "explicit",
+      "confidence": 0.92,
+      "basis": "'Insurance Company' recorded in the same section as the insurance policy",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "primary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              334.7,
+              140.3,
+              350.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              127.2,
+              361.0,
+              243.8,
+              373.4
+            ],
+            "attribute": "primary_insurance.insurance_company"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_003",
+      "subject": "PAT_001",
+      "predicate": "HAS_INSURANCE",
+      "object": "INS_001",
+      "support": "explicit",
+      "confidence": 0.92,
+      "basis": "insurance policy details inside section 'Primary Insurance' (heading 'Primary Insurance', page 1) of the patient's own intake form",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "primary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              334.7,
+              140.3,
+              350.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              127.2,
+              361.0,
+              243.8,
+              373.4
+            ],
+            "attribute": "primary_insurance.insurance_company"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              433.9,
+              361.0,
+              490.0,
+              373.4
+            ],
+            "attribute": "primary_insurance.phone"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              126.2,
+              382.0,
+              188.7,
+              394.4
+            ],
+            "attribute": "primary_insurance.policy_holder.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              349.5,
+              382.0,
+              365.1,
+              394.4
+            ],
+            "attribute": "primary_insurance.policy_holder.relationship_to_patient"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              478.3,
+              382.0,
+              523.3,
+              394.4
+            ],
+            "attribute": "primary_insurance.policy_holder.date_of_birth"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              97.7,
+              403.0,
+              160.2,
+              415.4
+            ],
+            "attribute": "primary_insurance.insurance_id"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_004",
+      "subject": "MED_001",
+      "predicate": "PRESCRIBED_BY",
+      "object": "DR_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'Prescribing Doctor' recorded on the same table row as the medication",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              532.7,
+              151.2,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              41.2,
+              587.0,
+              97.2,
+              599.4
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              397.6,
+              587.0,
+              451.1,
+              599.4
+            ],
+            "attribute": "medications.prescribing_doctor"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_005",
+      "subject": "PAT_001",
+      "predicate": "TAKES_MEDICATION",
+      "object": "MED_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "row 1 inside section 'Current Medications' (heading 'Current Medications', page 1)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              532.7,
+              151.2,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              41.2,
+              587.0,
+              97.2,
+              599.4
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              200.8,
+              587.0,
+              230.3,
+              599.4
+            ],
+            "attribute": "medications.dosage"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              291.2,
+              587.0,
+              349.3,
+              599.4
+            ],
+            "attribute": "medications.frequency"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              397.6,
+              587.0,
+              451.1,
+              599.4
+            ],
+            "attribute": "medications.prescribing_doctor"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_006",
+      "subject": "PAT_001",
+      "predicate": "TAKES_MEDICATION",
+      "object": "MED_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "row 2 inside section 'Current Medications' (heading 'Current Medications', page 1)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "medications",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              532.7,
+              151.2,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              41.2,
+              605.0,
+              79.2,
+              617.4
+            ],
+            "attribute": "medications.name"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              200.8,
+              605.0,
+              230.8,
+              617.4
+            ],
+            "attribute": "medications.dosage"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              291.2,
+              605.0,
+              366.8,
+              617.4
+            ],
+            "attribute": "medications.frequency"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_007",
+      "subject": "PAT_001",
+      "predicate": "HAS_ALLERGY",
+      "object": "ALG_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "row 1 inside section 'Allergies' (heading 'Allergies', page 2)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "allergies",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              43.7,
+              88.6,
+              59.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              41.2,
+              85.0,
+              86.7,
+              97.4
+            ],
+            "attribute": "allergies.allergen"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              254.0,
+              85.0,
+              275.0,
+              97.4
+            ],
+            "attribute": "allergies.reaction"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              440.2,
+              85.0,
+              456.7,
+              97.4
+            ],
+            "attribute": "allergies.severity"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_008",
+      "subject": "PAT_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "box ticked next to 'Thyroid Disorder' inside section 'Past Medical History' (heading 'Past Medical History', page 2)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "medical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              170.7,
+              152.5,
+              186.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              173.0,
+              228.3,
+              253.5,
+              240.7
+            ],
+            "attribute": "medical_history.thyroid_disorder"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_009",
+      "subject": "PAT_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "box ticked next to 'Depression/Anxiety' inside section 'Past Medical History' (heading 'Past Medical History', page 2)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "medical_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              170.7,
+              152.5,
+              186.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              306.0,
+              228.3,
+              397.5,
+              240.7
+            ],
+            "attribute": "medical_history.depression_anxiety"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_010",
+      "subject": "FAM_001",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_003",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'Hypothyroidism' listed in the 'Medical Conditions' cell of the 'Mother' row of 'Family Medical History'",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              405.7,
+              164.6,
+              421.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              275.3,
+              447.0,
+              337.3,
+              459.4
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_011",
+      "subject": "PAT_001",
+      "predicate": "HAS_FAMILY_HISTORY",
+      "object": "FAM_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'Mother' row inside section 'Family Medical History' (heading 'Family Medical History', page 2)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              405.7,
+              164.6,
+              421.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              42.0,
+              447.3,
+              70.0,
+              459.7
+            ],
+            "attribute": "family_history.relation"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              126.3,
+              447.0,
+              149.8,
+              459.4
+            ],
+            "attribute": "family_history.living_status"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              222.1,
+              447.0,
+              232.1,
+              459.4
+            ],
+            "attribute": "family_history.age"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              275.3,
+              447.0,
+              337.3,
+              459.4
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_012",
+      "subject": "FAM_002",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_004",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'High cholesterol' listed in the 'Medical Conditions' cell of the 'Father' row of 'Family Medical History'",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              405.7,
+              164.6,
+              421.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              275.3,
+              465.0,
+              364.3,
+              477.4
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_013",
+      "subject": "FAM_002",
+      "predicate": "HAS_CONDITION",
+      "object": "COND_005",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'Gout' listed in the 'Medical Conditions' cell of the 'Father' row of 'Family Medical History'",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              405.7,
+              164.6,
+              421.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              275.3,
+              465.0,
+              364.3,
+              477.4
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_014",
+      "subject": "PAT_001",
+      "predicate": "HAS_FAMILY_HISTORY",
+      "object": "FAM_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'Father' row inside section 'Family Medical History' (heading 'Family Medical History', page 2)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "family_history",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              405.7,
+              164.6,
+              421.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              42.0,
+              465.3,
+              68.0,
+              477.7
+            ],
+            "attribute": "family_history.relation"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              126.3,
+              465.0,
+              149.8,
+              477.4
+            ],
+            "attribute": "family_history.living_status"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              222.1,
+              465.0,
+              232.1,
+              477.4
+            ],
+            "attribute": "family_history.age"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              275.3,
+              465.0,
+              364.3,
+              477.4
+            ],
+            "attribute": "family_history.conditions"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_015",
+      "subject": "PAT_001",
+      "predicate": "PROVIDES_CONSENT",
+      "object": "CONS_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "answer to 'May we leave a voicemail' inside section 'Communication Consent' (heading 'Communication Consent', page 2)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              161.5,
+              559.3,
+              235.0,
+              571.7
+            ],
+            "attribute": "communication_consent.voicemail"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_016",
+      "subject": "CONS_001",
+      "predicate": "DECLINES_COMMUNICATION",
+      "object_value": "voicemail",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'NO' marked for 'May we leave a voicemail?'",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              161.5,
+              559.3,
+              235.0,
+              571.7
+            ],
+            "attribute": "communication_consent.voicemail"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_017",
+      "subject": "PAT_001",
+      "predicate": "PROVIDES_CONSENT",
+      "object": "CONS_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "answer to 'May we send text messages' inside section 'Communication Consent' (heading 'Communication Consent', page 2)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              172.5,
+              580.3,
+              246.1,
+              592.7
+            ],
+            "attribute": "communication_consent.text_message"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_018",
+      "subject": "CONS_002",
+      "predicate": "AUTHORIZES_COMMUNICATION",
+      "object_value": "text_message",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'YES' marked for 'May we send text messages?'",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              172.5,
+              580.3,
+              246.1,
+              592.7
+            ],
+            "attribute": "communication_consent.text_message"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_019",
+      "subject": "PAT_001",
+      "predicate": "PROVIDES_CONSENT",
+      "object": "CONS_003",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "answer to 'May we contact you by email' inside section 'Communication Consent' (heading 'Communication Consent', page 2)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              174.5,
+              601.3,
+              248.0,
+              613.7
+            ],
+            "attribute": "communication_consent.email"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_020",
+      "subject": "CONS_003",
+      "predicate": "AUTHORIZES_COMMUNICATION",
+      "object_value": "email",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "'YES' marked for 'May we contact you by email?'",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "communication_consent",
+        "pages": [
+          2
+        ],
+        "locations": [
+          {
+            "page": 2,
+            "bbox": [
+              40.0,
+              532.7,
+              176.1,
+              548.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 2,
+            "bbox": [
+              174.5,
+              601.3,
+              248.0,
+              613.7
+            ],
+            "attribute": "communication_consent.email"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_021",
+      "subject": "PAT_001",
+      "predicate": "PROVIDES_CONSENT",
+      "object": "CONS_004",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "answer to 'I authorize the clinic to discuss my health information with the individuals listed below' inside section 'Authorization to Release Information' (heading 'Authorization to Release Information', page 3)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "release_of_information",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              43.7,
+              241.3,
+              59.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              394.6,
+              70.3,
+              468.1,
+              82.7
+            ],
+            "attribute": "release_of_information.release_authorized"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_022",
+      "subject": "SIG_001",
+      "predicate": "SIGNATURE_FOR",
+      "object": "AGR_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "signature block printed under 'Consent to Treatment' inside section 'Consent to Treatment' (heading 'Consent to Treatment', page 3)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "consent_to_treatment",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              157.7,
+              158.8,
+              173.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              115.7,
+              212.0,
+              178.3,
+              224.4
+            ],
+            "attribute": "consent_to_treatment.signature"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              314.5,
+              212.0,
+              377.0,
+              224.4
+            ],
+            "attribute": "consent_to_treatment.printed_name"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              464.7,
+              212.0,
+              509.7,
+              224.4
+            ],
+            "attribute": "consent_to_treatment.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_023",
+      "subject": "SIG_002",
+      "predicate": "SIGNATURE_FOR",
+      "object": "AGR_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "signature block printed under 'HIPAA Acknowledgment' inside section 'HIPAA Acknowledgment' (heading 'HIPAA Acknowledgment', page 3)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "hipaa_acknowledgment",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              242.7,
+              174.2,
+              258.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              115.7,
+              297.0,
+              178.3,
+              309.4
+            ],
+            "attribute": "hipaa_acknowledgment.signature"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              464.7,
+              297.0,
+              509.7,
+              309.4
+            ],
+            "attribute": "hipaa_acknowledgment.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_024",
+      "subject": "SIG_003",
+      "predicate": "SIGNATURE_FOR",
+      "object": "AGR_003",
+      "support": "explicit",
+      "confidence": 0.75,
+      "basis": "signature block printed under 'Financial Responsibility Agreement' inside section 'Financial Responsibility Agreement' (heading 'Financial Responsibility Agreement', page 3)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "financial_agreement",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              327.7,
+              234.9,
+              343.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              111.5,
+              366.3,
+              252.8,
+              400.7
+            ],
+            "attribute": "financial_agreement.signature"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_025",
+      "subject": "INS_001",
+      "predicate": "HELD_BY",
+      "object": "PAT_001",
+      "support": "explicit",
+      "confidence": 0.92,
+      "basis": "policy holder 'Relationship to Patient' is 'Self'",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "primary_insurance",
+        "pages": [
+          1
+        ],
+        "locations": [
+          {
+            "page": 1,
+            "bbox": [
+              40.0,
+              334.7,
+              140.3,
+              350.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              349.5,
+              382.0,
+              365.1,
+              394.4
+            ],
+            "attribute": "primary_insurance.policy_holder.relationship_to_patient"
+          },
+          {
+            "page": 1,
+            "bbox": [
+              126.2,
+              382.0,
+              188.7,
+              394.4
+            ],
+            "attribute": "primary_insurance.policy_holder.name"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_026",
+      "subject": "PAT_001",
+      "predicate": "SIGNS",
+      "object": "AGR_001",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "signature found on the 'Patient Signature' line of 'Consent to Treatment' (page 3)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "consent_to_treatment",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              157.7,
+              158.8,
+              173.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              115.7,
+              212.0,
+              178.3,
+              224.4
+            ],
+            "attribute": "consent_to_treatment.signature"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              314.5,
+              212.0,
+              377.0,
+              224.4
+            ],
+            "attribute": "consent_to_treatment.printed_name"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              464.7,
+              212.0,
+              509.7,
+              224.4
+            ],
+            "attribute": "consent_to_treatment.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    },
+    {
+      "relationship_id": "REL_027",
+      "subject": "PAT_001",
+      "predicate": "SIGNS",
+      "object": "AGR_002",
+      "support": "explicit",
+      "confidence": 0.9,
+      "basis": "signature found on the 'Patient Signature' line of 'HIPAA Acknowledgment' (page 3)",
+      "evidence": {
+        "source_file": "intake_B_flattened_lindqvist.pdf",
+        "section_id": "hipaa_acknowledgment",
+        "pages": [
+          3
+        ],
+        "locations": [
+          {
+            "page": 3,
+            "bbox": [
+              40.0,
+              242.7,
+              174.2,
+              258.5
+            ],
+            "attribute": "section_heading"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              115.7,
+              297.0,
+              178.3,
+              309.4
+            ],
+            "attribute": "hipaa_acknowledgment.signature"
+          },
+          {
+            "page": 3,
+            "bbox": [
+              464.7,
+              297.0,
+              509.7,
+              309.4
+            ],
+            "attribute": "hipaa_acknowledgment.signed_date"
+          }
+        ]
+      },
+      "review_required": false
+    }
+  ],
+  "missing_information": [
+    {
+      "ref": "surgical_history.table",
+      "section_id": "surgical_history",
+      "label": "Surgical History",
+      "severity": "no_records",
+      "reason": "section present but no records were found"
+    },
+    {
+      "ref": "release_of_information.table",
+      "section_id": "release_of_information",
+      "label": "Authorization to Release Information",
+      "severity": "no_records",
+      "reason": "section present but no records were found"
+    },
+    {
+      "ref": "financial_agreement.signature",
+      "section_id": "financial_agreement",
+      "entity_id": "AGR_003",
+      "label": "Financial Responsibility Agreement signature",
+      "severity": "required",
+      "reason": "signature line empty or not found"
+    },
+    {
+      "ref": "spouse_info.name",
+      "section_id": "spouse_info",
+      "entity_id": null,
+      "label": "Spouse Name",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "spouse_info.date_of_birth",
+      "section_id": "spouse_info",
+      "entity_id": null,
+      "label": "Date of Birth",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "spouse_info.phone",
+      "section_id": "spouse_info",
+      "entity_id": null,
+      "label": "Phone",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "secondary_insurance.insurance_company",
+      "section_id": "secondary_insurance",
+      "entity_id": null,
+      "label": "Insurance Company",
+      "severity": "required",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "secondary_insurance.phone",
+      "section_id": "secondary_insurance",
+      "entity_id": null,
+      "label": "Insurance Phone",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "secondary_insurance.policy_holder.name",
+      "section_id": "secondary_insurance",
+      "entity_id": null,
+      "label": "Policy Holder Name",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "secondary_insurance.policy_holder.relationship_to_patient",
+      "section_id": "secondary_insurance",
+      "entity_id": null,
+      "label": "Relationship to Patient",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "secondary_insurance.policy_holder.date_of_birth",
+      "section_id": "secondary_insurance",
+      "entity_id": null,
+      "label": "Holder DOB",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "secondary_insurance.insurance_id",
+      "section_id": "secondary_insurance",
+      "entity_id": null,
+      "label": "Insurance ID",
+      "severity": "required",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "secondary_insurance.group_number",
+      "section_id": "secondary_insurance",
+      "entity_id": null,
+      "label": "Group Number",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "hipaa_acknowledgment.printed_name",
+      "section_id": "hipaa_acknowledgment",
+      "entity_id": "SIG_002",
+      "label": "Printed Name",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "financial_agreement.printed_name",
+      "section_id": "financial_agreement",
+      "entity_id": "SIG_003",
+      "label": "Printed Name",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "financial_agreement.signed_date",
+      "section_id": "financial_agreement",
+      "entity_id": "SIG_003",
+      "label": "Date",
+      "severity": "required",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "MED_002",
+      "section_id": "medications",
+      "entity_id": "MED_002",
+      "label": "Prescribing Doctor",
+      "severity": "incomplete_record",
+      "reason": "record 2 has no value for: Prescribing Doctor"
+    }
+  ],
+  "validation": {
+    "status": "needs_review",
+    "checks": [
+      {
+        "check": "document_isolation",
+        "status": "passed",
+        "checked": 98,
+        "issues": []
+      },
+      {
+        "check": "predicate_signatures",
+        "status": "passed",
+        "checked": 27,
+        "issues": []
+      },
+      {
+        "check": "medication_record_integrity",
+        "status": "passed",
+        "checked": 2,
+        "issues": []
+      },
+      {
+        "check": "insurance_policy_separation",
+        "status": "passed",
+        "checked": 1,
+        "issues": []
+      },
+      {
+        "check": "family_history_separation",
+        "status": "passed",
+        "checked": 7,
+        "issues": []
+      },
+      {
+        "check": "consent_decision_integrity",
+        "status": "passed",
+        "checked": 4,
+        "issues": []
+      },
+      {
+        "check": "signature_agreement_binding",
+        "status": "passed",
+        "checked": 6,
+        "issues": []
+      }
+    ],
+    "errors": [],
+    "warnings": [
+      {
+        "code": "agreement_not_signed",
+        "ref": "AGR_003",
+        "message": "no signature detected for 'Financial Responsibility Agreement'"
+      }
+    ]
+  },
+  "manual_review": [
+    {
+      "review_id": "REV_001",
+      "kind": "attribute",
+      "ref": "PAT_001.email",
+      "field_label": "Email",
+      "value": "grace.lindqvist@example",
+      "status": "invalid",
+      "reason": "not a valid e-mail address",
+      "page": 1,
+      "bbox": [
+        69.2,
+        190.0,
+        169.9,
+        202.4
+      ]
+    }
+  ],
+  "unmapped_content": []
+}

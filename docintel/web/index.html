@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>docintel</title>
+<style>
+:root{
+  --bg:#f4f5f7; --panel:#ffffff; --panel2:#fafbfc; --ink:#1a1d21; --muted:#5f6873; --line:#e2e5e9;
+  --accent:#2f5bd3; --accent-weak:#e9eefc; --ok:#1b7f45; --ok-bg:#e4f3ea; --warn:#9a5b00; --warn-bg:#fcf0dc;
+  --bad:#b83232; --bad-bg:#fae6e6; --info:#465670; --info-bg:#e8ecf2;
+  --hl:rgba(47,91,211,.20); --hl-line:#2f5bd3; --lb:rgba(200,120,0,.14); --lb-line:#c27800;
+  --shadow:0 1px 2px rgba(16,24,40,.06),0 1px 3px rgba(16,24,40,.08); --radius:10px;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#121417; --panel:#1b1e23; --panel2:#20242a; --ink:#e6e8eb; --muted:#9aa2ad; --line:#2d3138;
+  --accent:#7d9bff; --accent-weak:#222b44; --ok:#62cd8f; --ok-bg:#16301f; --warn:#efb45c; --warn-bg:#33270f;
+  --bad:#ff8080; --bad-bg:#3b1b1b; --info:#aab6ca; --info-bg:#252a32;
+  --hl:rgba(125,155,255,.28); --hl-line:#8fa9ff; --lb:rgba(239,180,92,.18); --lb-line:#efb45c;
+  --shadow:0 1px 2px rgba(0,0,0,.4);
+}}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;flex-direction:column}
+button,input,select{font:inherit;color:inherit}
+a{color:var(--accent)}
+.top{display:flex;align-items:center;gap:16px;padding:10px 18px;background:var(--panel);border-bottom:1px solid var(--line)}
+.brand{font-weight:700;font-size:16px;display:flex;align-items:center;gap:8px}
+.brand .logo{width:22px;height:22px;border-radius:6px;background:var(--accent);display:inline-grid;place-items:center;color:#fff;font-size:12px}
+.brand .sub{font-weight:400;color:var(--muted);font-size:13px}
+.top .grow{flex:1}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);cursor:pointer;text-decoration:none;color:var(--ink);font-size:13px;white-space:nowrap}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.danger{color:var(--bad)}
+.btn[aria-disabled=true]{opacity:.45;pointer-events:none}
+.app{flex:1;display:grid;grid-template-columns:290px 1fr;min-height:0}
+.side{background:var(--panel);border-right:1px solid var(--line);overflow:auto;padding:14px}
+.drop{border:1.5px dashed var(--line);border-radius:var(--radius);padding:16px;text-align:center;color:var(--muted);cursor:pointer;transition:.15s}
+.drop.over,.drop:hover{border-color:var(--accent);background:var(--accent-weak);color:var(--ink)}
+.drop small{font-size:12px}
+.notice{margin-top:10px;padding:9px 11px;border-radius:8px;background:var(--warn-bg);color:var(--warn);font-size:12.5px;line-height:1.4}
+.side-title{margin:18px 2px 8px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);display:flex;justify-content:space-between}
+#doclist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+#doclist li{padding:10px;border:1px solid var(--line);border-radius:8px;cursor:pointer;background:var(--panel2)}
+#doclist li:hover{border-color:var(--accent)}
+#doclist li.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-weak)}
+.row1{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.fname{font-size:13px;margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mini{font-size:12px;color:var(--muted);margin-top:2px}
+.mini.bad{color:var(--bad)}
+.docid{font-family:ui-monospace,Consolas,monospace;font-size:12px;color:var(--muted)}
+.badge{display:inline-block;padding:1px 8px;border-radius:999px;font-size:11.5px;font-weight:600;white-space:nowrap}
+.b-ok{background:var(--ok-bg);color:var(--ok)} .b-warn{background:var(--warn-bg);color:var(--warn)}
+.b-bad{background:var(--bad-bg);color:var(--bad)} .b-info{background:var(--info-bg);color:var(--info)}
+main{min-width:0;min-height:0;display:flex;flex-direction:column}
+.empty{margin:auto;color:var(--muted);text-align:center;padding:40px}
+.empty h2{color:var(--ink);font-size:18px;margin:0 0 6px}
+#docview{flex:1;display:flex;flex-direction:column;min-height:0;padding:14px 18px;gap:12px}
+.dochead{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap}
+.dochead h1{font-size:18px;margin:2px 0 4px;word-break:break-all}
+.meta{color:var(--muted);font-size:12.5px}
+.actions{display:flex;gap:6px;flex-wrap:wrap}
+.stats{display:flex;gap:8px;flex-wrap:wrap}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 12px;min-width:92px}
+.stat b{display:block;font-size:17px}
+.stat span{font-size:11.5px;color:var(--muted)}
+.stat.warn b{color:var(--warn)} .stat.bad b{color:var(--bad)}
+.split{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:12px}
+.pane{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);min-height:0;display:flex;flex-direction:column}
+.tabs{display:flex;gap:2px;border-bottom:1px solid var(--line);padding:6px 8px 0;flex-wrap:wrap}
+.tabs button{border:0;background:none;padding:8px 10px;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;font-size:13px}
+.tabs button.on{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
+.tabs .n{font-size:11px;background:var(--info-bg);color:var(--info);border-radius:999px;padding:0 6px;margin-left:4px}
+.tabs .n.warn{background:var(--warn-bg);color:var(--warn)}
+.tab-body{overflow:auto;padding:12px;flex:1}
+.group{margin-bottom:16px}
+.group-h{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:2px 2px 6px}
+.group-h .count{background:var(--info-bg);color:var(--info);border-radius:999px;padding:0 6px;margin-left:4px}
+.card{border:1px solid var(--line);border-radius:8px;margin-bottom:8px;background:var(--panel2);overflow:hidden}
+.card.flash{box-shadow:0 0 0 2px var(--accent)}
+.card-h{display:flex;gap:8px;align-items:baseline;padding:7px 10px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.eid{font-family:ui-monospace,Consolas,monospace;font-weight:700;font-size:12.5px;color:var(--accent)}
+.etype{font-weight:600}
+.where{color:var(--muted);font-size:12px;margin-left:auto}
+table.attrs{width:100%;border-collapse:collapse;font-size:13px}
+table.attrs td{padding:5px 10px;border-top:1px solid var(--line);vertical-align:top}
+table.attrs tr:first-child td{border-top:0}
+table.attrs tr{cursor:pointer}
+table.attrs tr:hover{background:var(--accent-weak)}
+table.attrs tr.sel{background:var(--accent-weak);box-shadow:inset 3px 0 0 var(--accent)}
+td.k{color:var(--muted);width:30%;font-family:ui-monospace,Consolas,monospace;font-size:12px;word-break:break-all}
+td.v{font-weight:500;word-break:break-word}
+td.lbl{color:var(--muted);font-size:12px;width:22%}
+td.c{width:86px;white-space:nowrap}
+.nil{color:var(--muted)}
+.conf{display:inline-block;width:38px;height:5px;border-radius:3px;background:var(--line);vertical-align:middle;overflow:hidden}
+.conf i{display:block;height:100%;background:var(--ok)}
+.conf.lo i{background:var(--warn)}
+.cv{font-size:11.5px;color:var(--muted);margin-left:5px}
+.st{font-size:11px;font-weight:700;padding:0 6px;border-radius:999px;white-space:nowrap}
+.st.valid{color:var(--ok);background:var(--ok-bg)} .st.warning,.st.needs_review{color:var(--warn);background:var(--warn-bg)}
+.st.invalid{color:var(--bad);background:var(--bad-bg)}
+.rels{padding:7px 10px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:5px}
+.chip{font-size:11.5px;border:1px solid var(--line);border-radius:999px;padding:1px 8px;cursor:pointer;background:var(--panel);font-family:ui-monospace,Consolas,monospace}
+.chip:hover{border-color:var(--accent)}
+.chip.uncertain{border-color:var(--warn);color:var(--warn);background:var(--warn-bg)}
+.toolbar{display:flex;gap:6px;margin-bottom:10px;align-items:center;flex-wrap:wrap}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:var(--panel);padding:5px 10px;cursor:pointer;font-size:12.5px;color:var(--muted)}
+.seg button.on{background:var(--accent-weak);color:var(--ink);font-weight:600}
+.relrow,.item{border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-bottom:6px;cursor:pointer;background:var(--panel2)}
+.relrow:hover,.item:hover{border-color:var(--accent)}
+.relrow.sel,.item.sel{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-weak)}
+.relrow.uncertain{border-left:3px solid var(--warn)}
+.rl1{display:flex;gap:6px;flex-wrap:wrap;align-items:baseline}
+.pred{font-family:ui-monospace,Consolas,monospace;font-size:12px;font-weight:700;padding:0 6px;border-radius:4px;background:var(--info-bg);color:var(--info)}
+.nm{color:var(--muted);font-size:12.5px}
+.rl2{font-size:12px;color:var(--muted);margin-top:3px}
+.reasons{font-size:12.5px;color:var(--warn);margin-top:4px}
+.eid-link{font-family:ui-monospace,Consolas,monospace;color:var(--accent);cursor:pointer;font-weight:600;font-size:12.5px}
+.eid-link:hover{text-decoration:underline}
+.item .ref{font-family:ui-monospace,Consolas,monospace;font-size:12.5px;font-weight:600}
+.item .why{font-size:13px;margin-top:3px}
+.check{border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-bottom:6px;background:var(--panel2)}
+.check-h{display:flex;justify-content:space-between;gap:8px}
+.check ul{margin:6px 0 0;padding-left:18px;font-size:12.5px}
+.ask form{display:grid;gap:8px}
+.ask select,.ask input{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.ask .two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ask .hint{font-size:12.5px;color:var(--muted)}
+pre.ans{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:10px;overflow:auto;font-size:12.5px;white-space:pre-wrap;word-break:break-word;min-height:60px}
+.viewer-bar{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;border-bottom:1px solid var(--line);gap:8px}
+.pager{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+.pager button{border:1px solid var(--line);background:var(--panel);border-radius:6px;width:28px;height:26px;cursor:pointer}
+.caption{padding:8px 12px;font-size:12.5px;color:var(--muted);border-bottom:1px solid var(--line);min-height:36px}
+.caption b{color:var(--ink)}
+.caption .warnline{color:var(--warn);display:block;margin-top:2px}
+.pagewrap{overflow:auto;flex:1;padding:12px;background:var(--bg)}
+.page{position:relative;width:100%;max-width:820px;margin:0 auto;background:#fff;box-shadow:var(--shadow)}
+.page img{display:block;width:100%;height:auto}
+#overlay{position:absolute;inset:0;pointer-events:none}
+.hl{position:absolute;border:2px solid var(--hl-line);background:var(--hl);border-radius:3px;animation:pop .35s ease}
+.hl.label{border:1.5px dashed var(--lb-line);background:var(--lb)}
+@keyframes pop{from{transform:scale(1.25);opacity:0}to{transform:none;opacity:1}}
+.legend{font-size:11.5px;color:var(--muted);display:flex;gap:10px;align-items:center}
+.legend i{display:inline-block;width:12px;height:9px;border-radius:2px;margin-right:4px;vertical-align:middle}
+.legend .lv{border:2px solid var(--hl-line);background:var(--hl)} .legend .ll{border:1.5px dashed var(--lb-line);background:var(--lb)}
+#toast{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:6px;z-index:9}
+.toast{background:var(--ink);color:var(--bg);padding:8px 12px;border-radius:8px;font-size:13px;box-shadow:var(--shadow);max-width:380px}
+.spin{display:inline-block;width:11px;height:11px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:sp .8s linear infinite;vertical-align:-1px}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media (max-width:1100px){.split{grid-template-columns:1fr}.pane.right{min-height:520px}}
+@media (max-width:760px){.app{grid-template-columns:1fr}.side{max-height:260px}#docview{padding:12px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">◆</span>docintel <span class="sub">relationship-aware intake extraction</span></div>
+  <div class="grow"></div>
+  <label class="btn primary" for="file">Upload PDFs</label>
+  <input id="file" type="file" accept="application/pdf,.pdf" multiple hidden>
+</header>
+<div class="app">
+  <aside class="side">
+    <div id="drop" class="drop"><b>Drop PDFs here</b><br><small>or click to choose · each file is processed on its own</small></div>
+    <div id="notice" class="notice" hidden><b>Public demo.</b> Upload only fictional or test documents: anyone with the link can see uploads. Uploads are cleared when the server restarts.</div>
+    <div class="side-title"><span>Documents</span><span id="doccount"></span></div>
+    <ul id="doclist"></ul>
+  </aside>
+  <main>
+    <div id="empty" class="empty"><h2><span class="spin"></span> Loading…</h2></div>
+    <section id="docview" hidden>
+      <div class="dochead">
+        <div>
+          <div class="docid" id="h-id"></div>
+          <h1 id="h-file"></h1>
+          <div class="meta" id="h-meta"></div>
+        </div>
+        <div class="actions">
+          <a class="btn" id="dl-json" download>Download JSON</a>
+          <a class="btn" id="dl-std" target="_blank" rel="noopener">Standardized PDF</a>
+          <a class="btn" id="dl-src" target="_blank" rel="noopener">Source PDF</a>
+          <button class="btn danger" id="del">Delete</button>
+        </div>
+      </div>
+      <div class="stats" id="stats"></div>
+      <div class="split">
+        <div class="pane">
+          <nav class="tabs" id="tabs"></nav>
+          <div id="tab-body" class="tab-body"></div>
+        </div>
+        <div class="pane right">
+          <div class="viewer-bar">
+            <div class="seg" id="which"><button data-w="source" class="on">Source</button><button data-w="standardized">Standardized</button></div>
+            <div class="legend"><span><i class="lv"></i>value</span><span><i class="ll"></i>label / heading</span></div>
+            <div class="pager"><button id="prev" title="Previous page">‹</button><span id="pg"></span><button id="next" title="Next page">›</button></div>
+          </div>
+          <div class="caption" id="caption">Click any value, relationship or review item to see where it came from.</div>
+          <div class="pagewrap" id="pagewrap"><div class="page" id="page"><img id="pageimg" alt="page preview"><div id="overlay"></div></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<div id="toast"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const S = {docs:[], pending:[], cur:null, data:null, entry:null, tab:"entities", which:"source", page:1, hl:[],
+           idx:{}, names:{}, out:{}, inn:{}, relFilter:"all", src:[], std:[], sel:null};
+
+const STATUS = {completed:["Completed","b-ok"], completed_with_warnings:["Warnings","b-warn"], needs_review:["Needs review","b-warn"],
+  needs_ocr:["Needs OCR","b-info"], failed_validation:["Failed validation","b-bad"], failed:["Failed","b-bad"], processing:["Processing","b-info"]};
+const badge = s => { const [t,c] = STATUS[s] || [s,"b-info"]; return `<span class="badge ${c}">${esc(t)}</span>`; };
+const pretty = s => { s = String(s||"").replace(/_/g," "); return s.charAt(0).toUpperCase() + s.slice(1); };
+
+async function api(path, opts){
+  const r = await fetch(path, opts);
+  const j = await r.json().catch(() => ({error:r.statusText}));
+  if(!r.ok) throw new Error(j.error || r.statusText);
+  return j;
+}
+function toast(msg, ms=3500){
+  const t = document.createElement("div"); t.className = "toast"; t.innerHTML = msg;
+  $("#toast").append(t); setTimeout(() => t.remove(), ms); return t;
+}
+
+/* ---------------------------------------------------------------- data helpers */
+function entityId(e){ for(const [k,v] of Object.entries(e)) if(k.endsWith("_id") && k!=="section_id" && typeof v==="string") return v; }
+function traces(o, pre=""){
+  const out = [];
+  for(const [k,v] of Object.entries(o)){
+    if(!v || typeof v!=="object" || Array.isArray(v) || k==="record") continue;
+    const p = pre ? pre+"."+k : k;
+    if("extraction_method" in v) out.push([p,v]); else out.push(...traces(v,p));
+  }
+  return out;
+}
+const getPath = (o,p) => p.split(".").reduce((x,k) => x?.[k], o);
+function displayName(e){
+  const g = k => getPath(e,k)?.value;
+  if(g("first_name")||g("last_name")) return [g("first_name"),g("last_name")].filter(Boolean).join(" ");
+  for(const k of ["name","full_name","allergen","procedure","permission_type","title"]) if(g(k)) return String(g(k)).replace(/_/g," ");
+  const r = getPath(e,"relation"); if(r) return r.raw_value;
+  if(e.entity_type==="signature") return g("signature_present") ? "signed" : "not signed";
+  return "";
+}
+function fmt(v){
+  if(v===null || v===undefined || v==="") return '<span class="nil">—</span>';
+  if(Array.isArray(v)) return v.length ? esc(v.join(", ")) : '<span class="nil">none</span>';
+  if(typeof v==="boolean") return v ? "Yes" : "No";
+  return esc(v);
+}
+function buildIndex(){
+  S.idx = {}; S.names = {}; S.out = {}; S.inn = {};
+  for(const v of Object.values(S.data.entities)){
+    for(const e of (v==null ? [] : Array.isArray(v) ? v : [v])){ const id = entityId(e); S.idx[id] = e; S.names[id] = displayName(e); }
+  }
+  for(const r of S.data.relationships){
+    (S.out[r.subject] ||= []).push(r);
+    if(r.object) (S.inn[r.object] ||= []).push(r);
+  }
+}
+const sectionTitle = sid => (S.data.sections.find(s => s.section_id===sid) || {}).title || pretty(sid);
+const relById = id => S.data.relationships.find(r => r.relationship_id===id);
+const ent = (id, name=true) => `<span class="eid-link" data-eid="${esc(id)}">${esc(id)}</span>${name && S.names[id] ? ` <span class="nm">${esc(S.names[id])}</span>` : ""}`;
+function linkify(text){
+  return esc(text).replace(/\b(REL_\d{3,})\b/g, '<span class="eid-link" data-rel="$1">$1</span>')
+                  .replace(/\b((?!REL_|DOC_|REV_)[A-Z]{2,5}_\d{3,})\b/g, '<span class="eid-link" data-eid="$1">$1</span>');
+}
+
+/* ---------------------------------------------------------------- document list */
+async function loadDocs(){
+  const j = await api("/api/documents"); S.docs = j.documents; S.publicDemo = !!j.public_demo;
+  $("#notice").hidden = !S.publicDemo;
+  renderList();
+}
+function renderList(){
+  $("#doccount").textContent = S.docs.length || "";
+  const pend = S.pending.map(n => `<li><div class="row1"><span class="docid">uploading</span><span class="badge b-info"><span class="spin"></span> Processing</span></div><div class="fname">${esc(n)}</div></li>`).join("");
+  $("#doclist").innerHTML = pend + S.docs.map(d => `
+    <li class="${d.document_id===S.cur ? "on" : ""}" data-id="${d.document_id}">
+      <div class="row1"><span class="docid">${d.document_id}</span>${badge(d.status)}</div>
+      <div class="fname" title="${esc(d.source_filename)}">${esc(d.source_filename)}</div>
+      ${d.counts ? `<div class="mini">${d.counts.entities} entities · ${d.counts.relationships} relationships · ${d.counts.manual_review_items} to review</div>` : ""}
+      ${d.error ? `<div class="mini bad">${esc(d.error)}</div>` : ""}
+    </li>`).join("") || (pend ? "" : '<li class="mini" style="cursor:default">No documents yet.</li>');
+}
+$("#doclist").addEventListener("click", e => { const li = e.target.closest("li[data-id]"); if(li) openDoc(li.dataset.id); });
+
+/* ---------------------------------------------------------------- open document */
+async function openDoc(id){
+  S.cur = id; location.hash = id; renderList();
+  const entry = S.docs.find(d => d.document_id===id);
+  if(!entry || entry.status==="failed" || entry.status==="processing"){
+    $("#docview").hidden = true; $("#empty").hidden = false;
+    $("#empty").innerHTML = entry ? `<h2>${esc(entry.source_filename)}</h2>${entry.error ? esc(entry.error) : "Processing…"}` : "<h2>Not found</h2>";
+    return;
+  }
+  const j = await api(`/api/doc/${id}`);
+  Object.assign(S, {data:j.doc, entry:j.entry, src:j.source_pages, std:j.standardized_pages, page:1, hl:[], which:"source", sel:null});
+  buildIndex();
+  $("#empty").hidden = true; $("#docview").hidden = false;
+  renderHeader(); renderTabs(); renderTab(); setWhich("source");
+  setCaption("Click any value, relationship or review item to see where it came from.");
+}
+function renderHeader(){
+  const d = S.data, c = S.entry.counts || {};
+  $("#h-id").innerHTML = `${d.document_id} ${badge(d.processing.status)}`;
+  $("#h-file").textContent = d.source.filename;
+  $("#h-meta").innerHTML = `${esc(d.document_type.replace(/_/g," "))} · ${d.source.page_count} page(s) · extraction: <b>${esc(d.processing.extraction_mode)}</b> · sha256 ${d.source.sha256.slice(0,12)}… · ${esc(d.processing.processed_at)}`;
+  $("#dl-json").href = `/files/${d.document_id}/json`;
+  $("#dl-src").href = `/files/${d.document_id}/source`;
+  $("#dl-std").href = `/files/${d.document_id}/standardized`;
+  $("#dl-std").setAttribute("aria-disabled", S.std.length ? "false" : "true");
+  $("#del").hidden = S.publicDemo && !!S.entry.sample;
+  const fr = S.entry.fill_report;
+  const stat = (n,l,cls="") => `<div class="stat ${cls}"><b>${n ?? 0}</b><span>${l}</span></div>`;
+  $("#stats").innerHTML = stat(c.entities,"entities") + stat(c.attributes,"traced values") + stat(c.relationships,"relationships")
+    + stat(c.uncertain_relationships,"uncertain links", c.uncertain_relationships ? "warn" : "")
+    + stat(c.manual_review_items,"review items", c.manual_review_items ? "warn" : "")
+    + stat(c.missing_items,"missing items") + stat(c.errors,"validation errors", c.errors ? "bad" : "")
+    + (fr ? stat(fr.filled_fields,`fields filled${fr.withheld_pending_review ? ` · ${fr.withheld_pending_review} withheld` : ""}`) : "");
+}
+
+/* ---------------------------------------------------------------- tabs */
+function renderTabs(){
+  const d = S.data, unc = d.relationships.filter(r => r.support==="uncertain").length;
+  const n = (v,w) => v ? `<span class="n ${w ? "warn" : ""}">${v}</span>` : "";
+  const tabs = [["entities","Entities", n(Object.keys(S.idx).length)], ["rels","Relationships", n(d.relationships.length) + n(unc,1)],
+    ["review","Review", n(d.manual_review.length,1)], ["missing","Missing", n(d.missing_information.length)],
+    ["checks","Validation", n(d.validation.errors.length,1)], ["ask","Ask", ""]];
+  $("#tabs").innerHTML = tabs.map(([k,l,x]) => `<button data-tab="${k}" class="${S.tab===k ? "on" : ""}">${l}${x}</button>`).join("");
+}
+$("#tabs").addEventListener("click", e => { const b = e.target.closest("button[data-tab]"); if(b){ S.tab = b.dataset.tab; renderTabs(); renderTab(); } });
+
+function renderTab(){
+  const body = $("#tab-body");
+  body.innerHTML = ({entities:tabEntities, rels:tabRels, review:tabReview, missing:tabMissing, checks:tabChecks, ask:tabAsk})[S.tab]();
+  body.scrollTop = 0;
+  if(S.tab==="ask") wireAsk();
+}
+
+function relChip(r, dir){
+  const tgt = dir==="out" ? (r.object ? `${r.object}${S.names[r.object] ? " "+S.names[r.object] : ""}` : `'${r.object_value}'`)
+                          : `${r.subject}${S.names[r.subject] ? " "+S.names[r.subject] : ""}`;
+  return `<span class="chip ${r.support}" data-rel="${r.relationship_id}" title="${esc(r.basis)}">${dir==="out" ? `${r.predicate} → ${esc(tgt)}` : `← ${esc(tgt)} ${r.predicate}`}</span>`;
+}
+function tabEntities(){
+  let h = "";
+  for(const [coll,v] of Object.entries(S.data.entities)){
+    const list = v==null ? [] : Array.isArray(v) ? v : [v];
+    if(!list.length) continue;
+    h += `<div class="group"><div class="group-h">${pretty(coll)}<span class="count">${list.length}</span></div>`;
+    for(const e of list){
+      const id = entityId(e), rec = e.record;
+      const where = rec.part==="table" ? `row ${rec.index}` : rec.part==="checklist" ? "checklist" : rec.part==="derived" ? "derived" : "";
+      const rows = traces(e).map(([p,t]) => {
+        const lo = t.confidence < 0.7;
+        return `<tr class="attr" data-eid="${id}" data-path="${esc(p)}">
+          <td class="k">${esc(p)}</td><td class="v">${fmt(t.value)}</td>
+          <td class="lbl" title="label as printed in the source">${esc(t.field_label)}</td>
+          <td class="c"><span class="conf ${lo ? "lo" : ""}"><i style="width:${Math.round(t.confidence*100)}%"></i></span><span class="cv">${t.confidence.toFixed(2)}</span></td>
+          <td><span class="st ${t.validation.status}">${pretty(t.validation.status)}</span></td></tr>`;
+      }).join("");
+      const chips = (S.inn[id]||[]).map(r => relChip(r,"in")).join("") + (S.out[id]||[]).map(r => relChip(r,"out")).join("");
+      h += `<div class="card" id="card-${id}">
+        <div class="card-h"><span class="eid">${id}</span><span class="etype">${esc(pretty(e.entity_type))}</span>
+          ${S.names[id] ? `<span class="nm">${esc(S.names[id])}</span>` : ""}
+          <span class="where">${esc(sectionTitle(e.section_id))}${where ? " · "+where : ""}${e.source_pages?.length ? " · p."+e.source_pages.join(",") : ""}</span></div>
+        ${rows ? `<table class="attrs">${rows}</table>` : ""}
+        ${chips ? `<div class="rels">${chips}</div>` : ""}</div>`;
+    }
+    h += "</div>";
+  }
+  return h || '<div class="empty">No entities were extracted.</div>';
+}
+function relRow(r){
+  const obj = r.object ? ent(r.object) : `<span class="nm">'${esc(r.object_value)}'</span>`;
+  return `<div class="relrow ${r.support}" data-rel="${r.relationship_id}">
+    <div class="rl1"><span class="docid">${r.relationship_id}</span> ${ent(r.subject)} <span class="pred">${r.predicate}</span> ${obj}</div>
+    <div class="rl2">${r.support==="explicit" ? '<span class="badge b-ok">explicit</span>' : '<span class="badge b-warn">uncertain</span>'}
+      conf ${r.confidence.toFixed(2)} · page ${r.evidence.pages.join(", ")} · ${esc(r.basis)}</div>
+    ${r.uncertainty_reasons ? `<div class="reasons">⚠ ${esc(r.uncertainty_reasons.join("; "))}</div>` : ""}</div>`;
+}
+function tabRels(){
+  const all = S.data.relationships, unc = all.filter(r => r.support==="uncertain");
+  const list = S.relFilter==="uncertain" ? unc : all;
+  return `<div class="toolbar"><div class="seg" id="relf"><button data-f="all" class="${S.relFilter==="all" ? "on" : ""}">All ${all.length}</button><button data-f="uncertain" class="${S.relFilter==="uncertain" ? "on" : ""}">Uncertain ${unc.length}</button></div></div>`
+    + (list.map(relRow).join("") || '<div class="empty">None.</div>');
+}
+function tabReview(){
+  const items = S.data.manual_review;
+  if(!items.length) return '<div class="empty"><h2>Nothing to review</h2>Every value and relationship passed validation.</div>';
+  return items.map((r,i) => `<div class="item" data-review="${i}">
+    <div class="row1"><span class="ref">${esc(r.review_id)} · ${linkify(r.ref ?? "")}</span><span class="badge b-warn">${esc(r.kind)}</span></div>
+    ${r.relationship ? `<div class="nm">${linkify(r.relationship)}</div>` : ""}
+    ${"value" in r ? `<div class="nm">value: ${fmt(r.value)}</div>` : ""}
+    <div class="why">${esc(r.reason)}</div></div>`).join("");
+}
+function tabMissing(){
+  const m = S.data.missing_information;
+  if(!m.length) return '<div class="empty">Nothing missing.</div>';
+  const cls = {required:"b-bad", incomplete_record:"b-warn", no_records:"b-info", not_provided:"b-info", section_not_found:"b-info"};
+  return m.map(x => `<div class="item" ${x.entity_id ? `data-eid="${esc(x.entity_id)}"` : ""}>
+    <div class="row1"><span class="ref">${linkify(x.ref)}</span><span class="badge ${cls[x.severity] || "b-info"}">${esc(pretty(x.severity))}</span></div>
+    <div class="why">${esc(x.label)} — ${esc(x.reason)}</div></div>`).join("");
+}
+function tabChecks(){
+  const v = S.data.validation;
+  const cls = {passed:"b-ok", warning:"b-warn", review:"b-warn", failed:"b-bad"};
+  let h = v.checks.map(c => `<div class="check"><div class="check-h"><b>${esc(pretty(c.check))}</b><span>${c.checked} checked <span class="badge ${cls[c.status]}">${esc(c.status)}</span></span></div>
+    ${c.issues.length ? `<ul>${c.issues.map(i => `<li>${linkify(i.ref)}: ${esc(i.message)}</li>`).join("")}</ul>` : ""}</div>`).join("");
+  if(v.warnings.length) h += `<div class="group-h" style="margin-top:14px">Warnings<span class="count">${v.warnings.length}</span></div>`
+    + `<div class="check"><ul>${v.warnings.map(w => `<li>${linkify(w.ref ?? "")} ${esc(w.message)}</li>`).join("")}</ul></div>`;
+  if(S.data.unmapped_content.length) h += `<div class="group-h" style="margin-top:14px">Unmapped label/value pairs</div><div class="check"><ul>${S.data.unmapped_content.map(u => `<li>p.${u.page} ${esc(u.label)}: ${esc(u.value)}</li>`).join("")}</ul></div>`;
+  return h;
+}
+
+/* ---------------------------------------------------------------- ask */
+const QUESTIONS = {
+  entity:["1 · What information belongs to this entity?","MED_001",false],
+  related:["2 · What information is related to this field?","MED_001.dosage",false],
+  owner:["3 · Which person does this information belong to?","COND_005 or INS_002.policy_holder.name",false],
+  section:["4 · Which section contains this information?","FAM_001.conditions",false],
+  between:["5 · What is the relationship between these two elements?","MED_001",true],
+  evidence:["6 & 7 · Which page supports this relationship? Explicit or uncertain?","REL_007",false],
+  find:["Find where a value appears (and whose it is)","hypertension",false]};
+function tabAsk(){
+  const refs = [];
+  for(const [id,e] of Object.entries(S.idx)){ refs.push(id); for(const [p] of traces(e)) refs.push(`${id}.${p}`); }
+  S.data.relationships.forEach(r => refs.push(r.relationship_id));
+  return `<div class="ask"><form id="askf">
+    <select id="aq">${Object.entries(QUESTIONS).map(([k,[l]]) => `<option value="${k}">${esc(l)}</option>`).join("")}</select>
+    <div class="two"><input id="a1" list="refs" autocomplete="off" required><input id="a2" list="refs" autocomplete="off" hidden></div>
+    <div><button class="btn primary" type="submit">Ask</button> <span class="hint">IDs in the answer are clickable.</span></div>
+    </form><datalist id="refs">${refs.map(r => `<option value="${esc(r)}">`).join("")}</datalist>
+    <pre class="ans" id="ans">Pick a question and a reference, e.g. an entity ID, an attribute path or a relationship ID.</pre></div>`;
+}
+function wireAsk(){
+  const sync = () => { const [,ph,two] = QUESTIONS[$("#aq").value]; $("#a1").placeholder = ph; $("#a2").hidden = !two; $("#a2").required = two; $("#a2").placeholder = "e.g. DR_001"; };
+  $("#aq").onchange = sync; sync();
+  $("#askf").onsubmit = async ev => {
+    ev.preventDefault();
+    const q = $("#aq").value, args = [$("#a1").value.trim()];
+    if(QUESTIONS[q][2]) args.push($("#a2").value.trim());
+    const qs = new URLSearchParams([["q",q], ...args.map(a => ["a",a])]);
+    try{ const j = await api(`/api/doc/${S.cur}/ask?${qs}`); $("#ans").innerHTML = linkify(JSON.stringify(j.answer, null, 2)); }
+    catch(e){ $("#ans").textContent = "⚠ " + e.message; }
+  };
+}
+
+/* ---------------------------------------------------------------- selection -> viewer */
+function markSel(el){ document.querySelectorAll(".sel").forEach(x => x.classList.remove("sel")); el?.classList.add("sel"); }
+function setCaption(html){ $("#caption").innerHTML = html; }
+function showAttr(eid, path, el){
+  const t = getPath(S.idx[eid], path); if(!t) return;
+  markSel(el);
+  S.hl = [];
+  if(t.source.bbox) S.hl.push({page:t.source.page, bbox:t.source.bbox, kind:"value"});
+  if(t.source.label_bbox) S.hl.push({page:t.source.page, bbox:t.source.label_bbox, kind:"label"});
+  const msgs = [...t.validation.messages, ...(t.notes || [])];
+  setCaption(`<b>${eid}.${esc(path)}</b> = <b>${fmt(t.value)}</b> · printed label “${esc(t.field_label)}” · page ${t.source.page ?? "—"} · ${esc(t.extraction_method)} · confidence ${t.confidence.toFixed(2)} · <span class="st ${t.validation.status}">${pretty(t.validation.status)}</span>`
+    + (t.source.acroform_field ? ` · form field <code>${esc([].concat(t.source.acroform_field).join(", "))}</code>` : "")
+    + (msgs.length ? `<span class="warnline">${esc(msgs.join("; "))}</span>` : ""));
+  focusHl();
+}
+function showRel(rid, el){
+  const r = relById(rid); if(!r) return;
+  markSel(el);
+  S.hl = r.evidence.locations.map(l => ({page:l.page, bbox:l.bbox, kind:l.attribute==="section_heading" ? "label" : "value"}));
+  const obj = r.object ? `${r.object}${S.names[r.object] ? " ("+esc(S.names[r.object])+")" : ""}` : `'${esc(r.object_value)}'`;
+  setCaption(`<b>${r.relationship_id}</b>: ${r.subject}${S.names[r.subject] ? " ("+esc(S.names[r.subject])+")" : ""} <span class="pred">${r.predicate}</span> ${obj}
+    · ${r.support==="explicit" ? '<span class="badge b-ok">explicit</span>' : '<span class="badge b-warn">uncertain</span>'} · page ${r.evidence.pages.join(", ")}
+    <span style="display:block;margin-top:2px">${esc(r.basis)}</span>${r.uncertainty_reasons ? `<span class="warnline">⚠ ${esc(r.uncertainty_reasons.join("; "))}</span>` : ""}`);
+  focusHl();
+}
+function showEntity(eid, el){
+  const e = S.idx[eid]; if(!e) return;
+  markSel(el);
+  S.hl = traces(e).filter(([,t]) => t.source.bbox).map(([,t]) => ({page:t.source.page, bbox:t.source.bbox, kind:"value"}));
+  setCaption(`<b>${eid}</b> ${esc(pretty(e.entity_type))} ${S.names[eid] ? "· "+esc(S.names[eid]) : ""} · ${esc(sectionTitle(e.section_id))} · all ${S.hl.length} traced value(s) highlighted`);
+  focusHl();
+}
+function jumpToCard(eid){
+  if(S.tab!=="entities"){ S.tab = "entities"; renderTabs(); renderTab(); }
+  const c = document.getElementById("card-"+eid);
+  if(c){ c.scrollIntoView({block:"center", behavior:"smooth"}); c.classList.add("flash"); setTimeout(() => c.classList.remove("flash"), 1400); }
+  showEntity(eid);
+}
+$("#tab-body").addEventListener("click", e => {
+  const f = e.target.closest("#relf button"); if(f){ S.relFilter = f.dataset.f; renderTab(); return; }
+  const link = e.target.closest(".eid-link");
+  if(link){ e.stopPropagation(); if(link.dataset.rel) showRel(link.dataset.rel); else jumpToCard(link.dataset.eid); return; }
+  const chip = e.target.closest(".chip[data-rel]"); if(chip) return showRel(chip.dataset.rel, chip);
+  const tr = e.target.closest("tr.attr"); if(tr) return showAttr(tr.dataset.eid, tr.dataset.path, tr);
+  const rr = e.target.closest(".relrow"); if(rr) return showRel(rr.dataset.rel, rr);
+  const it = e.target.closest(".item[data-review]");
+  if(it){
+    const r = S.data.manual_review[+it.dataset.review];
+    if(r.kind==="relationship" && relById(r.ref)) return showRel(r.ref, it);
+    if(r.kind==="attribute"){ const i = r.ref.indexOf("."); return showAttr(r.ref.slice(0,i), r.ref.slice(i+1), it); }
+    if(S.idx[r.ref]) return showEntity(r.ref, it);
+    if(r.kind==="page"){ markSel(it); S.hl = []; S.page = parseInt(r.ref.replace(/\D/g,"")) || 1; setWhich("source"); setCaption(esc(r.reason)); return; }
+    markSel(it); setCaption(esc(r.reason)); return;
+  }
+  const mi = e.target.closest(".item[data-eid]"); if(mi) return showEntity(mi.dataset.eid, mi);
+});
+
+/* ---------------------------------------------------------------- page viewer */
+function setWhich(w){
+  S.which = w;
+  document.querySelectorAll("#which button").forEach(b => b.classList.toggle("on", b.dataset.w===w));
+  renderViewer();
+}
+function focusHl(){ if(S.hl.length) S.page = S.hl[0].page; setWhich("source"); }
+function renderViewer(){
+  const pages = S.which==="source" ? S.src : S.std;
+  const img = $("#pageimg"), ov = $("#overlay");
+  if(!pages.length){
+    img.removeAttribute("src"); ov.innerHTML = ""; $("#pg").textContent = "—";
+    $("#page").style.aspectRatio = "612/200";
+    ov.innerHTML = `<div style="position:absolute;inset:0;display:grid;place-items:center;color:#667;font-size:13px">No standardized PDF for this document.</div>`;
+    return;
+  }
+  S.page = Math.min(Math.max(1, S.page), pages.length);
+  const [W,H] = pages[S.page-1];
+  $("#page").style.aspectRatio = `${W}/${H}`;
+  const url = `/api/doc/${S.cur}/page/${S.page}.png?which=${S.which}`;
+  $("#pg").textContent = `Page ${S.page} / ${pages.length}`;
+  const boxes = S.which==="source" ? S.hl.filter(h => h.page===S.page && h.bbox) : [];
+  const pad = 2;
+  ov.innerHTML = boxes.map(h => { const [x0,y0,x1,y1] = h.bbox;
+    return `<div class="hl ${h.kind}" style="left:${(x0-pad)/W*100}%;top:${(y0-pad)/H*100}%;width:${(x1-x0+2*pad)/W*100}%;height:${(y1-y0+2*pad)/H*100}%"></div>`; }).join("");
+  const others = S.which==="source" ? [...new Set(S.hl.filter(h => h.page!==S.page).map(h => h.page))] : [];
+  if(others.length) toast(`Also highlighted on page ${others.join(", ")}`, 2200);
+  const reveal = () => { const first = ov.querySelector(".hl:not(.label)") || ov.querySelector(".hl"); first?.scrollIntoView({block:"center", behavior:"smooth"}); };
+  // same page already loaded: no new load event will fire, so scroll right away
+  if(img.getAttribute("src")===url && img.complete && img.naturalWidth){ img.onload = null; requestAnimationFrame(reveal); }
+  else { img.onload = reveal; img.src = url; }
+}
+$("#which").addEventListener("click", e => { const b = e.target.closest("button[data-w]"); if(b) setWhich(b.dataset.w); });
+$("#prev").onclick = () => { S.page--; renderViewer(); };
+$("#next").onclick = () => { S.page++; renderViewer(); };
+
+/* ---------------------------------------------------------------- upload / delete */
+async function upload(files){
+  const pdfs = [...files].filter(f => /\.pdf$/i.test(f.name) || f.type==="application/pdf");
+  [...files].filter(f => !pdfs.includes(f)).forEach(f => toast(`${esc(f.name)}: not a PDF, skipped`));
+  let last = null;
+  for(const f of pdfs){
+    S.pending.push(f.name); renderList();
+    try{
+      const e = await api("/api/upload", {method:"POST", headers:{"Content-Type":"application/pdf", "X-Filename":encodeURIComponent(f.name)}, body:f});
+      last = e.document_id;
+      toast(`<b>${e.document_id}</b> ${esc(f.name)} — ${(STATUS[e.status] || [e.status])[0]}`);
+    }catch(err){ toast(`⚠ ${esc(f.name)}: ${esc(err.message)}`, 6000); }
+    S.pending.splice(S.pending.indexOf(f.name), 1);
+    await loadDocs();
+  }
+  if(last) openDoc(last);
+}
+$("#file").onchange = e => { upload(e.target.files); e.target.value = ""; };
+$("#drop").onclick = () => $("#file").click();
+["dragenter","dragover"].forEach(t => window.addEventListener(t, e => { e.preventDefault(); $("#drop").classList.add("over"); }));
+["dragleave","drop"].forEach(t => window.addEventListener(t, e => { e.preventDefault(); if(t==="drop" || !e.relatedTarget) $("#drop").classList.remove("over"); }));
+window.addEventListener("drop", e => { if(e.dataTransfer?.files?.length) upload(e.dataTransfer.files); });
+$("#del").onclick = async () => {
+  if(!S.cur || !confirm(`Delete ${S.cur} and its JSON / standardized PDF?`)) return;
+  try{ await api(`/api/doc/${S.cur}`, {method:"DELETE"}); toast(`${S.cur} deleted`); S.cur = null; location.hash = "";
+       $("#docview").hidden = true; $("#empty").hidden = false; $("#empty").innerHTML = "<h2>No document selected</h2>Upload a PDF or pick one from the list."; await loadDocs(); }
+  catch(e){ toast("⚠ " + esc(e.message)); }
+};
+
+/* ---------------------------------------------------------------- boot */
+(async () => {
+  // A free hosting tier puts the API to sleep when idle; the first request can fail while it wakes up.
+  for(let attempt = 0; attempt < 30; attempt++){
+    try{
+      await loadDocs();
+      const want = location.hash.slice(1);
+      const pick = S.docs.find(d => d.document_id===want) || S.docs.find(d => d.status==="needs_review") || S.docs[0];
+      if(pick) openDoc(pick.document_id);
+      else $("#empty").innerHTML = "<h2>No document selected</h2>Upload a PDF or pick one from the list.";
+      return;
+    }catch(e){
+      $("#empty").innerHTML = `<h2><span class="spin"></span> Starting the server…</h2>The hosting plan pauses the server when nobody is using it. Waking it up can take up to a minute.`;
+      await new Promise(r => setTimeout(r, 4000));
+    }
+  }
+  $("#empty").innerHTML = "<h2>The server is not responding</h2>Reload the page in a minute. If it keeps failing, check the API service.";
+})();
+</script>
+</body>
+</html>

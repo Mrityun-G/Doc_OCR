@@ -1,0 +1,2790 @@
+{
+  "file": "reference_template.pdf",
+  "pages": 3,
+  "fillable": true,
+  "recognised_headings": [
+    {
+      "section_id": "patient_info",
+      "text": "Patient Information",
+      "page": 1,
+      "bbox": [
+        40.0,
+        79.7,
+        144.8,
+        95.5
+      ]
+    },
+    {
+      "section_id": "spouse_info",
+      "text": "Spouse Information",
+      "page": 1,
+      "bbox": [
+        40.0,
+        220.7,
+        148.0,
+        236.5
+      ]
+    },
+    {
+      "section_id": "emergency_contact",
+      "text": "Emergency Contact",
+      "page": 1,
+      "bbox": [
+        40.0,
+        277.7,
+        148.0,
+        293.5
+      ]
+    },
+    {
+      "section_id": "primary_insurance",
+      "text": "Primary Insurance",
+      "page": 1,
+      "bbox": [
+        40.0,
+        334.7,
+        140.3,
+        350.5
+      ]
+    },
+    {
+      "section_id": "secondary_insurance",
+      "text": "Secondary Insurance",
+      "page": 1,
+      "bbox": [
+        40.0,
+        433.7,
+        156.3,
+        449.5
+      ]
+    },
+    {
+      "section_id": "medications",
+      "text": "Current Medications",
+      "page": 1,
+      "bbox": [
+        40.0,
+        532.7,
+        151.2,
+        548.5
+      ]
+    },
+    {
+      "section_id": "allergies",
+      "text": "Allergies",
+      "page": 2,
+      "bbox": [
+        40.0,
+        43.7,
+        88.6,
+        59.5
+      ]
+    },
+    {
+      "section_id": "medical_history",
+      "text": "Past Medical History",
+      "page": 2,
+      "bbox": [
+        40.0,
+        170.7,
+        152.5,
+        186.5
+      ]
+    },
+    {
+      "section_id": "surgical_history",
+      "text": "Surgical History",
+      "page": 2,
+      "bbox": [
+        40.0,
+        278.7,
+        128.2,
+        294.5
+      ]
+    },
+    {
+      "section_id": "family_history",
+      "text": "Family Medical History",
+      "page": 2,
+      "bbox": [
+        40.0,
+        405.7,
+        164.6,
+        421.5
+      ]
+    },
+    {
+      "section_id": "communication_consent",
+      "text": "Communication Consent",
+      "page": 2,
+      "bbox": [
+        40.0,
+        532.7,
+        176.1,
+        548.5
+      ]
+    },
+    {
+      "section_id": "release_of_information",
+      "text": "Authorization to Release Information",
+      "page": 3,
+      "bbox": [
+        40.0,
+        43.7,
+        241.3,
+        59.5
+      ]
+    },
+    {
+      "section_id": "consent_to_treatment",
+      "text": "Consent to Treatment",
+      "page": 3,
+      "bbox": [
+        40.0,
+        157.7,
+        158.8,
+        173.5
+      ]
+    },
+    {
+      "section_id": "hipaa_acknowledgment",
+      "text": "HIPAA Acknowledgment",
+      "page": 3,
+      "bbox": [
+        40.0,
+        242.7,
+        174.2,
+        258.5
+      ]
+    },
+    {
+      "section_id": "financial_agreement",
+      "text": "Financial Responsibility Agreement",
+      "page": 3,
+      "bbox": [
+        40.0,
+        327.7,
+        234.9,
+        343.5
+      ]
+    }
+  ],
+  "template_sections_not_found": [],
+  "widgets": [
+    {
+      "name": "pat_first_name",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        89.5,
+        106.0,
+        244.8,
+        120.0
+      ],
+      "nearby_label": "First Name",
+      "section_region": "patient_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "patient_info.fields.first_name"
+      ]
+    },
+    {
+      "name": "pat_last_name",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        301.8,
+        106.0,
+        431.0,
+        120.0
+      ],
+      "nearby_label": "Last Name",
+      "section_region": "patient_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "patient_info.fields.last_name"
+      ]
+    },
+    {
+      "name": "pat_dob",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        494.5,
+        106.0,
+        564.0,
+        120.0
+      ],
+      "nearby_label": "Date of Birth",
+      "section_region": "patient_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "patient_info.fields.date_of_birth"
+      ]
+    },
+    {
+      "name": "pat_sex",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        61.0,
+        127.0,
+        165.0,
+        141.0
+      ],
+      "nearby_label": "Sex",
+      "section_region": "patient_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "patient_info.fields.sex"
+      ]
+    },
+    {
+      "name": "pat_marital_status",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        233.5,
+        127.0,
+        351.2,
+        141.0
+      ],
+      "nearby_label": "Marital Status",
+      "section_region": "patient_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "patient_info.fields.marital_status"
+      ]
+    },
+    {
+      "name": "pat_phone",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        390.7,
+        127.0,
+        564.0,
+        141.0
+      ],
+      "nearby_label": "Phone",
+      "section_region": "patient_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "patient_info.fields.phone"
+      ]
+    },
+    {
+      "name": "pat_address",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        105.0,
+        148.0,
+        564.0,
+        162.0
+      ],
+      "nearby_label": "Street Address",
+      "section_region": "patient_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "patient_info.fields.address"
+      ]
+    },
+    {
+      "name": "pat_city",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        61.0,
+        169.0,
+        244.8,
+        183.0
+      ],
+      "nearby_label": "City",
+      "section_region": "patient_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "patient_info.fields.city"
+      ]
+    },
+    {
+      "name": "pat_state",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        279.3,
+        169.0,
+        377.8,
+        183.0
+      ],
+      "nearby_label": "State",
+      "section_region": "patient_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "patient_info.fields.state"
+      ]
+    },
+    {
+      "name": "pat_zip",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        405.3,
+        169.0,
+        564.0,
+        183.0
+      ],
+      "nearby_label": "ZIP",
+      "section_region": "patient_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "patient_info.fields.zip"
+      ]
+    },
+    {
+      "name": "pat_email",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        68.0,
+        190.0,
+        564.0,
+        204.0
+      ],
+      "nearby_label": "Email",
+      "section_region": "patient_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "patient_info.fields.email"
+      ]
+    },
+    {
+      "name": "spo_name",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        102.5,
+        247.0,
+        271.4,
+        261.0
+      ],
+      "nearby_label": "Spouse Name",
+      "section_region": "spouse_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "spouse_info.fields.name"
+      ]
+    },
+    {
+      "name": "spo_dob",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        334.9,
+        247.0,
+        415.0,
+        261.0
+      ],
+      "nearby_label": "Date of Birth",
+      "section_region": "spouse_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "spouse_info.fields.date_of_birth"
+      ]
+    },
+    {
+      "name": "spo_phone",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        454.6,
+        247.0,
+        564.0,
+        261.0
+      ],
+      "nearby_label": "Phone",
+      "section_region": "spouse_info",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "spouse_info.fields.phone"
+      ]
+    },
+    {
+      "name": "emc_name",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        103.0,
+        304.0,
+        244.8,
+        318.0
+      ],
+      "nearby_label": "Contact Name",
+      "section_region": "emergency_contact",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "emergency_contact.fields.name"
+      ]
+    },
+    {
+      "name": "emc_relationship",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        348.3,
+        304.0,
+        415.0,
+        318.0
+      ],
+      "nearby_label": "Relationship to Patient",
+      "section_region": "emergency_contact",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "emergency_contact.fields.relationship"
+      ]
+    },
+    {
+      "name": "emc_phone",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        454.6,
+        304.0,
+        564.0,
+        318.0
+      ],
+      "nearby_label": "Phone",
+      "section_region": "emergency_contact",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "emergency_contact.fields.phone"
+      ]
+    },
+    {
+      "name": "pri_ins_company",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        126.0,
+        361.0,
+        351.2,
+        375.0
+      ],
+      "nearby_label": "Insurance Company",
+      "section_region": "primary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "primary_insurance.fields.insurance_company"
+      ]
+    },
+    {
+      "name": "pri_ins_phone",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        432.7,
+        361.0,
+        564.0,
+        375.0
+      ],
+      "nearby_label": "Insurance Phone",
+      "section_region": "primary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "primary_insurance.fields.phone"
+      ]
+    },
+    {
+      "name": "pri_ins_holder_name",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        125.0,
+        382.0,
+        244.8,
+        396.0
+      ],
+      "nearby_label": "Policy Holder Name",
+      "section_region": "primary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "primary_insurance.fields.policy_holder.name"
+      ]
+    },
+    {
+      "name": "pri_ins_holder_relationship",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        348.3,
+        382.0,
+        415.0,
+        396.0
+      ],
+      "nearby_label": "Relationship to Patient",
+      "section_region": "primary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "primary_insurance.fields.policy_holder.relationship_to_patient"
+      ]
+    },
+    {
+      "name": "pri_ins_holder_dob",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        477.1,
+        382.0,
+        564.0,
+        396.0
+      ],
+      "nearby_label": "Holder DOB",
+      "section_region": "primary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "primary_insurance.fields.policy_holder.date_of_birth"
+      ]
+    },
+    {
+      "name": "pri_ins_id",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        96.5,
+        403.0,
+        298.0,
+        417.0
+      ],
+      "nearby_label": "Insurance ID",
+      "section_region": "primary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "primary_insurance.fields.insurance_id"
+      ]
+    },
+    {
+      "name": "pri_ins_group",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        371.0,
+        403.0,
+        564.0,
+        417.0
+      ],
+      "nearby_label": "Group Number",
+      "section_region": "primary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "primary_insurance.fields.group_number"
+      ]
+    },
+    {
+      "name": "sec_ins_company",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        126.0,
+        460.0,
+        351.2,
+        474.0
+      ],
+      "nearby_label": "Insurance Company",
+      "section_region": "secondary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "secondary_insurance.fields.insurance_company"
+      ]
+    },
+    {
+      "name": "sec_ins_phone",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        432.7,
+        460.0,
+        564.0,
+        474.0
+      ],
+      "nearby_label": "Insurance Phone",
+      "section_region": "secondary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "secondary_insurance.fields.phone"
+      ]
+    },
+    {
+      "name": "sec_ins_holder_name",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        125.0,
+        481.0,
+        244.8,
+        495.0
+      ],
+      "nearby_label": "Policy Holder Name",
+      "section_region": "secondary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "secondary_insurance.fields.policy_holder.name"
+      ]
+    },
+    {
+      "name": "sec_ins_holder_relationship",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        348.3,
+        481.0,
+        415.0,
+        495.0
+      ],
+      "nearby_label": "Relationship to Patient",
+      "section_region": "secondary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "secondary_insurance.fields.policy_holder.relationship_to_patient"
+      ]
+    },
+    {
+      "name": "sec_ins_holder_dob",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        477.1,
+        481.0,
+        564.0,
+        495.0
+      ],
+      "nearby_label": "Holder DOB",
+      "section_region": "secondary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "secondary_insurance.fields.policy_holder.date_of_birth"
+      ]
+    },
+    {
+      "name": "sec_ins_id",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        96.5,
+        502.0,
+        298.0,
+        516.0
+      ],
+      "nearby_label": "Insurance ID",
+      "section_region": "secondary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "secondary_insurance.fields.insurance_id"
+      ]
+    },
+    {
+      "name": "sec_ins_group",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        371.0,
+        502.0,
+        564.0,
+        516.0
+      ],
+      "nearby_label": "Group Number",
+      "section_region": "secondary_insurance",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "secondary_insurance.fields.group_number"
+      ]
+    },
+    {
+      "name": "med_1_name",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        40.0,
+        587.0,
+        193.6,
+        601.0
+      ],
+      "nearby_label": "Medication Name",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.name"
+      ]
+    },
+    {
+      "name": "med_1_dosage",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        199.6,
+        587.0,
+        284.0,
+        601.0
+      ],
+      "nearby_label": "Dosage",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.dosage"
+      ]
+    },
+    {
+      "name": "med_1_frequency",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        290.0,
+        587.0,
+        390.4,
+        601.0
+      ],
+      "nearby_label": "Frequency",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.frequency"
+      ]
+    },
+    {
+      "name": "med_1_prescribing_doctor",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        396.4,
+        587.0,
+        566.0,
+        601.0
+      ],
+      "nearby_label": "Prescribing Doctor",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.prescribing_doctor"
+      ]
+    },
+    {
+      "name": "med_2_name",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        40.0,
+        605.0,
+        193.6,
+        619.0
+      ],
+      "nearby_label": "Medication Name",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.name"
+      ]
+    },
+    {
+      "name": "med_2_dosage",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        199.6,
+        605.0,
+        284.0,
+        619.0
+      ],
+      "nearby_label": "Dosage",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.dosage"
+      ]
+    },
+    {
+      "name": "med_2_frequency",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        290.0,
+        605.0,
+        390.4,
+        619.0
+      ],
+      "nearby_label": "Frequency",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.frequency"
+      ]
+    },
+    {
+      "name": "med_2_prescribing_doctor",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        396.4,
+        605.0,
+        566.0,
+        619.0
+      ],
+      "nearby_label": "Prescribing Doctor",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.prescribing_doctor"
+      ]
+    },
+    {
+      "name": "med_3_name",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        40.0,
+        623.0,
+        193.6,
+        637.0
+      ],
+      "nearby_label": "Medication Name",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.name"
+      ]
+    },
+    {
+      "name": "med_3_dosage",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        199.6,
+        623.0,
+        284.0,
+        637.0
+      ],
+      "nearby_label": "Dosage",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.dosage"
+      ]
+    },
+    {
+      "name": "med_3_frequency",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        290.0,
+        623.0,
+        390.4,
+        637.0
+      ],
+      "nearby_label": "Frequency",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.frequency"
+      ]
+    },
+    {
+      "name": "med_3_prescribing_doctor",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        396.4,
+        623.0,
+        566.0,
+        637.0
+      ],
+      "nearby_label": "Prescribing Doctor",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.prescribing_doctor"
+      ]
+    },
+    {
+      "name": "med_4_name",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        40.0,
+        641.0,
+        193.6,
+        655.0
+      ],
+      "nearby_label": "Medication Name",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.name"
+      ]
+    },
+    {
+      "name": "med_4_dosage",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        199.6,
+        641.0,
+        284.0,
+        655.0
+      ],
+      "nearby_label": "Dosage",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.dosage"
+      ]
+    },
+    {
+      "name": "med_4_frequency",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        290.0,
+        641.0,
+        390.4,
+        655.0
+      ],
+      "nearby_label": "Frequency",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.frequency"
+      ]
+    },
+    {
+      "name": "med_4_prescribing_doctor",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        396.4,
+        641.0,
+        566.0,
+        655.0
+      ],
+      "nearby_label": "Prescribing Doctor",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.prescribing_doctor"
+      ]
+    },
+    {
+      "name": "med_5_name",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        40.0,
+        659.0,
+        193.6,
+        673.0
+      ],
+      "nearby_label": "Medication Name",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.name"
+      ]
+    },
+    {
+      "name": "med_5_dosage",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        199.6,
+        659.0,
+        284.0,
+        673.0
+      ],
+      "nearby_label": "Dosage",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.dosage"
+      ]
+    },
+    {
+      "name": "med_5_frequency",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        290.0,
+        659.0,
+        390.4,
+        673.0
+      ],
+      "nearby_label": "Frequency",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.frequency"
+      ]
+    },
+    {
+      "name": "med_5_prescribing_doctor",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        396.4,
+        659.0,
+        566.0,
+        673.0
+      ],
+      "nearby_label": "Prescribing Doctor",
+      "section_region": "medications",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medications.table.prescribing_doctor"
+      ]
+    },
+    {
+      "name": "alg_1_allergen",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        40.0,
+        85.0,
+        246.8,
+        99.0
+      ],
+      "nearby_label": "Allergen",
+      "section_region": "allergies",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "allergies.table.allergen"
+      ]
+    },
+    {
+      "name": "alg_1_reaction",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        252.8,
+        85.0,
+        433.0,
+        99.0
+      ],
+      "nearby_label": "Reaction",
+      "section_region": "allergies",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "allergies.table.reaction"
+      ]
+    },
+    {
+      "name": "alg_1_severity",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        439.0,
+        85.0,
+        566.0,
+        99.0
+      ],
+      "nearby_label": "Severity",
+      "section_region": "allergies",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "allergies.table.severity"
+      ]
+    },
+    {
+      "name": "alg_2_allergen",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        40.0,
+        103.0,
+        246.8,
+        117.0
+      ],
+      "nearby_label": "Allergen",
+      "section_region": "allergies",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "allergies.table.allergen"
+      ]
+    },
+    {
+      "name": "alg_2_reaction",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        252.8,
+        103.0,
+        433.0,
+        117.0
+      ],
+      "nearby_label": "Reaction",
+      "section_region": "allergies",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "allergies.table.reaction"
+      ]
+    },
+    {
+      "name": "alg_2_severity",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        439.0,
+        103.0,
+        566.0,
+        117.0
+      ],
+      "nearby_label": "Severity",
+      "section_region": "allergies",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "allergies.table.severity"
+      ]
+    },
+    {
+      "name": "alg_3_allergen",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        40.0,
+        121.0,
+        246.8,
+        135.0
+      ],
+      "nearby_label": "Allergen",
+      "section_region": "allergies",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "allergies.table.allergen"
+      ]
+    },
+    {
+      "name": "alg_3_reaction",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        252.8,
+        121.0,
+        433.0,
+        135.0
+      ],
+      "nearby_label": "Reaction",
+      "section_region": "allergies",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "allergies.table.reaction"
+      ]
+    },
+    {
+      "name": "alg_3_severity",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        439.0,
+        121.0,
+        566.0,
+        135.0
+      ],
+      "nearby_label": "Severity",
+      "section_region": "allergies",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "allergies.table.severity"
+      ]
+    },
+    {
+      "name": "alg_4_allergen",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        40.0,
+        139.0,
+        246.8,
+        153.0
+      ],
+      "nearby_label": "Allergen",
+      "section_region": "allergies",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "allergies.table.allergen"
+      ]
+    },
+    {
+      "name": "alg_4_reaction",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        252.8,
+        139.0,
+        433.0,
+        153.0
+      ],
+      "nearby_label": "Reaction",
+      "section_region": "allergies",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "allergies.table.reaction"
+      ]
+    },
+    {
+      "name": "alg_4_severity",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        439.0,
+        139.0,
+        566.0,
+        153.0
+      ],
+      "nearby_label": "Severity",
+      "section_region": "allergies",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "allergies.table.severity"
+      ]
+    },
+    {
+      "name": "pmh_diabetes",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        40.0,
+        211.0,
+        50.0,
+        221.0
+      ],
+      "nearby_label": "Diabetes",
+      "section_region": "medical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medical_history.checklist.diabetes"
+      ]
+    },
+    {
+      "name": "pmh_hypertension",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        173.0,
+        211.0,
+        183.0,
+        221.0
+      ],
+      "nearby_label": "Hypertension",
+      "section_region": "medical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medical_history.checklist.hypertension"
+      ]
+    },
+    {
+      "name": "pmh_asthma",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        306.0,
+        211.0,
+        316.0,
+        221.0
+      ],
+      "nearby_label": "Asthma",
+      "section_region": "medical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medical_history.checklist.asthma"
+      ]
+    },
+    {
+      "name": "pmh_heart_disease",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        439.0,
+        211.0,
+        449.0,
+        221.0
+      ],
+      "nearby_label": "Heart Disease",
+      "section_region": "medical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medical_history.checklist.heart_disease"
+      ]
+    },
+    {
+      "name": "pmh_cancer",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        40.0,
+        229.0,
+        50.0,
+        239.0
+      ],
+      "nearby_label": "Cancer",
+      "section_region": "medical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medical_history.checklist.cancer"
+      ]
+    },
+    {
+      "name": "pmh_thyroid_disorder",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        173.0,
+        229.0,
+        183.0,
+        239.0
+      ],
+      "nearby_label": "Thyroid Disorder",
+      "section_region": "medical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medical_history.checklist.thyroid_disorder"
+      ]
+    },
+    {
+      "name": "pmh_depression_anxiety",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        306.0,
+        229.0,
+        316.0,
+        239.0
+      ],
+      "nearby_label": "Depression/Anxiety",
+      "section_region": "medical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medical_history.checklist.depression_anxiety"
+      ]
+    },
+    {
+      "name": "pmh_arthritis",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        439.0,
+        229.0,
+        449.0,
+        239.0
+      ],
+      "nearby_label": "Arthritis",
+      "section_region": "medical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medical_history.checklist.arthritis"
+      ]
+    },
+    {
+      "name": "pmh_other",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        113.0,
+        246.0,
+        564.0,
+        260.0
+      ],
+      "nearby_label": "Other Conditions",
+      "section_region": "medical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "medical_history.checklist.other"
+      ]
+    },
+    {
+      "name": "surg_1_procedure",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        40.0,
+        320.0,
+        246.8,
+        334.0
+      ],
+      "nearby_label": "Procedure",
+      "section_region": "surgical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "surgical_history.table.procedure"
+      ]
+    },
+    {
+      "name": "surg_1_date",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        252.8,
+        320.0,
+        342.6,
+        334.0
+      ],
+      "nearby_label": "Date",
+      "section_region": "surgical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "surgical_history.table.date"
+      ]
+    },
+    {
+      "name": "surg_1_hospital",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        348.6,
+        320.0,
+        566.0,
+        334.0
+      ],
+      "nearby_label": "Hospital",
+      "section_region": "surgical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "surgical_history.table.hospital"
+      ]
+    },
+    {
+      "name": "surg_2_procedure",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        40.0,
+        338.0,
+        246.8,
+        352.0
+      ],
+      "nearby_label": "Procedure",
+      "section_region": "surgical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "surgical_history.table.procedure"
+      ]
+    },
+    {
+      "name": "surg_2_date",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        252.8,
+        338.0,
+        342.6,
+        352.0
+      ],
+      "nearby_label": "Date",
+      "section_region": "surgical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "surgical_history.table.date"
+      ]
+    },
+    {
+      "name": "surg_2_hospital",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        348.6,
+        338.0,
+        566.0,
+        352.0
+      ],
+      "nearby_label": "Hospital",
+      "section_region": "surgical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "surgical_history.table.hospital"
+      ]
+    },
+    {
+      "name": "surg_3_procedure",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        40.0,
+        356.0,
+        246.8,
+        370.0
+      ],
+      "nearby_label": "Procedure",
+      "section_region": "surgical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "surgical_history.table.procedure"
+      ]
+    },
+    {
+      "name": "surg_3_date",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        252.8,
+        356.0,
+        342.6,
+        370.0
+      ],
+      "nearby_label": "Date",
+      "section_region": "surgical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "surgical_history.table.date"
+      ]
+    },
+    {
+      "name": "surg_3_hospital",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        348.6,
+        356.0,
+        566.0,
+        370.0
+      ],
+      "nearby_label": "Hospital",
+      "section_region": "surgical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "surgical_history.table.hospital"
+      ]
+    },
+    {
+      "name": "surg_4_procedure",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        40.0,
+        374.0,
+        246.8,
+        388.0
+      ],
+      "nearby_label": "Procedure",
+      "section_region": "surgical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "surgical_history.table.procedure"
+      ]
+    },
+    {
+      "name": "surg_4_date",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        252.8,
+        374.0,
+        342.6,
+        388.0
+      ],
+      "nearby_label": "Date",
+      "section_region": "surgical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "surgical_history.table.date"
+      ]
+    },
+    {
+      "name": "surg_4_hospital",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        348.6,
+        374.0,
+        566.0,
+        388.0
+      ],
+      "nearby_label": "Hospital",
+      "section_region": "surgical_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "surgical_history.table.hospital"
+      ]
+    },
+    {
+      "name": "fh_mother_living_status",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        125.1,
+        447.0,
+        214.9,
+        461.0
+      ],
+      "nearby_label": "Mother / Living/Deceased",
+      "section_region": "family_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "family_history.row_table.living_status [row=mother]"
+      ]
+    },
+    {
+      "name": "fh_mother_age",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        220.9,
+        447.0,
+        268.1,
+        461.0
+      ],
+      "nearby_label": "Mother / Age",
+      "section_region": "family_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "family_history.row_table.age [row=mother]"
+      ]
+    },
+    {
+      "name": "fh_mother_conditions",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        274.1,
+        447.0,
+        566.0,
+        461.0
+      ],
+      "nearby_label": "Mother / Medical Conditions",
+      "section_region": "family_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "family_history.row_table.conditions [row=mother]"
+      ]
+    },
+    {
+      "name": "fh_father_living_status",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        125.1,
+        465.0,
+        214.9,
+        479.0
+      ],
+      "nearby_label": "Father / Living/Deceased",
+      "section_region": "family_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "family_history.row_table.living_status [row=father]"
+      ]
+    },
+    {
+      "name": "fh_father_age",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        220.9,
+        465.0,
+        268.1,
+        479.0
+      ],
+      "nearby_label": "Father / Age",
+      "section_region": "family_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "family_history.row_table.age [row=father]"
+      ]
+    },
+    {
+      "name": "fh_father_conditions",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        274.1,
+        465.0,
+        566.0,
+        479.0
+      ],
+      "nearby_label": "Father / Medical Conditions",
+      "section_region": "family_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "family_history.row_table.conditions [row=father]"
+      ]
+    },
+    {
+      "name": "fh_siblings_living_status",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        125.1,
+        483.0,
+        214.9,
+        497.0
+      ],
+      "nearby_label": "Siblings / Living/Deceased",
+      "section_region": "family_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "family_history.row_table.living_status [row=siblings]"
+      ]
+    },
+    {
+      "name": "fh_siblings_age",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        220.9,
+        483.0,
+        268.1,
+        497.0
+      ],
+      "nearby_label": "Siblings / Age",
+      "section_region": "family_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "family_history.row_table.age [row=siblings]"
+      ]
+    },
+    {
+      "name": "fh_siblings_conditions",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        274.1,
+        483.0,
+        566.0,
+        497.0
+      ],
+      "nearby_label": "Siblings / Medical Conditions",
+      "section_region": "family_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "family_history.row_table.conditions [row=siblings]"
+      ]
+    },
+    {
+      "name": "fh_children_living_status",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        125.1,
+        501.0,
+        214.9,
+        515.0
+      ],
+      "nearby_label": "Children / Living/Deceased",
+      "section_region": "family_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "family_history.row_table.living_status [row=children]"
+      ]
+    },
+    {
+      "name": "fh_children_age",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        220.9,
+        501.0,
+        268.1,
+        515.0
+      ],
+      "nearby_label": "Children / Age",
+      "section_region": "family_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "family_history.row_table.age [row=children]"
+      ]
+    },
+    {
+      "name": "fh_children_conditions",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        274.1,
+        501.0,
+        566.0,
+        515.0
+      ],
+      "nearby_label": "Children / Medical Conditions",
+      "section_region": "family_history",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "family_history.row_table.conditions [row=children]"
+      ]
+    },
+    {
+      "name": "cons_voicemail_yes",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        161.5,
+        560.0,
+        171.5,
+        570.0
+      ],
+      "nearby_label": "May we leave a voicemail? -> Yes",
+      "section_region": "communication_consent",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "communication_consent.fields.voicemail [yes]"
+      ]
+    },
+    {
+      "name": "cons_voicemail_no",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        209.5,
+        560.0,
+        219.5,
+        570.0
+      ],
+      "nearby_label": "May we leave a voicemail? -> No",
+      "section_region": "communication_consent",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "communication_consent.fields.voicemail [no]"
+      ]
+    },
+    {
+      "name": "cons_text_yes",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        172.5,
+        581.0,
+        182.5,
+        591.0
+      ],
+      "nearby_label": "May we send text messages? -> Yes",
+      "section_region": "communication_consent",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "communication_consent.fields.text_message [yes]"
+      ]
+    },
+    {
+      "name": "cons_text_no",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        220.5,
+        581.0,
+        230.5,
+        591.0
+      ],
+      "nearby_label": "May we send text messages? -> No",
+      "section_region": "communication_consent",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "communication_consent.fields.text_message [no]"
+      ]
+    },
+    {
+      "name": "cons_email_yes",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        174.5,
+        602.0,
+        184.5,
+        612.0
+      ],
+      "nearby_label": "May we contact you by email? -> Yes",
+      "section_region": "communication_consent",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "communication_consent.fields.email [yes]"
+      ]
+    },
+    {
+      "name": "cons_email_no",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        222.5,
+        602.0,
+        232.5,
+        612.0
+      ],
+      "nearby_label": "May we contact you by email? -> No",
+      "section_region": "communication_consent",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "communication_consent.fields.email [no]"
+      ]
+    },
+    {
+      "name": "rel_authorized_yes",
+      "type": "CheckBox",
+      "page": 3,
+      "rect": [
+        394.6,
+        71.0,
+        404.6,
+        81.0
+      ],
+      "nearby_label": "I authorize the clinic to discuss my health information with the individuals listed below -> Yes",
+      "section_region": "release_of_information",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "release_of_information.fields.release_authorized [yes]"
+      ]
+    },
+    {
+      "name": "rel_authorized_no",
+      "type": "CheckBox",
+      "page": 3,
+      "rect": [
+        442.6,
+        71.0,
+        452.6,
+        81.0
+      ],
+      "nearby_label": "I authorize the clinic to discuss my health information with the individuals listed below -> No",
+      "section_region": "release_of_information",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "release_of_information.fields.release_authorized [no]"
+      ]
+    },
+    {
+      "name": "auth_1_name",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        40.0,
+        108.0,
+        257.4,
+        122.0
+      ],
+      "nearby_label": "Name",
+      "section_region": "release_of_information",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "release_of_information.table.name"
+      ]
+    },
+    {
+      "name": "auth_1_relationship",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        263.4,
+        108.0,
+        406.4,
+        122.0
+      ],
+      "nearby_label": "Relationship",
+      "section_region": "release_of_information",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "release_of_information.table.relationship"
+      ]
+    },
+    {
+      "name": "auth_1_phone",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        412.4,
+        108.0,
+        566.0,
+        122.0
+      ],
+      "nearby_label": "Phone",
+      "section_region": "release_of_information",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "release_of_information.table.phone"
+      ]
+    },
+    {
+      "name": "auth_2_name",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        40.0,
+        126.0,
+        257.4,
+        140.0
+      ],
+      "nearby_label": "Name",
+      "section_region": "release_of_information",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "release_of_information.table.name"
+      ]
+    },
+    {
+      "name": "auth_2_relationship",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        263.4,
+        126.0,
+        406.4,
+        140.0
+      ],
+      "nearby_label": "Relationship",
+      "section_region": "release_of_information",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "release_of_information.table.relationship"
+      ]
+    },
+    {
+      "name": "auth_2_phone",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        412.4,
+        126.0,
+        566.0,
+        140.0
+      ],
+      "nearby_label": "Phone",
+      "section_region": "release_of_information",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "release_of_information.table.phone"
+      ]
+    },
+    {
+      "name": "agr_treatment_signature",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        114.5,
+        212.0,
+        244.8,
+        226.0
+      ],
+      "nearby_label": "Patient Signature",
+      "section_region": "consent_to_treatment",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "consent_to_treatment.fields.signature"
+      ]
+    },
+    {
+      "name": "agr_treatment_printed_name",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        313.3,
+        212.0,
+        431.0,
+        226.0
+      ],
+      "nearby_label": "Printed Name",
+      "section_region": "consent_to_treatment",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "consent_to_treatment.fields.printed_name"
+      ]
+    },
+    {
+      "name": "agr_treatment_date",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        463.5,
+        212.0,
+        564.0,
+        226.0
+      ],
+      "nearby_label": "Date",
+      "section_region": "consent_to_treatment",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "consent_to_treatment.fields.signed_date"
+      ]
+    },
+    {
+      "name": "agr_hipaa_signature",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        114.5,
+        297.0,
+        244.8,
+        311.0
+      ],
+      "nearby_label": "Patient Signature",
+      "section_region": "hipaa_acknowledgment",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "hipaa_acknowledgment.fields.signature"
+      ]
+    },
+    {
+      "name": "agr_hipaa_printed_name",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        313.3,
+        297.0,
+        431.0,
+        311.0
+      ],
+      "nearby_label": "Printed Name",
+      "section_region": "hipaa_acknowledgment",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "hipaa_acknowledgment.fields.printed_name"
+      ]
+    },
+    {
+      "name": "agr_hipaa_date",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        463.5,
+        297.0,
+        564.0,
+        311.0
+      ],
+      "nearby_label": "Date",
+      "section_region": "hipaa_acknowledgment",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "hipaa_acknowledgment.fields.signed_date"
+      ]
+    },
+    {
+      "name": "agr_financial_signature",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        114.5,
+        382.0,
+        244.8,
+        396.0
+      ],
+      "nearby_label": "Patient Signature",
+      "section_region": "financial_agreement",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "financial_agreement.fields.signature"
+      ]
+    },
+    {
+      "name": "agr_financial_printed_name",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        313.3,
+        382.0,
+        431.0,
+        396.0
+      ],
+      "nearby_label": "Printed Name",
+      "section_region": "financial_agreement",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "financial_agreement.fields.printed_name"
+      ]
+    },
+    {
+      "name": "agr_financial_date",
+      "type": "Text",
+      "page": 3,
+      "rect": [
+        463.5,
+        382.0,
+        564.0,
+        396.0
+      ],
+      "nearby_label": "Date",
+      "section_region": "financial_agreement",
+      "known_to_template": true,
+      "suggested_mapping": [
+        "financial_agreement.fields.signed_date"
+      ]
+    }
+  ],
+  "widgets_unknown_to_template": [],
+  "template_fields_absent_from_pdf": [],
+  "label_candidates": [
+    {
+      "label": "First Name",
+      "page": 1,
+      "bbox": [
+        40.0,
+        106.3,
+        86.5,
+        118.7
+      ],
+      "section_region": "patient_info",
+      "suggested_mapping": [
+        "patient_info.fields.first_name"
+      ]
+    },
+    {
+      "label": "Last Name",
+      "page": 1,
+      "bbox": [
+        252.8,
+        106.3,
+        298.8,
+        118.7
+      ],
+      "section_region": "patient_info",
+      "suggested_mapping": [
+        "patient_info.fields.last_name"
+      ]
+    },
+    {
+      "label": "Date of Birth",
+      "page": 1,
+      "bbox": [
+        439.0,
+        106.3,
+        491.5,
+        118.7
+      ],
+      "section_region": "patient_info",
+      "suggested_mapping": [
+        "patient_info.fields.date_of_birth"
+      ]
+    },
+    {
+      "label": "Sex",
+      "page": 1,
+      "bbox": [
+        40.0,
+        127.3,
+        58.0,
+        139.7
+      ],
+      "section_region": "patient_info",
+      "suggested_mapping": [
+        "patient_info.fields.sex"
+      ]
+    },
+    {
+      "label": "Marital Status",
+      "page": 1,
+      "bbox": [
+        173.0,
+        127.3,
+        230.5,
+        139.7
+      ],
+      "section_region": "patient_info",
+      "suggested_mapping": [
+        "patient_info.fields.marital_status"
+      ]
+    },
+    {
+      "label": "Phone",
+      "page": 1,
+      "bbox": [
+        359.2,
+        127.3,
+        387.7,
+        139.7
+      ],
+      "section_region": "patient_info",
+      "suggested_mapping": [
+        "patient_info.fields.phone"
+      ]
+    },
+    {
+      "label": "Street Address",
+      "page": 1,
+      "bbox": [
+        40.0,
+        148.3,
+        102.0,
+        160.7
+      ],
+      "section_region": "patient_info",
+      "suggested_mapping": [
+        "patient_info.fields.address"
+      ]
+    },
+    {
+      "label": "City",
+      "page": 1,
+      "bbox": [
+        40.0,
+        169.3,
+        58.0,
+        181.7
+      ],
+      "section_region": "patient_info",
+      "suggested_mapping": [
+        "patient_info.fields.city"
+      ]
+    },
+    {
+      "label": "State",
+      "page": 1,
+      "bbox": [
+        252.8,
+        169.3,
+        276.3,
+        181.7
+      ],
+      "section_region": "patient_info",
+      "suggested_mapping": [
+        "patient_info.fields.state"
+      ]
+    },
+    {
+      "label": "ZIP",
+      "page": 1,
+      "bbox": [
+        385.8,
+        169.3,
+        402.3,
+        181.7
+      ],
+      "section_region": "patient_info",
+      "suggested_mapping": [
+        "patient_info.fields.zip"
+      ]
+    },
+    {
+      "label": "Email",
+      "page": 1,
+      "bbox": [
+        40.0,
+        190.3,
+        65.0,
+        202.7
+      ],
+      "section_region": "patient_info",
+      "suggested_mapping": [
+        "patient_info.fields.email"
+      ]
+    },
+    {
+      "label": "Spouse Name",
+      "page": 1,
+      "bbox": [
+        40.0,
+        247.3,
+        99.5,
+        259.7
+      ],
+      "section_region": "spouse_info",
+      "suggested_mapping": [
+        "spouse_info.fields.name"
+      ]
+    },
+    {
+      "label": "Date of Birth",
+      "page": 1,
+      "bbox": [
+        279.4,
+        247.3,
+        331.9,
+        259.7
+      ],
+      "section_region": "spouse_info",
+      "suggested_mapping": [
+        "spouse_info.fields.date_of_birth"
+      ]
+    },
+    {
+      "label": "Phone",
+      "page": 1,
+      "bbox": [
+        423.0,
+        247.3,
+        451.6,
+        259.7
+      ],
+      "section_region": "spouse_info",
+      "suggested_mapping": [
+        "spouse_info.fields.phone"
+      ]
+    },
+    {
+      "label": "Contact Name",
+      "page": 1,
+      "bbox": [
+        40.0,
+        304.3,
+        100.0,
+        316.7
+      ],
+      "section_region": "emergency_contact",
+      "suggested_mapping": [
+        "emergency_contact.fields.name"
+      ]
+    },
+    {
+      "label": "Relationship to Patient",
+      "page": 1,
+      "bbox": [
+        252.8,
+        304.3,
+        345.3,
+        316.7
+      ],
+      "section_region": "emergency_contact",
+      "suggested_mapping": [
+        "emergency_contact.fields.relationship"
+      ]
+    },
+    {
+      "label": "Phone",
+      "page": 1,
+      "bbox": [
+        423.0,
+        304.3,
+        451.6,
+        316.7
+      ],
+      "section_region": "emergency_contact",
+      "suggested_mapping": [
+        "emergency_contact.fields.phone"
+      ]
+    },
+    {
+      "label": "Insurance Company",
+      "page": 1,
+      "bbox": [
+        40.0,
+        361.3,
+        123.0,
+        373.7
+      ],
+      "section_region": "primary_insurance",
+      "suggested_mapping": [
+        "primary_insurance.fields.insurance_company"
+      ]
+    },
+    {
+      "label": "Insurance Phone",
+      "page": 1,
+      "bbox": [
+        359.2,
+        361.3,
+        429.7,
+        373.7
+      ],
+      "section_region": "primary_insurance",
+      "suggested_mapping": [
+        "primary_insurance.fields.phone"
+      ]
+    },
+    {
+      "label": "Policy Holder Name",
+      "page": 1,
+      "bbox": [
+        40.0,
+        382.3,
+        122.0,
+        394.7
+      ],
+      "section_region": "primary_insurance",
+      "suggested_mapping": [
+        "primary_insurance.fields.policy_holder.name"
+      ]
+    },
+    {
+      "label": "Relationship to Patient",
+      "page": 1,
+      "bbox": [
+        252.8,
+        382.3,
+        345.3,
+        394.7
+      ],
+      "section_region": "primary_insurance",
+      "suggested_mapping": [
+        "primary_insurance.fields.policy_holder.relationship_to_patient"
+      ]
+    },
+    {
+      "label": "Holder DOB",
+      "page": 1,
+      "bbox": [
+        423.0,
+        382.3,
+        474.1,
+        394.7
+      ],
+      "section_region": "primary_insurance",
+      "suggested_mapping": [
+        "primary_insurance.fields.policy_holder.date_of_birth"
+      ]
+    },
+    {
+      "label": "Insurance ID",
+      "page": 1,
+      "bbox": [
+        40.0,
+        403.3,
+        93.5,
+        415.7
+      ],
+      "section_region": "primary_insurance",
+      "suggested_mapping": [
+        "primary_insurance.fields.insurance_id"
+      ]
+    },
+    {
+      "label": "Group Number",
+      "page": 1,
+      "bbox": [
+        306.0,
+        403.3,
+        368.0,
+        415.7
+      ],
+      "section_region": "primary_insurance",
+      "suggested_mapping": [
+        "primary_insurance.fields.group_number"
+      ]
+    },
+    {
+      "label": "Insurance Company",
+      "page": 1,
+      "bbox": [
+        40.0,
+        460.3,
+        123.0,
+        472.7
+      ],
+      "section_region": "secondary_insurance",
+      "suggested_mapping": [
+        "secondary_insurance.fields.insurance_company"
+      ]
+    },
+    {
+      "label": "Insurance Phone",
+      "page": 1,
+      "bbox": [
+        359.2,
+        460.3,
+        429.7,
+        472.7
+      ],
+      "section_region": "secondary_insurance",
+      "suggested_mapping": [
+        "secondary_insurance.fields.phone"
+      ]
+    },
+    {
+      "label": "Policy Holder Name",
+      "page": 1,
+      "bbox": [
+        40.0,
+        481.3,
+        122.0,
+        493.7
+      ],
+      "section_region": "secondary_insurance",
+      "suggested_mapping": [
+        "secondary_insurance.fields.policy_holder.name"
+      ]
+    },
+    {
+      "label": "Relationship to Patient",
+      "page": 1,
+      "bbox": [
+        252.8,
+        481.3,
+        345.3,
+        493.7
+      ],
+      "section_region": "secondary_insurance",
+      "suggested_mapping": [
+        "secondary_insurance.fields.policy_holder.relationship_to_patient"
+      ]
+    },
+    {
+      "label": "Holder DOB",
+      "page": 1,
+      "bbox": [
+        423.0,
+        481.3,
+        474.1,
+        493.7
+      ],
+      "section_region": "secondary_insurance",
+      "suggested_mapping": [
+        "secondary_insurance.fields.policy_holder.date_of_birth"
+      ]
+    },
+    {
+      "label": "Insurance ID",
+      "page": 1,
+      "bbox": [
+        40.0,
+        502.3,
+        93.5,
+        514.7
+      ],
+      "section_region": "secondary_insurance",
+      "suggested_mapping": [
+        "secondary_insurance.fields.insurance_id"
+      ]
+    },
+    {
+      "label": "Group Number",
+      "page": 1,
+      "bbox": [
+        306.0,
+        502.3,
+        368.0,
+        514.7
+      ],
+      "section_region": "secondary_insurance",
+      "suggested_mapping": [
+        "secondary_insurance.fields.group_number"
+      ]
+    },
+    {
+      "label": "Other Conditions",
+      "page": 2,
+      "bbox": [
+        40.0,
+        246.3,
+        110.0,
+        258.7
+      ],
+      "section_region": "medical_history",
+      "suggested_mapping": [
+        "medical_history.checklist.other"
+      ]
+    },
+    {
+      "label": "I authorize the clinic to discuss my health information with the individuals listed below",
+      "page": 3,
+      "bbox": [
+        40.0,
+        70.3,
+        380.6,
+        82.7
+      ],
+      "section_region": "release_of_information",
+      "suggested_mapping": [
+        "release_of_information.fields.release_authorized"
+      ]
+    },
+    {
+      "label": "Patient Signature",
+      "page": 3,
+      "bbox": [
+        40.0,
+        212.3,
+        111.5,
+        224.7
+      ],
+      "section_region": "consent_to_treatment",
+      "suggested_mapping": [
+        "consent_to_treatment.fields.signature"
+      ]
+    },
+    {
+      "label": "Printed Name",
+      "page": 3,
+      "bbox": [
+        252.8,
+        212.3,
+        310.3,
+        224.7
+      ],
+      "section_region": "consent_to_treatment",
+      "suggested_mapping": [
+        "consent_to_treatment.fields.printed_name"
+      ]
+    },
+    {
+      "label": "Date",
+      "page": 3,
+      "bbox": [
+        439.0,
+        212.3,
+        460.5,
+        224.7
+      ],
+      "section_region": "consent_to_treatment",
+      "suggested_mapping": [
+        "consent_to_treatment.fields.signed_date"
+      ]
+    },
+    {
+      "label": "Patient Signature",
+      "page": 3,
+      "bbox": [
+        40.0,
+        297.3,
+        111.5,
+        309.7
+      ],
+      "section_region": "hipaa_acknowledgment",
+      "suggested_mapping": [
+        "hipaa_acknowledgment.fields.signature"
+      ]
+    },
+    {
+      "label": "Printed Name",
+      "page": 3,
+      "bbox": [
+        252.8,
+        297.3,
+        310.3,
+        309.7
+      ],
+      "section_region": "hipaa_acknowledgment",
+      "suggested_mapping": [
+        "hipaa_acknowledgment.fields.printed_name"
+      ]
+    },
+    {
+      "label": "Date",
+      "page": 3,
+      "bbox": [
+        439.0,
+        297.3,
+        460.5,
+        309.7
+      ],
+      "section_region": "hipaa_acknowledgment",
+      "suggested_mapping": [
+        "hipaa_acknowledgment.fields.signed_date"
+      ]
+    },
+    {
+      "label": "Patient Signature",
+      "page": 3,
+      "bbox": [
+        40.0,
+        382.3,
+        111.5,
+        394.7
+      ],
+      "section_region": "financial_agreement",
+      "suggested_mapping": [
+        "financial_agreement.fields.signature"
+      ]
+    },
+    {
+      "label": "Printed Name",
+      "page": 3,
+      "bbox": [
+        252.8,
+        382.3,
+        310.3,
+        394.7
+      ],
+      "section_region": "financial_agreement",
+      "suggested_mapping": [
+        "financial_agreement.fields.printed_name"
+      ]
+    },
+    {
+      "label": "Date",
+      "page": 3,
+      "bbox": [
+        439.0,
+        382.3,
+        460.5,
+        394.7
+      ],
+      "section_region": "financial_agreement",
+      "suggested_mapping": [
+        "financial_agreement.fields.signed_date"
+      ]
+    }
+  ]
+}

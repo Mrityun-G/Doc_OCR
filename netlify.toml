@@ -1,0 +1,28 @@
+# Netlify serves the web page (a single static HTML file, no build step).
+# Requests to /api/* and /files/* are proxied to the Python API on Render, so the
+# browser only ever talks to the netlify.app address.
+#
+# If Render gives your service a different address than docintel-api.onrender.com,
+# change the two "to" lines below and push.
+
+[build]
+  publish = "docintel/web"
+  command = "echo 'Static page: nothing to build'"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://docintel-api.onrender.com/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/files/*"
+  to = "https://docintel-api.onrender.com/files/:splat"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "same-origin"

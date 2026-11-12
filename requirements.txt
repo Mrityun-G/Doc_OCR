@@ -1,0 +1,2 @@
+# runtime (what the Render API service installs)
+pymupdf>=1.24

@@ -1,0 +1,16 @@
+# Render Blueprint: the Python API that processes PDFs.
+# The web page itself is served by Netlify (see netlify.toml), which forwards /api and /files here.
+services:
+  - type: web
+    name: docintel-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m docintel serve --host 0.0.0.0
+    healthCheckPath: /api/documents
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: DOCINTEL_PUBLIC_DEMO      # shows the "fictional data only" notice, protects the sample PDFs
+        value: "1"

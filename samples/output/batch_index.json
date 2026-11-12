@@ -1,0 +1,105 @@
+{
+  "batch_id": "BATCH_20261112T071239",
+  "created_at": "2026-11-12T07:12:39+00:00",
+  "template_id": "patient_intake_v1",
+  "engine": "docintel 1.0.0",
+  "output_dir": "samples\\output",
+  "documents": [
+    {
+      "document_id": "DOC_001",
+      "source_filename": "intake_A_fillable_okafor.pdf",
+      "status": "completed",
+      "source_sha256": "16448ca35f1a15680ac9c27d41d6b9b6efe14e5d320e06dd016882992545f3e4",
+      "extraction_mode": "template_acroform",
+      "json": "json\\DOC_001.json",
+      "counts": {
+        "entities": 41,
+        "attributes": 113,
+        "relationships": 47,
+        "uncertain_relationships": 0,
+        "manual_review_items": 0,
+        "missing_items": 1,
+        "warnings": 0,
+        "errors": 0
+      },
+      "standardized_pdf": "standardized\\DOC_001_standardized.pdf",
+      "fill_report": {
+        "filled_fields": 83,
+        "withheld_pending_review": 0,
+        "not_placed": []
+      }
+    },
+    {
+      "document_id": "DOC_002",
+      "source_filename": "intake_B_flattened_lindqvist.pdf",
+      "status": "needs_review",
+      "source_sha256": "c1f55e7e73e886ea29b82da4fc4e8242a8f1bb92e98d21ac3dc7d5e54559f978",
+      "extraction_mode": "layout",
+      "json": "json\\DOC_002.json",
+      "counts": {
+        "entities": 25,
+        "attributes": 71,
+        "relationships": 27,
+        "uncertain_relationships": 0,
+        "manual_review_items": 1,
+        "missing_items": 17,
+        "warnings": 1,
+        "errors": 0
+      },
+      "standardized_pdf": "standardized\\DOC_002_standardized.pdf",
+      "fill_report": {
+        "filled_fields": 47,
+        "withheld_pending_review": 1,
+        "not_placed": []
+      }
+    },
+    {
+      "document_id": "DOC_003",
+      "source_filename": "intake_C_other_clinic_rivera.pdf",
+      "status": "needs_review",
+      "source_sha256": "51ad708c3ee91f1c7b4806812b9721ea6eef00204ac69e40793edf9482557706",
+      "extraction_mode": "layout",
+      "json": "json\\DOC_003.json",
+      "counts": {
+        "entities": 40,
+        "attributes": 112,
+        "relationships": 45,
+        "uncertain_relationships": 3,
+        "manual_review_items": 7,
+        "missing_items": 2,
+        "warnings": 2,
+        "errors": 0
+      },
+      "standardized_pdf": "standardized\\DOC_003_standardized.pdf",
+      "fill_report": {
+        "filled_fields": 81,
+        "withheld_pending_review": 2,
+        "not_placed": []
+      }
+    },
+    {
+      "document_id": "DOC_004",
+      "source_filename": "intake_D_scanned_rivera.pdf",
+      "status": "needs_ocr",
+      "source_sha256": "a6dbf04dac17a991ca7f8de85bb29bf208fd986b17f64d0af7513ea48dd22fa2",
+      "extraction_mode": "layout",
+      "json": "json\\DOC_004.json",
+      "counts": {
+        "entities": 1,
+        "attributes": 0,
+        "relationships": 0,
+        "uncertain_relationships": 0,
+        "manual_review_items": 2,
+        "missing_items": 26,
+        "warnings": 1,
+        "errors": 0
+      }
+    }
+  ],
+  "completed_at": "2026-11-12T07:12:40+00:00",
+  "summary": {
+    "completed": 1,
+    "needs_review": 2,
+    "needs_ocr": 1
+  }
+}

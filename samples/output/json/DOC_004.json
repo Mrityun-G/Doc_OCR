@@ -1,0 +1,331 @@
+{
+  "schema_version": "1.0",
+  "document_id": "DOC_004",
+  "document_type": "patient_intake",
+  "template_id": "patient_intake_v1",
+  "source": {
+    "filename": "intake_D_scanned_rivera.pdf",
+    "sha256": "a6dbf04dac17a991ca7f8de85bb29bf208fd986b17f64d0af7513ea48dd22fa2",
+    "page_count": 2,
+    "has_acroform": false,
+    "pages_without_text_layer": [
+      1,
+      2
+    ],
+    "ocr_pages": []
+  },
+  "processing": {
+    "engine": "docintel 1.0.0",
+    "processed_at": "2026-11-12T07:12:40+00:00",
+    "extraction_mode": "layout",
+    "review_threshold": 0.7,
+    "status": "needs_ocr",
+    "coordinate_system": "PDF points; origin top-left; bbox = [x0, y0, x1, y1]"
+  },
+  "sections": [
+    {
+      "section_id": "patient_info",
+      "title": "Patient Information",
+      "source_heading": null,
+      "identified_by": "values_only",
+      "pages": [],
+      "heading_location": null,
+      "entity_ids": [
+        "PAT_001"
+      ]
+    }
+  ],
+  "entities": {
+    "patient": {
+      "patient_id": "PAT_001",
+      "entity_type": "patient",
+      "section_id": "patient_info",
+      "record": {
+        "part": "fields",
+        "record_key": "main",
+        "index": 1
+      },
+      "source_pages": []
+    },
+    "spouse": null,
+    "emergency_contacts": [],
+    "insurance_policies": [],
+    "insurance_companies": [],
+    "medications": [],
+    "doctors": [],
+    "allergies": [],
+    "medical_conditions": [],
+    "surgeries": [],
+    "hospitals": [],
+    "family_members": [],
+    "consents": [],
+    "authorized_family_members": [],
+    "agreements": [],
+    "signatures": []
+  },
+  "relationships": [],
+  "missing_information": [
+    {
+      "ref": "patient_info",
+      "section_id": "patient_info",
+      "label": "Patient Information",
+      "severity": "required",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "spouse_info",
+      "section_id": "spouse_info",
+      "label": "Spouse Information",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "emergency_contact",
+      "section_id": "emergency_contact",
+      "label": "Emergency Contact",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "primary_insurance",
+      "section_id": "primary_insurance",
+      "label": "Primary Insurance",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "secondary_insurance",
+      "section_id": "secondary_insurance",
+      "label": "Secondary Insurance",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "medications",
+      "section_id": "medications",
+      "label": "Current Medications",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "allergies",
+      "section_id": "allergies",
+      "label": "Allergies",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "medical_history",
+      "section_id": "medical_history",
+      "label": "Past Medical History",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "surgical_history",
+      "section_id": "surgical_history",
+      "label": "Surgical History",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "family_history",
+      "section_id": "family_history",
+      "label": "Family Medical History",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "communication_consent",
+      "section_id": "communication_consent",
+      "label": "Communication Consent",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "release_of_information",
+      "section_id": "release_of_information",
+      "label": "Authorization to Release Information",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "consent_to_treatment",
+      "section_id": "consent_to_treatment",
+      "label": "Consent to Treatment",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "hipaa_acknowledgment",
+      "section_id": "hipaa_acknowledgment",
+      "label": "HIPAA Acknowledgment",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "financial_agreement",
+      "section_id": "financial_agreement",
+      "label": "Financial Responsibility Agreement",
+      "severity": "section_not_found",
+      "reason": "section not present in the source document"
+    },
+    {
+      "ref": "patient_info.first_name",
+      "section_id": "patient_info",
+      "entity_id": "PAT_001",
+      "label": "First Name",
+      "severity": "required",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "patient_info.last_name",
+      "section_id": "patient_info",
+      "entity_id": "PAT_001",
+      "label": "Last Name",
+      "severity": "required",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "patient_info.date_of_birth",
+      "section_id": "patient_info",
+      "entity_id": "PAT_001",
+      "label": "Date of Birth",
+      "severity": "required",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "patient_info.sex",
+      "section_id": "patient_info",
+      "entity_id": "PAT_001",
+      "label": "Sex",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "patient_info.marital_status",
+      "section_id": "patient_info",
+      "entity_id": "PAT_001",
+      "label": "Marital Status",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "patient_info.phone",
+      "section_id": "patient_info",
+      "entity_id": "PAT_001",
+      "label": "Phone",
+      "severity": "required",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "patient_info.address",
+      "section_id": "patient_info",
+      "entity_id": "PAT_001",
+      "label": "Street Address",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "patient_info.city",
+      "section_id": "patient_info",
+      "entity_id": "PAT_001",
+      "label": "City",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "patient_info.state",
+      "section_id": "patient_info",
+      "entity_id": "PAT_001",
+      "label": "State",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "patient_info.zip",
+      "section_id": "patient_info",
+      "entity_id": "PAT_001",
+      "label": "ZIP",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    },
+    {
+      "ref": "patient_info.email",
+      "section_id": "patient_info",
+      "entity_id": "PAT_001",
+      "label": "Email",
+      "severity": "not_provided",
+      "reason": "no value found in the source document"
+    }
+  ],
+  "validation": {
+    "status": "needs_ocr",
+    "checks": [
+      {
+        "check": "document_isolation",
+        "status": "passed",
+        "checked": 0,
+        "issues": []
+      },
+      {
+        "check": "predicate_signatures",
+        "status": "passed",
+        "checked": 0,
+        "issues": []
+      },
+      {
+        "check": "medication_record_integrity",
+        "status": "passed",
+        "checked": 0,
+        "issues": []
+      },
+      {
+        "check": "insurance_policy_separation",
+        "status": "passed",
+        "checked": 0,
+        "issues": []
+      },
+      {
+        "check": "family_history_separation",
+        "status": "passed",
+        "checked": 0,
+        "issues": []
+      },
+      {
+        "check": "consent_decision_integrity",
+        "status": "passed",
+        "checked": 0,
+        "issues": []
+      },
+      {
+        "check": "signature_agreement_binding",
+        "status": "passed",
+        "checked": 0,
+        "issues": []
+      }
+    ],
+    "errors": [],
+    "warnings": [
+      {
+        "code": "needs_ocr",
+        "message": "page(s) [1, 2] contain only images; install Tesseract and pytesseract to OCR them"
+      }
+    ]
+  },
+  "manual_review": [
+    {
+      "review_id": "REV_001",
+      "kind": "page",
+      "ref": "page 1",
+      "reason": "page is an image without a text layer and OCR is unavailable; content not extracted"
+    },
+    {
+      "review_id": "REV_002",
+      "kind": "page",
+      "ref": "page 2",
+      "reason": "page is an image without a text layer and OCR is unavailable; content not extracted"
+    }
+  ],
+  "unmapped_content": []
+}
